@@ -1,0 +1,8 @@
+﻿<Window x:Class="GDrive.NET.DlgAuth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Google Drive Authentication" Height="374" Width="582" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <WebBrowser Name="wbAuth" Navigating="wbAuth_Navigating" Navigated="wbAuth_Navigated" />
+    </Grid>
+</Window>
