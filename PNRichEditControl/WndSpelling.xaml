@@ -1,0 +1,45 @@
+﻿<Window x:Class="PNRichEdit.WndSpelling"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Spell checking" Height="370" Width="380"
+        Name="DlgSpelling"
+        SizeToContent="Height"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="lblNotInDic" Text="Not in dictionary" Margin="4"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ListBox Name="lstNotInDict" Height="140" Margin="4" SelectionChanged="lstNotInDict_SelectionChanged"/>
+            <StackPanel Grid.Column="1">
+                <Button Name="cmdIgnoreOnce" MinHeight="23" Content="Ignore once" Margin="4" IsEnabled="False" Click="cmdIgnoreOnce_Click"/>
+                <Button Name="cmdIgnoreAll" MinHeight="23" Content="Ignore all" Margin="4" IsEnabled="False" Click="cmdIgnoreAll_Click"/>
+                <Button Name="cmdAddToDict" MinHeight="23" Content="Add to dictionary" Margin="4" IsEnabled="False" Click="cmdAddToDict_Click"/>
+            </StackPanel>
+        </Grid>
+        <TextBlock Name="lblSuggestions" Text="Suggestions" Grid.Row="2" Margin="4"/>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ListBox Name="lstSuggestions" Height="140" Margin="4" SelectionChanged="lstSuggestions_SelectionChanged"/>
+            <DockPanel Grid.Column="1" LastChildFill="False">
+                <Button Name="cmdChange" MinHeight="23" DockPanel.Dock="Top" Content="Change" Margin="4" IsEnabled="False" Click="cmdChange_Click"/>
+                <Button Name="cmdChangeAll" MinHeight="23" DockPanel.Dock="Top" Content="Change all" Margin="4" IsEnabled="False" Click="cmdChangeAll_Click"/>
+                <Button Name="cmdCancel" MinHeight="23" DockPanel.Dock="Bottom" Content="Cancel" Margin="4" IsCancel="True"/>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</Window>
