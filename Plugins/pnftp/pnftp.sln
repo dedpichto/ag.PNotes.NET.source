@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pnftp", "pnftp.csproj", "{8D67C3A7-C05C-4EF6-9080-59D35374C7C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTPTest", "FTPTest\FTPTest.csproj", "{40C15962-C372-4212-8841-FD1196B7E109}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://andreygruber.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = pnftp.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = FTPTest\\FTPTest.csproj
+		SccProjectName2 = FTPTest
+		SccLocalPath2 = FTPTest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D67C3A7-C05C-4EF6-9080-59D35374C7C2}.Debug|x86.ActiveCfg = Debug|x86
+		{8D67C3A7-C05C-4EF6-9080-59D35374C7C2}.Debug|x86.Build.0 = Debug|x86
+		{8D67C3A7-C05C-4EF6-9080-59D35374C7C2}.Release|x86.ActiveCfg = Release|x86
+		{8D67C3A7-C05C-4EF6-9080-59D35374C7C2}.Release|x86.Build.0 = Release|x86
+		{40C15962-C372-4212-8841-FD1196B7E109}.Debug|x86.ActiveCfg = Debug|x86
+		{40C15962-C372-4212-8841-FD1196B7E109}.Debug|x86.Build.0 = Debug|x86
+		{40C15962-C372-4212-8841-FD1196B7E109}.Release|x86.ActiveCfg = Release|x86
+		{40C15962-C372-4212-8841-FD1196B7E109}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

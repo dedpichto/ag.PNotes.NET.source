@@ -1,0 +1,29 @@
+﻿<Window x:Class="pnftp.DlgParameters"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FTP parameters" Height="340" Width="296" 
+        ResizeMode="NoResize"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <StackPanel>
+        <TextBlock Name="lblServer" Margin="4">Server</TextBlock>
+        <TextBox Name="txtServer" Margin="4" TextChanged="textBox_TextChanged" />
+        <TextBlock Name="lblDirectory" Margin="4">Directory</TextBlock>
+        <TextBox Name="txtDirectory" Margin="4" TextChanged="textBox_TextChanged" />
+        <TextBlock Name="lblUser" Margin="4">User Name</TextBlock>
+        <TextBox Name="txtUser" Margin="4" TextChanged="textBox_TextChanged" />
+        <TextBlock Name="lblPassword" Margin="4">Password</TextBlock>
+        <PasswordBox Name="txtPassword" Margin="4" PasswordChanged="txtPassword_PasswordChanged" />
+        <TextBlock Name="lblPort" Margin="4">Port</TextBlock>
+        <TextBox Name="txtPort" Margin="4" TextChanged="textBox_TextChanged" PreviewTextInput="txtPort_PreviewTextInput" DataObject.Pasting="txtPort_Pasting"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Name="cmdSave" Margin="4" IsDefault="True" HorizontalAlignment="Right" IsEnabled="False" MinWidth="75" MinHeight="23" Click="cmdSave_Click">Save</Button>
+            <Button Grid.Column="1" Name="cmdCancel" Margin="4" MinWidth="75" MinHeight="23" IsCancel="True">Cancel</Button>
+        </Grid>
+    </StackPanel>
+</Window>

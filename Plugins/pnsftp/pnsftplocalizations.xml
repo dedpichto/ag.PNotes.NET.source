@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizations>
+  <lang culture="en-US">
+    <lblServer>SFTP server address</lblServer>
+    <lblDirectory>SFTP directory</lblDirectory>
+    <lblUser>User name</lblUser>
+    <lblPassword>Password</lblPassword>
+    <lblPort>Port</lblPort>
+    <cmdSave>Save</cmdSave>
+    <cmdCancel>Cancel</cmdCancel>
+    <progress_text>Synchronization in progress...</progress_text>
+    <config_file_not_found>Configuration file not found</config_file_not_found>
+    <parameters_not_set>SFTP connection parameters have not been set</parameters_not_set>
+  </lang>
+  <lang culture="ru-RU">
+    <lblServer>Адрес сервера SFTP</lblServer>
+    <lblDirectory>Директория SFTP</lblDirectory>
+    <lblUser>Имя пользователя</lblUser>
+    <lblPassword>Пароль</lblPassword>
+    <lblPort>Порт</lblPort>
+    <cmdSave>Сохранить</cmdSave>
+    <cmdCancel>Отмена</cmdCancel>
+    <progress_text>Выполняется синхронизация...</progress_text>
+    <config_file_not_found>Файл кофигурации не найден</config_file_not_found>
+    <parameters_not_set>Параметры соединения SFTP не были установлены</parameters_not_set>
+  </lang>
+</localizations>

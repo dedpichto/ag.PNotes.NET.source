@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pngoogledrive", "pngoogledrive.csproj", "{C5AEB8D2-80B2-4532-9EC4-E621E248CD6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDTest", "GDTest\GDTest.csproj", "{2393F93B-7EB9-4020-8A0F-0B35024FB021}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://andreygruber.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = pngoogledrive.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = GDTest\\GDTest.csproj
+		SccProjectName2 = GDTest
+		SccLocalPath2 = GDTest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5AEB8D2-80B2-4532-9EC4-E621E248CD6B}.Debug|x86.ActiveCfg = Debug|x86
+		{C5AEB8D2-80B2-4532-9EC4-E621E248CD6B}.Debug|x86.Build.0 = Debug|x86
+		{C5AEB8D2-80B2-4532-9EC4-E621E248CD6B}.Release|x86.ActiveCfg = Release|x86
+		{C5AEB8D2-80B2-4532-9EC4-E621E248CD6B}.Release|x86.Build.0 = Release|x86
+		{2393F93B-7EB9-4020-8A0F-0B35024FB021}.Debug|x86.ActiveCfg = Debug|x86
+		{2393F93B-7EB9-4020-8A0F-0B35024FB021}.Debug|x86.Build.0 = Debug|x86
+		{2393F93B-7EB9-4020-8A0F-0B35024FB021}.Release|x86.ActiveCfg = Release|x86
+		{2393F93B-7EB9-4020-8A0F-0B35024FB021}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

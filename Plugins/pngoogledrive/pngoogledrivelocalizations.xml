@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizations>
+  <lang culture="en-US">
+    <config_file_not_found>Configuration file not found</config_file_not_found>
+    <key_not_found>API key not found</key_not_found>
+    <app_secret_not_found>Application secret not found</app_secret_not_found>
+    <progress_text>Synchronization in progress...</progress_text>
+  </lang>
+  <lang culture="ru-RU">
+    <config_file_not_found>Файл кофигурации не найден</config_file_not_found>
+    <key_not_found>API ключ не найден</key_not_found>
+    <app_secret_not_found>Код аппликации не найден</app_secret_not_found>
+    <progress_text>Выполняется синхронизация...</progress_text>
+  </lang>
+  <lang culture="bg-BG">
+    <config_file_not_found>Не е открит конфигурационен файл</config_file_not_found>
+    <key_not_found>Не е открит API ключ</key_not_found>
+    <app_secret_not_found>Не е открит код на приложението</app_secret_not_found>
+    <progress_text>Изпълнява се синхронизация ...</progress_text>
+  </lang>
+</localizations>
