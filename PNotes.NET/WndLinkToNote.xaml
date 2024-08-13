@@ -1,0 +1,44 @@
+﻿<Window x:Class="PNotes.NET.WndLinkToNote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:net="clr-namespace:PNotes.NET"
+        xmlns:sts="clr-namespace:WPFStandardStyles;assembly=WPFStandardStyles"
+        Height="300" 
+        Width="420"
+        Name="DlgLinkToNote"
+        Style="{DynamicResource CustomWindowStyle}"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner"
+        TextElement.FontFamily="{Binding FontFamily}"
+        TextElement.FontSize="{Binding FontSize}"
+        TextElement.FontStretch="{Binding FontStretch}"
+        TextElement.FontStyle="{Binding FontStyle}"
+        TextElement.FontWeight="{Binding FontWeight}"
+        Loaded="DlgLinkToNote_Loaded">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static net:OkCancelCommands.OkCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+        <CommandBinding Command="{x:Static net:OkCancelCommands.CancelCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+    </Window.CommandBindings>
+    <DockPanel>
+        <TextBlock x:Name="lblAvailableLinks" Margin="4" DockPanel.Dock="Top" Text="Available notes"/>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="4" MinWidth="75" IsDefault="True" MinHeight="23" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" Command="net:OkCancelCommands.OkCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+            <Button Margin="4" MinWidth="75" IsCancel="True" MinHeight="23" Grid.Row="0" Grid.Column="1" Command="net:OkCancelCommands.CancelCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+        </Grid>
+        <ListView Name="grdLinks" sts:WPFGridViewHelper.AutoSort="True" Margin="4" MouseDoubleClick="grdDates_MouseDoubleClick">
+            <ListView.View>
+                <GridView AllowsColumnReorder="False">
+                    <GridViewColumn sts:WPFGridViewHelper.ColumnName="Note_Name" sts:WPFGridViewHelper.PropertyName="Name" Header="Note name" DisplayMemberBinding="{Binding Name}" Width="128"/>
+                    <GridViewColumn sts:WPFGridViewHelper.ColumnName="Note_Group" sts:WPFGridViewHelper.PropertyName="Group" Header="Group" DisplayMemberBinding="{Binding Group}" Width="128"/>
+                    <GridViewColumn sts:WPFGridViewHelper.ColumnName="Note_Created" Header="Created" Width="128" DisplayMemberBinding="{Binding Created, Converter={StaticResource DateToDisplayConverter}}"/>
+                    <GridViewColumn sts:WPFGridViewHelper.ColumnName="Note_Saved" Header="Last saved" Width="128" DisplayMemberBinding="{Binding Saved, Converter={StaticResource DateToDisplayConverter}}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+</Window>

@@ -1,0 +1,391 @@
+﻿<Window x:Class="PNotes.NET.WndMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:taskbarNotification="http://www.hardcodet.net/taskbar"
+        xmlns:net="clr-namespace:PNotes.NET"
+        Height="1" 
+        Width="1" 
+        Background="Transparent" 
+        Left="-100" 
+        Top="-100" 
+        Title="PNotes.NET Main Window" 
+        ShowInTaskbar="False" 
+        AllowsTransparency="True"
+        WindowStyle="None" 
+        Loaded="Window_Loaded" 
+        Closing="Window_Closing" 
+        Closed="Window_Closed"
+        SourceInitialized="Window_SourceInitialized">
+    <taskbarNotification:TaskbarIcon Name="ntfPN"
+                                     IconSource="note_pinned.ico" 
+                                     Visibility="Collapsed"
+                                     TrayMouseDoubleClick="ntfPN_TrayMouseDoubleClick"
+                                     TrayContextMenuOpen="ntfPN_TrayContextMenuOpen"
+                                     TrayLeftMouseUp="ntfPN_TrayLeftMouseUp"
+                                     TrayRightMouseDown="ntfPN_TrayRightMouseDown">
+        <taskbarNotification:TaskbarIcon.ContextMenu>
+            <ContextMenu Name="ctmPN"
+                         TextElement.FontFamily="{Binding FontFamily}"
+                         TextElement.FontSize="{Binding FontSize}"
+                         TextElement.FontStretch="{Binding FontStretch}"
+                         TextElement.FontStyle="{Binding FontStyle}"
+                         TextElement.FontWeight="{Binding FontWeight}">
+                <ContextMenu.CommandBindings>
+                    <CommandBinding Command="{x:Static net:MainCommands.NewNoteCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.NewNoteInGroupCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.LoadNoteCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.NoteFromClipboardCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.DiaryCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.TodayCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.PreferencesCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ControlPanelCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.HotkeysCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.MenusManagementCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.PanelCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ToPanelAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.FromPanelAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ShowHideCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ShowGroupsCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ShowAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ShowIncomingCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.HideGroupsCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.HideAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.HideIncomingCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.TagsShowByCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.TagsHideByCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.LastModifiedNotesCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.LastTodayCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.Last1Command}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.Last2Command}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.Last3Command}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.Last4Command}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.Last5Command}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.Last6Command}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.Last7Command}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.AllToFrontCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SaveAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.BackupSyncCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.BackupCreateCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.BackupRestoreCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SyncLocalCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ImportNotesCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ImportSettingsCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ImportFontsCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ImportDictionariesCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ExpAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ExpPdfCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ExpTiffCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ExpDocCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ExpRtfCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ExpTxtCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.PrintFieldsCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ReloadAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.DockAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:CommonCommands.DockNoneCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:CommonCommands.DockLeftCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:CommonCommands.DockTopCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:CommonCommands.DockRightCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:CommonCommands.DockBottomCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOnAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOnHighPriorityCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOnProtectionCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOnCompleteCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOnRollCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOnOnTopCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOffAllCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOffHighPriorityCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOffProtectionCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOffCompleteCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOffRollCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SwitchOffOnTopCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SpecialOptionsCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.OnScreenKeyboardCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.MagnifierCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SearchInMainCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SearchInNotesCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SearchByTagsCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SearchByDatesCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.FavoritesMainCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ShowAllFavoritesCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.LockProgramCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.RunCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.HelpCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.AboutCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.HomepageCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.SupportCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                    <CommandBinding Command="{x:Static net:MainCommands.ExitCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+                </ContextMenu.CommandBindings>
+                <MenuItem Name="mnuNewNote" Command="net:MainCommands.NewNoteCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource new_note}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuNewNoteInGroup" Command="net:MainCommands.NewNoteInGroupCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource new_note_in_group}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuLoadNote" Command="net:MainCommands.LoadNoteCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource load}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuNoteFromClipboard" Command="net:MainCommands.NoteFromClipboardCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource fromcp}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuDiary" Command="net:MainCommands.DiaryCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource diary}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuTodayDiary" Command="net:MainCommands.TodayCommand"/>
+                </MenuItem>
+                <Separator Name="toolStripSeparator1"/>
+                <MenuItem Name="mnuPrefs" Command="net:MainCommands.PreferencesCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource prefs}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuCP" Command="net:MainCommands.ControlPanelCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource controlp}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuHotkeys" Command="net:MainCommands.HotkeysCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource hotkeys}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuMenusManagement" Command="net:MainCommands.MenusManagementCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource menus}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator Name="toolStripSeparator27"/>
+                <MenuItem Name="mnuPanelAll" Command="net:MainCommands.PanelCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource panel}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuToPanelAll" Command="net:MainCommands.ToPanelAllCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource topanel}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Name="mnuFromPanelAll" Command="net:MainCommands.FromPanelAllCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource frompanel}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <Separator Name="toolStripSeparator2"/>
+                <MenuItem Name="mnuShowHide" Command="net:MainCommands.ShowHideCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource showhide}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuShowGroups" Command="net:MainCommands.ShowGroupsCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource showgroups}"/>
+                        </MenuItem.Icon>
+                        <MenuItem Name="mnuShowAll" Command="net:MainCommands.ShowAllCommand"/>
+                        <Separator Name="toolStripSeparator5"/>
+                        <MenuItem Name="mnuShowIncoming" Command="net:MainCommands.ShowIncomingCommand"/>
+                    </MenuItem>
+                    <MenuItem Name="mnuHideGroups" Command="net:MainCommands.HideGroupsCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource hidegroups}"/>
+                        </MenuItem.Icon>
+                        <MenuItem Name="mnuHideAll" Command="net:MainCommands.HideAllCommand"/>
+                        <Separator Name="toolStripSeparator6"/>
+                        <MenuItem Name="mnuHideIncoming" Command="net:MainCommands.HideIncomingCommand"/>
+                    </MenuItem>
+                    <MenuItem Name="mnuShowByTag" Command="net:MainCommands.TagsShowByCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource showtag}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Name="mnuHideByTag" Command="net:MainCommands.TagsHideByCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource hidetag}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator Name="toolStripSeparator18"/>
+                    <MenuItem Name="mnuLastModified" Command="net:MainCommands.LastModifiedNotesCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource lastmod}"/>
+                        </MenuItem.Icon>
+                        <MenuItem Name="mnuTodayLast" Command="net:MainCommands.LastTodayCommand"/>
+                        <MenuItem Name="mnu1DayAgo" Command="net:MainCommands.Last1Command"/>
+                        <MenuItem Name="mnu2DaysAgo" Command="net:MainCommands.Last2Command"/>
+                        <MenuItem Name="mnu3DaysAgo" Command="net:MainCommands.Last3Command"/>
+                        <MenuItem Name="mnu4DaysAgo" Command="net:MainCommands.Last4Command"/>
+                        <MenuItem Name="mnu5DaysAgo" Command="net:MainCommands.Last5Command"/>
+                        <MenuItem Name="mnu6DaysAgo" Command="net:MainCommands.Last6Command"/>
+                        <MenuItem Name="mnu7DaysAgo" Command="net:MainCommands.Last7Command"/>
+                    </MenuItem>
+                    <MenuItem Name="mnuAllToFront" Command="net:MainCommands.AllToFrontCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource front}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <Separator Name="toolStripSeparator7"/>
+                <MenuItem Name="mnuSaveAll" Command="net:MainCommands.SaveAllCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource saveall}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuBackup" Command="net:MainCommands.BackupSyncCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource back}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuBackupCreate" Command="net:MainCommands.BackupCreateCommand"/>
+                    <MenuItem Name="mnuBackupRestore" Command="net:MainCommands.BackupRestoreCommand"/>
+                    <MenuItem Name="mnuSyncLocal" Command="net:MainCommands.SyncLocalCommand"/>
+                    <Separator Name="sepBackup" />
+                    <MenuItem Name="mnuImportNotes" Command="net:MainCommands.ImportNotesCommand"/>
+                    <MenuItem Name="mnuImportSettings" Command="net:MainCommands.ImportSettingsCommand"/>
+                    <MenuItem Name="mnuImportFonts" Command="net:MainCommands.ImportFontsCommand"/>
+                    <MenuItem Name="mnuImportDictionaries" Command="net:MainCommands.ImportDictionariesCommand"/>
+                    <Separator Name="sepExport"/>
+                    <MenuItem Name="mnuExportAll" Command="net:MainCommands.ExpAllCommand">
+                        <MenuItem Name="mnuExpPdf" Command="net:MainCommands.ExpPdfCommand" CommandParameter="mnuExpPdf"/>
+                        <MenuItem Name="mnuExpTif" Command="net:MainCommands.ExpTiffCommand" CommandParameter="mnuExpTif"/>
+                        <MenuItem Name="mnuExpDoc" Command="net:MainCommands.ExpDocCommand" CommandParameter="mnuExpDoc"/>
+                        <MenuItem Name="mnuExpRtf" Command="net:MainCommands.ExpRtfCommand" CommandParameter="mnuExpRtf"/>
+                        <MenuItem Name="mnuExpTxt" Command="net:MainCommands.ExpTxtCommand" CommandParameter="mnuExpTxt"/>
+                        <Separator Name="sepConfRep"/>
+                        <MenuItem Name="mnuPrintFields" Command="net:MainCommands.PrintFieldsCommand"/>
+                    </MenuItem>
+                </MenuItem>
+                <Separator Name="toolStripSeparator8"/>
+                <MenuItem Name="mnuReloadAll" Command="net:MainCommands.ReloadAllCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource reload}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator Name="toolStripSeparator9"/>
+                <MenuItem Name="mnuDockAll" Command="net:MainCommands.DockAllCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource dockall}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuDAllNone" Command="net:CommonCommands.DockNoneCommand"/>
+                    <MenuItem Name="mnuDAllLeft" Command="net:CommonCommands.DockLeftCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource dockleft}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Name="mnuDAllTop" Command="net:CommonCommands.DockTopCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource docktop}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Name="mnuDAllRight" Command="net:CommonCommands.DockRightCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource dockright}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Name="mnuDAllBottom" Command="net:CommonCommands.DockBottomCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource dockbottom}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Name="mnuSwitchOnAll" Command="net:MainCommands.SwitchOnAllCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource switchon}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuSOnHighPriority" Command="net:MainCommands.SwitchOnHighPriorityCommand"/>
+                    <MenuItem Name="mnuSOnProtection" Command="net:MainCommands.SwitchOnProtectionCommand"/>
+                    <MenuItem Name="mnuSOnComplete" Command="net:MainCommands.SwitchOnCompleteCommand"/>
+                    <MenuItem Name="mnuSOnRoll" Command="net:MainCommands.SwitchOnRollCommand"/>
+                    <MenuItem Name="mnuSOnOnTop" Command="net:MainCommands.SwitchOnOnTopCommand"/>
+                </MenuItem>
+                <MenuItem Name="mnuSwitchOffAll" Command="net:MainCommands.SwitchOffAllCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource switchoff}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuSOffHighPriority" Command="net:MainCommands.SwitchOffHighPriorityCommand"/>
+                    <MenuItem Name="mnuSOffProtection" Command="net:MainCommands.SwitchOffProtectionCommand"/>
+                    <MenuItem Name="mnuSOffComplete" Command="net:MainCommands.SwitchOffCompleteCommand"/>
+                    <MenuItem Name="mnuSOffUnroll" Command="net:MainCommands.SwitchOffRollCommand"/>
+                    <MenuItem Name="mnuSOffOnTop" Command="net:MainCommands.SwitchOffOnTopCommand"/>
+                </MenuItem>
+                <Separator Name="toolStripSeparator19"/>
+                <MenuItem Name="mnuSpecialOptions" Command="net:MainCommands.SpecialOptionsCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource easeaccess}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuOnScreenKbrd" Command="net:MainCommands.OnScreenKeyboardCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource keyboard}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Name="mnuMagnifier" Command="net:MainCommands.MagnifierCommand">
+                        <MenuItem.Icon>
+                            <Image Source="{DynamicResource zoom}"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <Separator Name="toolStripSeparator10"/>
+                <MenuItem Name="mnuSearch" Command="net:MainCommands.SearchInMainCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource search}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuSearchInNotes" Command="net:MainCommands.SearchInNotesCommand"/>
+                    <Separator Name="toolStripSeparator11"/>
+                    <MenuItem Name="mnuSearchByTags" Command="net:MainCommands.SearchByTagsCommand"/>
+                    <Separator Name="toolStripSeparator12"/>
+                    <MenuItem Name="mnuSearchByDates" Command="net:MainCommands.SearchByDatesCommand"/>
+                </MenuItem>
+                <Separator Name="toolStripSeparator13"/>
+                <MenuItem Name="mnuFavorites" Command="net:MainCommands.FavoritesMainCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource favorites}"/>
+                    </MenuItem.Icon>
+                    <MenuItem Name="mnuShowAllFavorites" Command="net:MainCommands.ShowAllFavoritesCommand"/>
+                </MenuItem>
+                <Separator Name="toolStripSeparator14"/>
+                <MenuItem Name="mnuLockProg" Command="net:MainCommands.LockProgramCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource lockprogram}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator Name="toolStripSeparator15"/>
+                <MenuItem Name="mnuRun" Command="net:MainCommands.RunCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource run}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator Name="toolStripSeparator16"/>
+                <MenuItem Name="mnuHelp" Command="net:MainCommands.HelpCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource help}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuAbout" Command="net:MainCommands.AboutCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource about}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuSupport" Command="net:MainCommands.SupportCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource support}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuHomepage" Command="net:MainCommands.HomepageCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource web}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator Name="toolStripSeparator17"/>
+                <MenuItem Name="mnuExit" Command="net:MainCommands.ExitCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource exit}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </ContextMenu>
+        </taskbarNotification:TaskbarIcon.ContextMenu>
+
+    </taskbarNotification:TaskbarIcon>
+</Window>

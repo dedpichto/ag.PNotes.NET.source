@@ -1,0 +1,988 @@
+﻿<Window x:Class="PNotes.NET.WndNote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:net="clr-namespace:PNotes.NET"
+        Height="300" Width="300"
+        Title="Untitled"
+        BorderThickness="1"
+        Name="DlgNote"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        ShowInTaskbar="False"
+        ShowActivated="True"
+        WindowStartupLocation="CenterScreen"
+        AllowDrop="True"
+        MinWidth="{Binding Path=MinWidth, ElementName=SkinlessHeader}"
+        MinHeight="{Binding Path=Height, ElementName=SkinlessHeader}"
+        SourceInitialized="Window_SourceInitialized"
+        MouseDown="Window_MouseDown"
+        Activated="Window_Activated"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed"
+        Closing="Window_Closing"
+        MouseEnter="Window_MouseEnter"
+        MouseLeave="Window_MouseLeave" 
+        PreviewMouseDoubleClick="Window_PreviewMouseDoubleClick">
+    <Window.BorderBrush>
+        <SolidColorBrush Color="{Binding ElementName=DlgNote, Path=Background, Converter={StaticResource BrushToColorCoverter}, ConverterParameter=0.8}"/>
+    </Window.BorderBrush>
+    <Window.ContextMenu>
+        <ContextMenu x:Name="ctmNote"
+                     TextElement.FontFamily="{Binding FontFamily}"
+                     TextElement.FontSize="{Binding FontSize}"
+                     TextElement.FontStretch="{Binding FontStretch}"
+                     TextElement.FontStyle="{Binding FontStyle}"
+                     TextElement.FontWeight="{Binding FontWeight}" Opened="ctmNote_Opened">
+            <ContextMenu.CommandBindings>
+                <CommandBinding Command="{x:Static net:NoteCommands.SaveNoteCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.SaveAsCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.SaveAsTextCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.RestoreFromBackupCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.DuplicateNoteCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.PrintCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.SaveAsShortcutCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.AdjustAppearanceCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.AdjustScheduleCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.HideNoteCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.DeleteNoteCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ToPanelCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.DockCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:CommonCommands.DockNoneCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:CommonCommands.DockLeftCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:CommonCommands.DockRightCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:CommonCommands.DockTopCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:CommonCommands.DockBottomCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.SendAsTextCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.SendAsAttachmentCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.SendAsZipCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.SendNetworkCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ContactAddCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ContactGroupAddCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ContactSelectCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ContactGroupSelectCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ReplyCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.PostToCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.FromPostCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ExportToOfficeCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ExportToOutlookCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.TagsCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.LinkedNotesCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.LinkedManagementCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.AddFavoritesCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.RemoveFavoritesCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.OnTopCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.HighPriorityCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ProtectionModeCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.MarkAsCompleteCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.SetNotePasswordCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.RemoveNotePasswordCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.RollUnrollCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.PinCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.UnpinCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+                <CommandBinding Command="{x:Static net:NoteCommands.ScrambleCommand}" CanExecute="NoteCommandBinding_CanExecute" Executed="NoteCommandBinding_Executed"/>
+            </ContextMenu.CommandBindings>
+            <MenuItem x:Name="mnuSave" InputGestureText="Ctrl+S" Command="net:NoteCommands.SaveNoteCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource save}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="mnuRename" Command="net:NoteCommands.SaveAsCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource saveas}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuSaveAsText" Command="net:NoteCommands.SaveAsTextCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource saveastext}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuRestoreFromBackup" Command="net:NoteCommands.RestoreFromBackupCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource restore}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuDuplicateNote" Command="net:NoteCommands.DuplicateNoteCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource note_copy}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuSaveAsShortcut" Command="net:NoteCommands.SaveAsShortcutCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource shortcut}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator Name="toolStripSeparator1"/>
+            <MenuItem Name="mnuPrint" InputGestureText="Ctrl+P" Command="net:NoteCommands.PrintCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource print}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator Name="toolStripSeparator2"/>
+            <MenuItem Name="mnuAdjustAppearance" Command="net:NoteCommands.AdjustAppearanceCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource adjustapp}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuAdjustSchedule" Command="net:NoteCommands.AdjustScheduleCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource adjustsch}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator Name="toolStripSeparator3"/>
+            <MenuItem Name="mnuHideNote" Command="net:NoteCommands.HideNoteCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource hidenote}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuDeleteNote" Command="net:NoteCommands.DeleteNoteCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource deletenote}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuPanel" Command="net:NoteCommands.ToPanelCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource topanel}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator Name="toolStripSeparator4"/>
+            <MenuItem Name="mnuDock" Command="net:NoteCommands.DockCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource dockall}"/>
+                </MenuItem.Icon>
+                <MenuItem Name="mnuDockNone" Command="net:CommonCommands.DockNoneCommand"/>
+                <MenuItem Name="mnuDockLeft" Command="net:CommonCommands.DockLeftCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource dockleft}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuDockTop" Command="net:CommonCommands.DockTopCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource docktop}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuDockRight" Command="net:CommonCommands.DockRightCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource dockright}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuDockBottom" Command="net:CommonCommands.DockBottomCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource dockbottom}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <Separator Name="toolStripSeparator5"/>
+            <MenuItem Name="mnuSendAsText" Command="net:NoteCommands.SendAsTextCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource sendmail}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuSendAsAttachment" Command="net:NoteCommands.SendAsAttachmentCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource sendattach}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuSendZip" Command="net:NoteCommands.SendAsZipCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource mailzip}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuSendNetwork" Command="net:NoteCommands.SendNetworkCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource sendnetwork}"/>
+                </MenuItem.Icon>
+                <MenuItem Name="mnuAddContact" Command="net:NoteCommands.ContactAddCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource contactadd}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuAddGroup" Command="net:NoteCommands.ContactGroupAddCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource groupadd}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator Name="toolStripMenuItem50"/>
+                <MenuItem Name="mnuSelectContact" Command="net:NoteCommands.ContactSelectCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource contactselect}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="mnuSelectGroup" Command="net:NoteCommands.ContactGroupSelectCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource groupselect}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Name="mnuReply" Command="net:NoteCommands.ReplyCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource reply}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator Name="toolStripSeparator14"/>
+            <MenuItem Name="mnuPostNote" Command="net:NoteCommands.PostToCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource post}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuReplacePost" Command="net:NoteCommands.FromPostCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource insertpost}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator Name="toolStripSeparator13"/>
+            <MenuItem Name="mnuExportToOffice" Command="net:NoteCommands.ExportToOfficeCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource msoffice}"/>
+                </MenuItem.Icon>
+                <MenuItem Name="mnuExportOutlookNote" Command="net:NoteCommands.ExportToOutlookCommand">
+                    <MenuItem.Icon>
+                        <Image Source="{DynamicResource outlooknote}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <Separator Name="toolStripSeparator6"/>
+            <MenuItem Name="mnuTags" Command="net:NoteCommands.TagsCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource tags}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator Name="toolStripSeparator10"/>
+            <MenuItem Name="mnuLinked" Command="net:NoteCommands.LinkedNotesCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource link}"/>
+                </MenuItem.Icon>
+                <MenuItem Name="mnuManageLinks" Command="net:NoteCommands.LinkedManagementCommand"/>
+            </MenuItem>
+            <Separator Name="toolStripSeparator11"/>
+            <MenuItem Name="mnuAddToFavorites" Command="net:NoteCommands.AddFavoritesCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource favadd}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuRemoveFromFavorites" Command="net:NoteCommands.RemoveFavoritesCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource favremove}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator Name="toolStripSeparator8"/>
+            <MenuItem Name="mnuOnTop" IsCheckable="True" Command="net:NoteCommands.OnTopCommand"/>
+            <MenuItem Name="mnuToggleHighPriority" IsCheckable="True" Command="net:NoteCommands.HighPriorityCommand"/>
+            <MenuItem Name="mnuToggleProtectionMode" IsCheckable="True" Command="net:NoteCommands.ProtectionModeCommand"/>
+            <MenuItem Name="mnuSetPassword" Command="net:NoteCommands.SetNotePasswordCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource passadd}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuRemovePassword" Command="net:NoteCommands.RemoveNotePasswordCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource passremove}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuMarkAsComplete" IsCheckable="True" Command="net:NoteCommands.MarkAsCompleteCommand"/>
+            <MenuItem Name="mnuRollUnroll" Command="net:NoteCommands.RollUnrollCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource rollunroll}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuPin" Command="net:NoteCommands.PinCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource pinadd}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuUnpin" Command="net:NoteCommands.UnpinCommand">
+                <MenuItem.Icon>
+                    <Image Source="{DynamicResource pinremove}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="mnuScramble" Command="net:NoteCommands.ScrambleCommand"/>
+        </ContextMenu>
+    </Window.ContextMenu>
+    <Window.Resources>
+        <Storyboard x:Key="FadeAway" Completed="StoryboardClose_Completed">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0" From="{Binding Path=Opacity, ElementName=DlgNote}" Duration="0:0:0.5" Storyboard.TargetName="DlgNote"/>
+        </Storyboard>
+        <Storyboard x:Key="ThumbnailStoryboard">
+            <DoubleAnimation Storyboard.TargetProperty="Left" Duration="0:0:0.3" Completed="LeftAnimationThumbnail_Completed">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseIn"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetProperty="Top" Duration="0:0:0.3" Completed="TopAnimationThumbnail_Completed">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseIn"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </Window.Resources>
+    <Grid>
+        <Grid.Resources>
+            <net:RolledVisibilityConverter x:Key="RolledVisibility"/>
+        </Grid.Resources>
+        <Popup x:Name="PopAlarm" AllowsTransparency="True" StaysOpen="False" PopupAnimation="Fade" Placement="Top" HorizontalOffset="-20" VerticalOffset="20">
+            <Image Source="images/w48.png"/>
+        </Popup>
+        <Canvas x:Name="cnvSkin" Visibility="Hidden" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="SkinImage" Canvas.Left="0" Canvas.Top="0" Stretch="None"/>
+            <net:SkinnableHeader x:Name="SkinnableHeader" HideDeleteButtonClicked="PHeader_HideDeleteButtonClicked"/>
+            <net:SkinnableFooter x:Name="SkinnableFooter" MarkButtonClicked="PFooter_MarkButtonClicked"/>
+            <net:SkinnableToolbar x:Name="SkinnableToolbar" FormatButtonClicked="PFooter_FormatButtonClicked"/>
+            <Border x:Name="EditTargetSkinnable" Background="Transparent"/>
+        </Canvas>
+        <DockPanel x:Name="pnlkSkinless">
+            <net:SkinlessHeader x:Name="SkinlessHeader" 
+                        DockPanel.Dock="Top" 
+                        HeaderButtonClicked="PHeader_HideDeleteButtonClicked"
+                        MouseLeftButtonUp="PHeader_MouseLeftButtonDown"/>
+            <Grid DockPanel.Dock="Bottom">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="18"/>
+                </Grid.ColumnDefinitions>
+                <net:SkinlessFooter x:Name="SkinlessFooter" 
+                                    Grid.Column="0"
+                                    HorizontalAlignment="Left"
+                                    MarkButtonClicked="PFooter_MarkButtonClicked"/>
+                <net:SkinlessToolbar x:Name="SkinlessToolbar"
+                                     Grid.Column="1"
+                                     HorizontalAlignment="Right"
+                                     FormatButtonClicked="PFooter_FormatButtonClicked"/>
+            </Grid>
+
+            <Border Visibility="Hidden">
+                <Border.ContextMenu>
+                    <ContextMenu x:Name="ctmEdit" 
+                         TextElement.FontFamily="{Binding FontFamily}"
+                         TextElement.FontSize="{Binding FontSize}"
+                         TextElement.FontStretch="{Binding FontStretch}"
+                         TextElement.FontStyle="{Binding FontStyle}"
+                         TextElement.FontWeight="{Binding FontWeight}"
+                         Opened="ctmEdit_Opened">
+                        <ContextMenu.CommandBindings>
+                            <CommandBinding Command="{x:Static net:EditCommands.SortDescCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.SortAscCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.PosSelectedtOnCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.ReplaceFromPostCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.SelectAllCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.SearchWebCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:SearchCommands.FindCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:SearchCommands.FindNextCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:SearchCommands.ReplaceCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.SpellCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.CheckSpellNowCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.CheckSpellAutoCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.DownloadDictCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.InsertCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.InsertPictureCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.InsertDateTimeCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.InsertSmilieCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.InsertTableCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.InsertDrawingCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.InsertSpecialSymbolCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.InsertLinkCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.IncreaseIndentCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.DecreaseIndentCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.SubscriptCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.SuperscriptCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.ClearFormatCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.AddSpaceAfterCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.AddSpaceBeforeCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.RemoveSpaceAfterCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.RemoveSpaceBeforeCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.LineSpacingCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.Space10Command}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.Space15Command}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.Space20Command}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.Space30Command}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.BulletsCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.AlignLeftCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.AlignCenterCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.AlignRightCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.FontCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.FontSizeCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.FontColorCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.BoldCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.ItalicCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.UnderlineCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.StrikethroughCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.HighlightCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.ToggleCaseCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.CapitalWordCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.CapitalSentenceCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.ToLowerCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.ToUpperCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.FormatCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.UndoCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.RedoCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.CutCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.CopyCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.PasteCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.CopyPlainCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.PastePlainCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="EditCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.NoBulletsCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="BulletsCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.SimpleBulletsMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="BulletsCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.BulletsMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="BulletsCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.FontSizeMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="FontSizeCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.AutomaticColorCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="ColorCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.NoHighlightCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="ColorCommandBinding_Executed"/>
+                            <CommandBinding Command="{x:Static net:EditCommands.ColorMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="ColorCommandBinding_Executed"/>
+                        </ContextMenu.CommandBindings>
+                        <MenuItem Name="mnuUndo" InputGestureText="Ctrl+Z" Command="net:EditCommands.UndoCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource undo}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuRedo" InputGestureText="Ctrl+Y" Command="net:EditCommands.RedoCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource redo}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Name="toolStripSeparator9"/>
+                        <MenuItem Name="mnuCut" InputGestureText="Ctrl+X" Command="net:EditCommands.CutCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource cut}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuCopy" InputGestureText="Ctrl+C" Command="net:EditCommands.CopyCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource copy}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuPaste" InputGestureText="Ctrl+V" Command="net:EditCommands.PasteCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource paste}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Name="toolStripMenuItem11"/>
+                        <MenuItem Name="mnuCopyPlain" Command="net:EditCommands.CopyPlainCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource copy}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuPastePlain" Command="net:EditCommands.PastePlainCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource paste}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Name="toolStripSeparator12"/>
+                        <MenuItem Name="mnuFormat" Command="net:EditCommands.FormatCommand">
+                            <MenuItem Name="mnuToUpper" Command="net:EditCommands.ToUpperCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource upper}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuToLower" Command="net:EditCommands.ToLowerCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource lower}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuCapSent" Command="net:EditCommands.CapitalSentenceCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource capsent}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuCapWord" Command="net:EditCommands.CapitalWordCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource capword}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuToggleCase" Command="net:EditCommands.ToggleCaseCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource updown}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <Separator Name="toolStripSeparator7"/>
+                            <MenuItem Name="mnuFont" Command="net:EditCommands.FontCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource font}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuFontSize" Command="net:EditCommands.FontSizeCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource fontsize}"/>
+                                </MenuItem.Icon>
+                                <MenuItem x:Name="S0" Header="8" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="8"/>
+                                <MenuItem x:Name="S1" Header="9" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="9"/>
+                                <MenuItem x:Name="S2" Header="10" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="10"/>
+                                <MenuItem x:Name="S3" Header="11" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="11"/>
+                                <MenuItem x:Name="S4" Header="12" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="12"/>
+                                <MenuItem x:Name="S5" Header="14" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="14"/>
+                                <MenuItem x:Name="S6" Header="16" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="16"/>
+                                <MenuItem x:Name="S7" Header="18" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="18"/>
+                                <MenuItem x:Name="S8" Header="20" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="20"/>
+                                <MenuItem x:Name="S9" Header="22" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="22"/>
+                                <MenuItem x:Name="S10" Header="24" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="24"/>
+                                <MenuItem x:Name="S11" Header="26" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="26"/>
+                                <MenuItem x:Name="S12" Header="28" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="28"/>
+                                <MenuItem x:Name="S13" Header="36" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="36"/>
+                                <MenuItem x:Name="S14" Header="48" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="48"/>
+                                <MenuItem x:Name="S15" Header="72" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="72"/>
+                            </MenuItem>
+                            <MenuItem Name="mnuFontColor" Command="net:EditCommands.FontColorCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource fontcolor}"/>
+                                </MenuItem.Icon>
+                                <MenuItem x:Name="C0" IsCheckable="True" Command="net:EditCommands.AutomaticColorCommand" CommandParameter="mnuColorAutomatic"/>
+                                <MenuItem x:Name="C1" Background="Black" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Black"/>
+                                <MenuItem x:Name="C2" Background="Navy" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Navy"/>
+                                <MenuItem x:Name="C3" Background="Green" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Green"/>
+                                <MenuItem x:Name="C4" Background="Teal" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Teal"/>
+                                <MenuItem x:Name="C5" Background="Maroon" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Maroon"/>
+                                <MenuItem x:Name="C6" Background="Purple" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Purple"/>
+                                <MenuItem x:Name="C7" Background="Olive" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Olive"/>
+                                <MenuItem x:Name="C8" Background="Silver" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Silver"/>
+                                <MenuItem x:Name="C9" Background="Gray" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Gray"/>
+                                <MenuItem x:Name="C10" Background="Blue" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Blue"/>
+                                <MenuItem x:Name="C11" Background="Lime" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Lime"/>
+                                <MenuItem x:Name="C12" Background="Cyan" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Cyan"/>
+                                <MenuItem x:Name="C13" Background="Red" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Red"/>
+                                <MenuItem x:Name="C14" Background="Magenta" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Magenta"/>
+                                <MenuItem x:Name="C15" Background="Yellow" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Yellow"/>
+                                <MenuItem x:Name="C16" Background="White" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="White"/>
+                            </MenuItem>
+                            <MenuItem Name="mnuBold" InputGestureText="Ctrl+B" Command="net:EditCommands.BoldCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource bold}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuItalic" InputGestureText="Ctrl+I" Command="net:EditCommands.ItalicCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource italic}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuUnderline" InputGestureText="Ctrl+U" Command="net:EditCommands.UnderlineCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource under}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuStrikethrough" InputGestureText="Ctrl+K" Command="net:EditCommands.StrikethroughCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource strike}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuHighlight" Command="net:EditCommands.HighlightCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource highlight}"/>
+                                </MenuItem.Icon>
+                                <MenuItem x:Name="H0" IsCheckable="True" Command="net:EditCommands.NoHighlightCommand" CommandParameter="mnuNoHighlight"/>
+                                <MenuItem x:Name="H1" Background="Black" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Black"/>
+                                <MenuItem x:Name="H2" Background="Navy" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Navy"/>
+                                <MenuItem x:Name="H3" Background="Green" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Green"/>
+                                <MenuItem x:Name="H4" Background="Teal" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Teal"/>
+                                <MenuItem x:Name="H5" Background="Maroon" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Maroon"/>
+                                <MenuItem x:Name="H6" Background="Purple" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Purple"/>
+                                <MenuItem x:Name="H7" Background="Olive" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Olive"/>
+                                <MenuItem x:Name="H8" Background="Silver" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Silver"/>
+                                <MenuItem x:Name="H9" Background="Gray" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Gray"/>
+                                <MenuItem x:Name="H10" Background="Blue" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Blue"/>
+                                <MenuItem x:Name="H11" Background="Lime" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Lime"/>
+                                <MenuItem x:Name="H12" Background="Cyan" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Cyan"/>
+                                <MenuItem x:Name="H13" Background="Red" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Red"/>
+                                <MenuItem x:Name="H14" Background="Magenta" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Magenta"/>
+                                <MenuItem x:Name="H15" Background="Yellow" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Yellow"/>
+                                <MenuItem x:Name="H16" Background="White" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="White"/>
+                            </MenuItem>
+                            <MenuItem Name="mnuAlignLeft" InputGestureText="Ctrl+L" Command="net:EditCommands.AlignLeftCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource left}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuAlignCenter" InputGestureText="Ctrl+E" Command="net:EditCommands.AlignCenterCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource center}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuAlignRight" InputGestureText="Ctrl+R" Command="net:EditCommands.AlignRightCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource right}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuBulletsNumbering" Command="net:EditCommands.BulletsCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource bullets}"/>
+                                </MenuItem.Icon>
+                                <MenuItem x:Name="B0" IsCheckable="True" Command="net:EditCommands.NoBulletsCommand" CommandParameter="mnuNoBullets"/>
+                                <MenuItem x:Name="B1" IsCheckable="True" Command="net:EditCommands.SimpleBulletsMenuCommand" CommandParameter="mnuBullets"/>
+                                <MenuItem x:Name="B2" Header="1. 2. 3." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuArabicPoint"/>
+                                <MenuItem x:Name="B3" Header="1) 2) 3)" IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuArabicPoint"/>
+                                <MenuItem x:Name="B4" Header="a. b. c." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuSmallLettersPoint"/>
+                                <MenuItem x:Name="B5" Header="a) b) c)" IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuSmallLettersPart"/>
+                                <MenuItem x:Name="B6" Header="A. B. C." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuBigLettersPoint"/>
+                                <MenuItem x:Name="B7" Header="A) B) C)" IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuBigLettersParts"/>
+                                <MenuItem x:Name="B8" Header="i. ii. iii." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuLatinSmall"/>
+                                <MenuItem x:Name="B9" Header="I. II. III." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuLatinBig"/>
+                            </MenuItem>
+                            <Separator Name="toolStripSeparator15"/>
+                            <MenuItem Name="mnuLineSpacing" Command="net:EditCommands.LineSpacingCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource linespacing}"/>
+                                </MenuItem.Icon>
+                                <MenuItem Name="mnuSpace10" IsCheckable="True" Command="net:EditCommands.Space10Command"/>
+                                <MenuItem Name="mnuSpace15" IsCheckable="True" Command="net:EditCommands.Space15Command"/>
+                                <MenuItem Name="mnuSpace20" IsCheckable="True" Command="net:EditCommands.Space20Command"/>
+                                <MenuItem Name="mnuSpace30" IsCheckable="True" Command="net:EditCommands.Space30Command"/>
+                                <Separator Name="toolStripSeparator17"/>
+                                <MenuItem Name="mnuAddSpaceBefore" Command="net:EditCommands.AddSpaceBeforeCommand">
+                                    <MenuItem.Icon>
+                                        <Image Source="{DynamicResource lineaddbefore}"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem Name="mnuRemoveSpaceBefore" Command="net:EditCommands.RemoveSpaceBeforeCommand">
+                                    <MenuItem.Icon>
+                                        <Image Source="{DynamicResource lineremovebefore}"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem Name="mnuRemoveSpaceAfter" Command="net:EditCommands.RemoveSpaceAfterCommand">
+                                    <MenuItem.Icon>
+                                        <Image Source="{DynamicResource lineremoveafter}"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem Name="mnuAddSpaceAfter" Command="net:EditCommands.AddSpaceAfterCommand">
+                                    <MenuItem.Icon>
+                                        <Image Source="{DynamicResource lineaddafter}"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </MenuItem>
+                            <Separator Name="toolStripSeparator16"/>
+                            <MenuItem Name="mnuSubscript" Command="net:EditCommands.SubscriptCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource sub}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuSuperscript" Command="net:EditCommands.SuperscriptCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource super}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <Separator Name="toolStripSeparator19"/>
+                            <MenuItem Name="mnuClearFormat" Command="net:EditCommands.ClearFormatCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource clear}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <Separator Name="toolStripSeparator20"/>
+                            <MenuItem Name="mnuIncreaseIndent" Command="net:EditCommands.IncreaseIndentCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource indentinc}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuDecreaseIndent" Command="net:EditCommands.DecreaseIndentCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource indentdec}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <Separator Name="toolStripMenuItem51"/>
+                        <MenuItem Name="mnuInsert" Command="net:EditCommands.InsertCommand">
+                            <MenuItem Name="mnuInsertPicture" Command="net:EditCommands.InsertPictureCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource picture}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuInsertSmiley" Command="net:EditCommands.InsertSmilieCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource smilie}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuInsertDT" Command="net:EditCommands.InsertDateTimeCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource calendar}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuInsertTable" Command="net:EditCommands.InsertTableCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource table}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuInsertSpecialSymbol" Command="net:EditCommands.InsertSpecialSymbolCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource sum}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuDrawing" Command="net:EditCommands.InsertDrawingCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource pencil}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Name="mnuInsertLinkToNote" Command="net:EditCommands.InsertLinkCommand">
+                                <MenuItem.Icon>
+                                    <Image Source="{DynamicResource link}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <Separator Name="toolStripMenuItem52"/>
+                        <MenuItem Name="mnuSpell" Command="net:EditCommands.SpellCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource spell}"/>
+                            </MenuItem.Icon>
+                            <MenuItem Name="mnuCheckSpellNow" Command="net:EditCommands.CheckSpellNowCommand"/>
+                            <Separator Name="toolStripMenuItem53"/>
+                            <MenuItem Name="mnuCheckSpellAuto" IsCheckable="True" Command="net:EditCommands.CheckSpellAutoCommand"/>
+                            <Separator Name="toolStripMenuItem54"/>
+                            <MenuItem Name="mnuDownloadDict" Command="net:EditCommands.DownloadDictCommand"/>
+                        </MenuItem>
+                        <Separator Name="toolStripMenuItem55"/>
+                        <MenuItem Name="mnuFind" InputGestureText="Ctrl+F" Command="net:SearchCommands.FindCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource find}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuFindNext" InputGestureText="F3" Command="net:SearchCommands.FindNextCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource findnext}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuReplace" InputGestureText="Ctrl+H" Command="net:SearchCommands.ReplaceCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource replace}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Name="toolStripMenuItem56"/>
+                        <MenuItem Name="mnuSearchWeb" Command="net:EditCommands.SearchWebCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource searchweb}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuPostOn" Command="net:EditCommands.PosSelectedtOnCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource post}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuInsertPost" Command="net:EditCommands.ReplaceFromPostCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource insertpost}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Name="toolStripMenuItem57"/>
+                        <MenuItem Name="mnuSelectAll" InputGestureText="Ctrl+A" Command="net:EditCommands.SelectAllCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource selectall}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Name="toolStripSeparator18"/>
+                        <MenuItem Name="mnuSortAscending" Command="net:EditCommands.SortAscCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource sortasc}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="mnuSortDescending" Command="net:EditCommands.SortDescCommand">
+                            <MenuItem.Icon>
+                                <Image Source="{DynamicResource sortdesc}"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </Border.ContextMenu>
+            </Border>
+            <Border x:Name="EditTargetSkinless" Margin="2" Background="Transparent"/>
+        </DockPanel>
+        <Border Visibility="Collapsed">
+            <Border.ContextMenu>
+                <ContextMenu x:Name="ctmBullets"
+                     TextElement.FontFamily="{Binding FontFamily}"
+                     TextElement.FontSize="{Binding FontSize}"
+                     TextElement.FontStretch="{Binding FontStretch}"
+                     TextElement.FontStyle="{Binding FontStyle}"
+                     TextElement.FontWeight="{Binding FontWeight}">
+                    <ContextMenu.CommandBindings>
+                        <CommandBinding Command="{x:Static net:EditCommands.NoBulletsCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="BulletsCommandBinding_Executed"/>
+                        <CommandBinding Command="{x:Static net:EditCommands.SimpleBulletsMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="BulletsCommandBinding_Executed"/>
+                        <CommandBinding Command="{x:Static net:EditCommands.BulletsMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="BulletsCommandBinding_Executed"/>
+                    </ContextMenu.CommandBindings>
+                    <MenuItem IsCheckable="True" Command="net:EditCommands.NoBulletsCommand" CommandParameter="mnuNoBullets"/>
+                    <MenuItem IsCheckable="True" Command="net:EditCommands.SimpleBulletsMenuCommand" CommandParameter="mnuBullets"/>
+                    <MenuItem Header="1. 2. 3." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuArabicPoint"/>
+                    <MenuItem Header="1) 2) 3)" IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuArabicPoint"/>
+                    <MenuItem Header="a. b. c." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuSmallLettersPoint"/>
+                    <MenuItem Header="a) b) c)" IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuSmallLettersPart"/>
+                    <MenuItem Header="A. B. C." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuBigLettersPoint"/>
+                    <MenuItem Header="A) B) C)" IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuBigLettersParts"/>
+                    <MenuItem Header="i. ii. iii." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuLatinSmall"/>
+                    <MenuItem Header="I. II. III." IsCheckable="True" Command="net:EditCommands.BulletsMenuCommand" CommandParameter="mnuLatinBig"/>
+                </ContextMenu>
+            </Border.ContextMenu>
+        </Border>
+        <Border Visibility="Collapsed">
+            <Border.ContextMenu>
+                <ContextMenu x:Name="ctmFontSize"
+                     TextElement.FontFamily="{Binding FontFamily}"
+                     TextElement.FontSize="{Binding FontSize}"
+                     TextElement.FontStretch="{Binding FontStretch}"
+                     TextElement.FontStyle="{Binding FontStyle}"
+                     TextElement.FontWeight="{Binding FontWeight}">
+                    <ContextMenu.CommandBindings>
+                        <CommandBinding Command="{x:Static net:EditCommands.FontSizeMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="FontSizeCommandBinding_Executed"/>
+                    </ContextMenu.CommandBindings>
+                    <MenuItem Header="8" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="8"/>
+                    <MenuItem Header="9" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="9"/>
+                    <MenuItem Header="10" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="10"/>
+                    <MenuItem Header="11" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="11"/>
+                    <MenuItem Header="12" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="12"/>
+                    <MenuItem Header="14" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="14"/>
+                    <MenuItem Header="16" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="16"/>
+                    <MenuItem Header="18" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="18"/>
+                    <MenuItem Header="20" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="20"/>
+                    <MenuItem Header="22" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="22"/>
+                    <MenuItem Header="24" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="24"/>
+                    <MenuItem Header="26" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="26"/>
+                    <MenuItem Header="28" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="28"/>
+                    <MenuItem Header="36" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="36"/>
+                    <MenuItem Header="48" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="48"/>
+                    <MenuItem Header="72" IsCheckable="True" Command="net:EditCommands.FontSizeMenuCommand" CommandParameter="72"/>
+                </ContextMenu>
+            </Border.ContextMenu>
+        </Border>
+        <Border Visibility="Collapsed">
+            <Border.ContextMenu>
+                <ContextMenu x:Name="ctmFontColor"
+                     TextElement.FontFamily="{Binding FontFamily}"
+                     TextElement.FontSize="{Binding FontSize}"
+                     TextElement.FontStretch="{Binding FontStretch}"
+                     TextElement.FontStyle="{Binding FontStyle}"
+                     TextElement.FontWeight="{Binding FontWeight}">
+                    <ContextMenu.CommandBindings>
+                        <CommandBinding Command="{x:Static net:EditCommands.AutomaticColorCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="ColorCommandBinding_Executed"/>
+                        <CommandBinding Command="{x:Static net:EditCommands.ColorMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="ColorCommandBinding_Executed"/>
+                    </ContextMenu.CommandBindings>
+                    <MenuItem IsCheckable="True" Command="net:EditCommands.AutomaticColorCommand" CommandParameter="mnuColorAutomatic"/>
+                    <MenuItem Background="Black" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Black"/>
+                    <MenuItem Background="Navy" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Navy"/>
+                    <MenuItem Background="Green" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Green"/>
+                    <MenuItem Background="Teal" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Teal"/>
+                    <MenuItem Background="Maroon" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Maroon"/>
+                    <MenuItem Background="Purple" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Purple"/>
+                    <MenuItem Background="Olive" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Olive"/>
+                    <MenuItem Background="Silver" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Silver"/>
+                    <MenuItem Background="Gray" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Gray"/>
+                    <MenuItem Background="Blue" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Blue"/>
+                    <MenuItem Background="Lime" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Lime"/>
+                    <MenuItem Background="Cyan" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Cyan"/>
+                    <MenuItem Background="Red" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Red"/>
+                    <MenuItem Background="Magenta" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Magenta"/>
+                    <MenuItem Background="Yellow" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Yellow"/>
+                    <MenuItem Background="White" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="White"/>
+                </ContextMenu>
+            </Border.ContextMenu>
+        </Border>
+        <Border Visibility="Collapsed">
+            <Border.ContextMenu>
+                <ContextMenu x:Name="ctmFontHighlight"
+                     TextElement.FontFamily="{Binding FontFamily}"
+                     TextElement.FontSize="{Binding FontSize}"
+                     TextElement.FontStretch="{Binding FontStretch}"
+                     TextElement.FontStyle="{Binding FontStyle}"
+                     TextElement.FontWeight="{Binding FontWeight}">
+                    <ContextMenu.CommandBindings>
+                        <CommandBinding Command="{x:Static net:EditCommands.NoHighlightCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="ColorCommandBinding_Executed"/>
+                        <CommandBinding Command="{x:Static net:EditCommands.ColorMenuCommand}" CanExecute="EditCommandBinding_CanExecute" Executed="ColorCommandBinding_Executed"/>
+                    </ContextMenu.CommandBindings>
+                    <MenuItem IsCheckable="True" Command="net:EditCommands.NoHighlightCommand" CommandParameter="mnuNoHighlight"/>
+                    <MenuItem Background="Black" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Black"/>
+                    <MenuItem Background="Navy" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Navy"/>
+                    <MenuItem Background="Green" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Green"/>
+                    <MenuItem Background="Teal" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Teal"/>
+                    <MenuItem Background="Maroon" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Maroon"/>
+                    <MenuItem Background="Purple" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Purple"/>
+                    <MenuItem Background="Olive" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Olive"/>
+                    <MenuItem Background="Silver" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Silver"/>
+                    <MenuItem Background="Gray" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Gray"/>
+                    <MenuItem Background="Blue" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Blue"/>
+                    <MenuItem Background="Lime" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Lime"/>
+                    <MenuItem Background="Cyan" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Cyan"/>
+                    <MenuItem Background="Red" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Red"/>
+                    <MenuItem Background="Magenta" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Magenta"/>
+                    <MenuItem Background="Yellow" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="Yellow"/>
+                    <MenuItem Background="White" IsCheckable="True" Command="net:EditCommands.ColorMenuCommand" CommandParameter="White"/>
+                </ContextMenu>
+            </Border.ContextMenu>
+        </Border>
+        <Border Visibility="Collapsed">
+            <Border.ContextMenu>
+                <ContextMenu x:Name="ctmDrop" Closed="ctmDrop_Closed">
+                    <ContextMenu.CommandBindings>
+                        <CommandBinding Command="{x:Static net:DropCommands.DropInsertContentCommand}" CanExecute="DropCommandBinding_CanExecute" Executed="DropCommandBinding_Executed"/>
+                        <CommandBinding Command="{x:Static net:DropCommands.DropInsertObjectCommand}" CanExecute="DropCommandBinding_CanExecute" Executed="DropCommandBinding_Executed"/>
+                        <CommandBinding Command="{x:Static net:DropCommands.DropInsertLinkCommand}" CanExecute="DropCommandBinding_CanExecute" Executed="DropCommandBinding_Executed"/>
+                    </ContextMenu.CommandBindings>
+                    <MenuItem Command="net:DropCommands.DropInsertContentCommand"/>
+                    <MenuItem Command="net:DropCommands.DropInsertObjectCommand"/>
+                    <MenuItem Command="net:DropCommands.DropInsertLinkCommand"/>
+                </ContextMenu>
+            </Border.ContextMenu>
+        </Border>
+        <Line Name="lnSizeNorth" 
+              MouseDown="OnSizeNorth" 
+              Stroke="Transparent"   
+              Cursor="SizeNS"
+              X1="1" 
+              X2="{Binding Path=ActualWidth, ElementName=DlgNote}" 
+              Y1="1" 
+              Y2="1"
+              StrokeThickness="3" 
+              Visibility="{Binding Path=IsRolled, Converter={StaticResource RolledVisibility}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=net:WndNote}, Mode=OneWay}"/>
+        <Line Name="lnSizeSouth"
+              MouseDown="OnSizeSouth"
+              Stroke="Transparent"
+              VerticalAlignment="Bottom" 
+              Cursor="SizeNS"
+              X1="1" 
+              X2="{Binding Path=ActualWidth, ElementName=DlgNote}" 
+              Y1="{Binding Path=ActualHeight, ElementName=DlgNote}" 
+              Y2="{Binding Path=ActualHeight, ElementName=DlgNote}"
+              StrokeThickness="3"
+              Visibility="{Binding Path=IsRolled, Converter={StaticResource RolledVisibility}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=net:WndNote}, Mode=OneWay}"/>
+        <Line Name="lnSizeWest"
+              MouseDown="OnSizeWest"
+              Stroke="Transparent"
+              Cursor="SizeWE"
+              X1="1" 
+              X2="1" 
+              Y1="1" 
+              Y2="{Binding Path=ActualHeight, ElementName=DlgNote}"
+              StrokeThickness="3"
+              Visibility="{Binding Path=IsRolled, Converter={StaticResource RolledVisibility}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=net:WndNote}, Mode=OneWay}"/>
+        <Line Name="lnSizeEast"
+              MouseDown="OnSizeEast"
+              Stroke="Transparent"
+              HorizontalAlignment="Right" 
+              Cursor="SizeWE"
+              X1="{Binding Path=ActualWidth, ElementName=DlgNote}" 
+              X2="{Binding Path=ActualWidth, ElementName=DlgNote}" 
+              Y1="1" 
+              Y2="{Binding Path=ActualHeight, ElementName=DlgNote}"
+              StrokeThickness="3"
+              Visibility="{Binding Path=IsRolled, Converter={StaticResource RolledVisibility}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=net:WndNote}, Mode=OneWay}"/>
+        <Rectangle Name="rectSizeNorthWest"
+                   MouseDown="OnSizeNorthWest" 
+                   Cursor="{Binding Path=FlowDirection, ConverterParameter='rectSizeNorthWest', RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}, Converter={StaticResource CursorFlowConverter}}" 
+                   Fill="Transparent" 
+                   Width="5" 
+                   Height="5" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Left"
+                   Visibility="{Binding Path=IsRolled, Converter={StaticResource RolledVisibility}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=net:WndNote}, Mode=OneWay}"/>
+        <Rectangle Name="rectSizeNorthEast"
+                   MouseDown="OnSizeNorthEast" 
+                   Cursor="{Binding Path=FlowDirection, ConverterParameter='rectSizeNorthEast', RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}, Converter={StaticResource CursorFlowConverter}}" 
+                   Fill="Transparent" 
+                   Width="5" 
+                   Height="5" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right"
+                   Visibility="{Binding Path=IsRolled, Converter={StaticResource RolledVisibility}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=net:WndNote}, Mode=OneWay}"/>
+        <Rectangle Name="rectSizeSouthWest"
+                   MouseDown="OnSizeSouthWest" 
+                   Cursor="{Binding Path=FlowDirection, ConverterParameter='rectSizeSouthWest', RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}, Converter={StaticResource CursorFlowConverter}}" 
+                   Fill="Transparent" 
+                   Width="5" 
+                   Height="5" 
+                   VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Left"
+                   Visibility="{Binding Path=IsRolled, Converter={StaticResource RolledVisibility}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=net:WndNote}, Mode=OneWay}"/>
+        <ResizeGrip Name="gripSize"
+                    MouseDown="OnSizeSouthEast" 
+                    Cursor="{Binding Path=FlowDirection, ConverterParameter='gripSize', RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}, Converter={StaticResource CursorFlowConverter}}" 
+                    VerticalAlignment="Bottom" 
+                    HorizontalAlignment="Right"
+                    Visibility="{Binding Path=IsRolled, Converter={StaticResource RolledVisibility}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=net:WndNote}, Mode=OneWay}"/>
+    </Grid>
+</Window>
