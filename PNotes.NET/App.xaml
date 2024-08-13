@@ -1,0 +1,16 @@
+﻿<Application x:Class="PNotes.NET.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="window1.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="styles/colorschemes/DarkGray.xaml"/>-->
+                <ResourceDictionary Source="styles/images.xaml"/>
+                <ResourceDictionary Source="styles/Resources.xaml"/>
+                <ResourceDictionary Source="styles/Styles.xaml"/>
+                <ResourceDictionary Source="Themes/generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
