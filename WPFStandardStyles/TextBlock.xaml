@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sts="clr-namespace:WPFStandardStyles">
+    <Style TargetType="{x:Type TextBlock}">
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsEnabled" Value="false"/>
+                    <Condition Property="sts:Utils.CatchDisabledState" Value="true"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="Opacity" Value="{DynamicResource DisabledOpacity}"/>
+            </MultiTrigger>
+            <!--<Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Foreground" Value="{DynamicResource DisabledTextBrush}"/>
+                <Setter Property="Opacity" Value="{DynamicResource DisabledOpacity}"/>
+            </Trigger>-->
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

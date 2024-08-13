@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\svcutil.exe" http://localhost:8001/PNService /out:PNProxy.cs

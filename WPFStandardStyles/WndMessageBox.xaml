@@ -1,0 +1,46 @@
+﻿<Window x:Class="WPFStandardStyles.WndMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sts="clr-namespace:WPFStandardStyles"
+        Name="DlgMessageBox" 
+        Height="200" 
+        Width="300"
+        WindowStartupLocation="CenterScreen"
+        Style="{DynamicResource CustomWindowStyle}"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        Topmost="True"
+        Closed="DlgMessageBox_Closed"
+        
+        TextElement.FontFamily="{Binding FontFamily}"
+        TextElement.FontSize="{Binding FontSize}"
+        TextElement.FontStretch="{Binding FontStretch}"
+        TextElement.FontStyle="{Binding FontStyle}"
+        TextElement.FontWeight="{Binding FontWeight}">
+    <!--sts:CustomWindowStyle.WindowBorder="MessageBox"-->
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static sts:MessageBoxCommands.OkCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+        <CommandBinding Command="{x:Static sts:MessageBoxCommands.NoCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+        <CommandBinding Command="{x:Static sts:MessageBoxCommands.CancelCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+        <CommandBinding Command="{x:Static sts:MessageBoxCommands.YesCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="imgIcon" Grid.Row="0" Grid.Column="0" Stretch="None" Margin="32,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBlock Name="txbText" Grid.Row="0" Grid.Column="1" Margin="8,42,42,42" VerticalAlignment="Center" HorizontalAlignment="Left" MaxWidth="375" TextWrapping="Wrap"/>
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="cmdOK" MinHeight="23" MinWidth="75" Margin="2,4,2,4" Command="sts:MessageBoxCommands.OkCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+            <Button Name="cmdYes" MinHeight="23" MinWidth="75" Margin="2,4,2,4" Command="sts:MessageBoxCommands.YesCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+            <Button Name="cmdNo" MinHeight="23" MinWidth="75" Margin="2,4,2,4" Command="sts:MessageBoxCommands.NoCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+            <Button Name="cmdCancel" MinHeight="23" MinWidth="75" Margin="2,4,2,4" Command="sts:MessageBoxCommands.CancelCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+        </StackPanel>
+    </Grid>
+</Window>
