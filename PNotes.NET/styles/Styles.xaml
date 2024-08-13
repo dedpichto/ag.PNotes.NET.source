@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/WPFStandardStyles;component/Styles.xaml"/>
+        <ResourceDictionary Source="Window.xaml"/>
+        <ResourceDictionary Source="NumericUpDown.xaml"/>
+        <ResourceDictionary Source="DateTimePicker.xaml"/>
+        <ResourceDictionary Source="ColorPicker.xaml"/>
+        <ResourceDictionary Source="IpBox.xaml"/>
+        <ResourceDictionary Source="Palette.xaml"/>
+    </ResourceDictionary.MergedDictionaries>    
+</ResourceDictionary>

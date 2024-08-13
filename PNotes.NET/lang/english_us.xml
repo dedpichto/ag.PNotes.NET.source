@@ -1,0 +1,1373 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language culture="en-US">
+  <main_menu>
+    <mnuNewNote>New Note</mnuNewNote>
+    <mnuLoadNote>Load Notes</mnuLoadNote>
+    <mnuNewNoteInGroup>New Note In Group</mnuNewNoteInGroup>
+    <mnuNoteFromClipboard>New Note From Clipboard</mnuNoteFromClipboard>
+    <mnuDiary>Diary</mnuDiary>
+    <mnuTodayDiary>Today</mnuTodayDiary>
+    <mnuPrefs>Preferences</mnuPrefs>
+    <mnuCP>Control Panel</mnuCP>
+    <mnuShowHide>Show/Hide</mnuShowHide>
+    <mnuShowGroups>Show Groups</mnuShowGroups>
+    <mnuShowAll>Show All</mnuShowAll>
+    <mnuShowIncoming>Incoming</mnuShowIncoming>
+    <mnuHideGroups>Hide Groups</mnuHideGroups>
+    <mnuHideAll>Hide All</mnuHideAll>
+    <mnuHideIncoming>Incoming</mnuHideIncoming>
+    <mnuShowByTag>Show By Tag</mnuShowByTag>
+    <mnuHideByTag>Hide By Tag</mnuHideByTag>
+    <mnuLastModified>Last Modified Notes</mnuLastModified>
+    <mnuTodayLast>Today</mnuTodayLast>
+    <mnu1DayAgo>1 Day Ago</mnu1DayAgo>
+    <mnu2DaysAgo>2 Days Ago</mnu2DaysAgo>
+    <mnu3DaysAgo>3 Days Ago</mnu3DaysAgo>
+    <mnu4DaysAgo>4 Days Ago</mnu4DaysAgo>
+    <mnu5DaysAgo>5 Days Ago</mnu5DaysAgo>
+    <mnu6DaysAgo>6 Days Ago</mnu6DaysAgo>
+    <mnu7DaysAgo>7 Days Ago</mnu7DaysAgo>
+    <mnuAllToFront>Bring All To Front</mnuAllToFront>
+    <mnuSaveAll>Save All</mnuSaveAll>
+    <mnuBackup>Backup/Synchronization</mnuBackup>
+    <mnuBackupCreate>Create Full Backup</mnuBackupCreate>
+    <mnuBackupRestore>Restore From Full Backup</mnuBackupRestore>
+    <mnuSyncLocal>Manual Local Synchronization</mnuSyncLocal>
+    <mnuReloadAll>Reload All</mnuReloadAll>
+    <mnuDockAll>Docking (All Notes)</mnuDockAll>
+    <mnuDAllNone>None</mnuDAllNone>
+    <mnuDAllLeft>Left</mnuDAllLeft>
+    <mnuDAllTop>Top</mnuDAllTop>
+    <mnuDAllRight>Right</mnuDAllRight>
+    <mnuDAllBottom>Bottom</mnuDAllBottom>
+    <mnuSwitchOnAll>Switch On (All Notes)</mnuSwitchOnAll>
+    <mnuSOnHighPriority>Set High Priority</mnuSOnHighPriority>
+    <mnuSOnProtection>Switch On Protection Mode</mnuSOnProtection>
+    <mnuSOnComplete>Set Complete Mark</mnuSOnComplete>
+    <mnuSOnRoll>Roll</mnuSOnRoll>
+    <mnuSOnOnTop>"On Top" Status</mnuSOnOnTop>
+    <mnuSwitchOffAll>Switch Off (All Notes)</mnuSwitchOffAll>
+    <mnuSpecialOptions>Special Options</mnuSpecialOptions>
+    <mnuOnScreenKbrd>Toggle On-Screen Keyboard</mnuOnScreenKbrd>
+    <mnuMagnifier>Toggle Magnifier</mnuMagnifier>
+    <mnuSOffHighPriority>Remove High Priority</mnuSOffHighPriority>
+    <mnuSOffProtection>Switch Off Protection Mode</mnuSOffProtection>
+    <mnuSOffComplete>Remove Complete Mark</mnuSOffComplete>
+    <mnuSOffUnroll>Unroll</mnuSOffUnroll>
+    <mnuSOffOnTop>"On Top" Status</mnuSOffOnTop>
+    <mnuSearch>Search</mnuSearch>
+    <mnuSearchInNotes>Search In Notes</mnuSearchInNotes>
+    <mnuSearchByTags>Search By Tags</mnuSearchByTags>
+    <mnuSearchByDates>Search By Dates</mnuSearchByDates>
+    <mnuFavorites>Favorites</mnuFavorites>
+    <mnuShowAllFavorites>Show All Favorites</mnuShowAllFavorites>
+    <mnuLockProg>Lock Program</mnuLockProg>
+    <mnuRun>Run</mnuRun>
+    <mnuHelp>Help</mnuHelp>
+    <mnuAbout>About</mnuAbout>
+    <mnuSupport>Support PNotes.NET Project</mnuSupport>
+    <mnuHomepage>PNotes.NET Home Page</mnuHomepage>
+    <mnuExit>Exit</mnuExit>
+    <mnuVisibility>Visibility</mnuVisibility>
+    <mnuShowNote>Show</mnuShowNote>
+    <mnuHideNote>Hide</mnuHideNote>
+    <mnuIncBinInQSearch>Include Notes From Recycle Bin in "Quick Search"</mnuIncBinInQSearch>
+    <mnuClearQSearch>Clear "Quick Search"</mnuClearQSearch>
+    <mnuQSearchIgnoreCase>Ignore case</mnuQSearchIgnoreCase>
+    <mnuTagsCurrent>Tags (current note)</mnuTagsCurrent>
+    <mnuImportNotes>Import Notes From PNotes</mnuImportNotes>
+    <mnuImportSettings>Import Settings From PNotes</mnuImportSettings>
+    <mnuImportFonts>Import Fonts From PNotes</mnuImportFonts>
+    <mnuImportDictionaries>Import Dictionaries From PNotes</mnuImportDictionaries>
+    <mnuHotkeys>Hot Keys Management</mnuHotkeys>
+    <mnuMenusManagement>Menus Management</mnuMenusManagement>
+    <mnuCentralize>Centralize</mnuCentralize>
+    <mnuToPanelAll>Move To Panel (All Notes)</mnuToPanelAll>
+    <mnuFromPanelAll>Remove From Panel (All Notes)</mnuFromPanelAll>
+    <mnuPanelAll>Panel</mnuPanelAll>
+    <mnuExportAll>Export All Notes</mnuExportAll>
+    <mnuExpPdf>PDF file</mnuExpPdf>
+    <mnuExpTif>TIF image</mnuExpTif>
+    <mnuExpDoc>Word document</mnuExpDoc>
+    <mnuExpRtf>RTF document</mnuExpRtf>
+    <mnuExpTxt>Text file</mnuExpTxt>
+    <mnuPrintFields>Configure report</mnuPrintFields>
+  </main_menu>
+  <note_menu>
+    <mnuSave>Save</mnuSave>
+    <mnuRename>Rename/Change Group</mnuRename>
+    <mnuSaveAsText>Save As Text File</mnuSaveAsText>
+    <mnuRestoreFromBackup>Restore From Backup</mnuRestoreFromBackup>
+    <mnuDuplicateNote>Duplicate Note</mnuDuplicateNote>
+    <mnuSaveAsShortcut>Save As Desktop Shortcut</mnuSaveAsShortcut>
+    <mnuPrint>Print</mnuPrint>
+    <mnuAdjustAppearance>Adjust Appearance</mnuAdjustAppearance>
+    <mnuAdjustSchedule>Adjust Schedule</mnuAdjustSchedule>
+    <mnuHideNote>Hide</mnuHideNote>
+    <mnuDeleteNote>Delete</mnuDeleteNote>
+    <mnuPanel>Move To Panel</mnuPanel>
+    <mnuDock>Dock</mnuDock>
+    <mnuDockNone>None</mnuDockNone>
+    <mnuDockLeft>Left</mnuDockLeft>
+    <mnuDockTop>Top</mnuDockTop>
+    <mnuDockRight>Right</mnuDockRight>
+    <mnuDockBottom>Bottom</mnuDockBottom>
+    <mnuSend>Send</mnuSend>
+    <mnuSendAsText>Send As Text</mnuSendAsText>
+    <mnuSendAsAttachment>Send As Attachment</mnuSendAsAttachment>
+    <mnuSendZip>Send In ZIP Archive</mnuSendZip>
+    <mnuSendNetwork>Send Via Network</mnuSendNetwork>
+    <mnuAddContact>Add Contact</mnuAddContact>
+    <mnuAddGroup>Add Group Of Contacts</mnuAddGroup>
+    <mnuSelectContact>Select Contacts</mnuSelectContact>
+    <mnuSelectGroup>Select Groups Of Contacts</mnuSelectGroup>
+    <mnuReply>Reply</mnuReply>
+    <mnuPostNote>Post Entire Note On:</mnuPostNote>
+    <mnuReplacePost>Replace Note Text By Post From:</mnuReplacePost>
+    <mnuTags>Tags</mnuTags>
+    <mnuLinked>Linked Notes</mnuLinked>
+    <mnuManageLinks>Manage Linked Notes</mnuManageLinks>
+    <mnuAddToFavorites>Add To Favorites</mnuAddToFavorites>
+    <mnuRemoveFromFavorites>Remove From Favorites</mnuRemoveFromFavorites>
+    <mnuOnTop>On Top</mnuOnTop>
+    <mnuToggleHighPriority>Toggle High Priority</mnuToggleHighPriority>
+    <mnuToggleProtectionMode>Toggle Protection Mode</mnuToggleProtectionMode>
+    <mnuSetPassword>Set Note Password</mnuSetPassword>
+    <mnuRemovePassword>Remove Note Password</mnuRemovePassword>
+    <mnuMarkAsComplete>Mark As Complete</mnuMarkAsComplete>
+    <mnuRollUnroll>Roll/Unroll</mnuRollUnroll>
+    <mnuPin>Pin To Window</mnuPin>
+    <mnuUnpin>Unpin</mnuUnpin>
+    <mnuExportToOffice>Export To MS Office As:</mnuExportToOffice>
+    <mnuExportOutlookNote>Outlook Note</mnuExportOutlookNote>
+    <mnuScramble>Encrypt text</mnuScramble>
+    <mnuUnscramble>Decrypt text</mnuUnscramble>
+  </note_menu>
+  <edit_menu>
+    <mnuUndo>Undo</mnuUndo>
+    <mnuRedo>Redo</mnuRedo>
+    <mnuCut>Cut</mnuCut>
+    <mnuCopy>Copy</mnuCopy>
+    <mnuPaste>Paste</mnuPaste>
+    <mnuCopyPlain>Copy As Plain Text</mnuCopyPlain>
+    <mnuPastePlain>Paste As Plain Text</mnuPastePlain>
+    <mnuFormat>Format</mnuFormat>
+    <mnuFont>Font</mnuFont>
+    <mnuFontSize>Font Size</mnuFontSize>
+    <mnuFontColor>Font Color</mnuFontColor>
+    <mnuBold>Bold</mnuBold>
+    <mnuItalic>Italic</mnuItalic>
+    <mnuUnderline>Underline</mnuUnderline>
+    <mnuStrikethrough>Strikethrough</mnuStrikethrough>
+    <mnuHighlight>Highlight</mnuHighlight>
+    <mnuAlignLeft>Align Left</mnuAlignLeft>
+    <mnuAlignCenter>Center</mnuAlignCenter>
+    <mnuAlignRight>Align Right</mnuAlignRight>
+    <mnuBulletsNumbering>Bullets/Numbering</mnuBulletsNumbering>
+    <mnuInsert>Insert</mnuInsert>
+    <mnuInsertPicture>Insert Picture</mnuInsertPicture>
+    <mnuInsertSmiley>Insert Smiley</mnuInsertSmiley>
+    <mnuInsertDT>Insert Date/Time</mnuInsertDT>
+    <mnuInsertTable>Insert Table</mnuInsertTable>
+    <mnuSpell>Spell Checking</mnuSpell>
+    <mnuCheckSpellNow>Check Now</mnuCheckSpellNow>
+    <mnuCheckSpellAuto>Check Automatically</mnuCheckSpellAuto>
+    <mnuDownloadDict>Download Dictionaries</mnuDownloadDict>
+    <mnuFind>Find</mnuFind>
+    <mnuFindNext>Find Next</mnuFindNext>
+    <mnuReplace>Replace</mnuReplace>
+    <mnuSearchWeb>Search Selected On:</mnuSearchWeb>
+    <mnuPostOn>Post Selected On:</mnuPostOn>
+    <mnuInsertPost>Insert Post From:</mnuInsertPost>
+    <mnuSelectAll>Select All</mnuSelectAll>
+    <mnuToUpper>Convert To Uppercase</mnuToUpper>
+    <mnuToLower>Convert To Lowercase</mnuToLower>
+    <mnuCapSent>Capitalize Sentences</mnuCapSent>
+    <mnuCapWord>Capitalize Words</mnuCapWord>
+    <mnuToggleCase>Toggle Case</mnuToggleCase>
+    <mnuNoHighlight>No Fill</mnuNoHighlight>
+    <mnuColorAutomatic>Automatic</mnuColorAutomatic>
+    <mnuNoBullets>No Bullets/Numbering</mnuNoBullets>
+    <mnuBullets>Simple Bullets</mnuBullets>
+    <mnuSuperscript>Superscript</mnuSuperscript>
+    <mnuSubscript>Subscript</mnuSubscript>
+    <mnuInsertSpecialSymbol>Insert Special Symbol</mnuInsertSpecialSymbol>
+    <mnuLineSpacing>Line Spacing</mnuLineSpacing>
+    <mnuAddSpaceBefore>Add Space Before Paragraph</mnuAddSpaceBefore>
+    <mnuRemoveSpaceAfter>Remove Space After Paragraph</mnuRemoveSpaceAfter>
+    <mnuRemoveSpaceBefore>Remove Space Before Paragraph</mnuRemoveSpaceBefore>
+    <mnuAddSpaceAfter>Add Space After Paragraph</mnuAddSpaceAfter>
+    <mnuSortAscending>Sort Ascending</mnuSortAscending>
+    <mnuSortDescending>Sort Descending</mnuSortDescending>
+    <mnuClearFormat>Clear All Formatting</mnuClearFormat>
+    <mnuDrawing>Insert Free Drawing</mnuDrawing>
+    <mnuInsertLinkToNote>Link To Other Note</mnuInsertLinkToNote>
+    <mnuIncreaseIndent>Increase Indent</mnuIncreaseIndent>
+    <mnuDecreaseIndent>Decrease Indent</mnuDecreaseIndent>
+  </edit_menu>
+  <insert_menu>
+    <mnuInsertContent>Insert File Content</mnuInsertContent>
+    <mnuInsertObject>Insert As Object</mnuInsertObject>
+    <mnuInsertLink>Insert Link To File</mnuInsertLink>
+  </insert_menu>
+  <cp_menu>
+    <mnuViewLarge>Icons</mnuViewLarge>
+    <mnuViewSmall>Small Icons</mnuViewSmall>
+    <mnuViewList>List</mnuViewList>
+    <mnuViewDetails>Details</mnuViewDetails>
+    <mnuUseCustColor>Use Custom Color</mnuUseCustColor>
+    <mnuChooseCustColor>Choose Custom Color</mnuChooseCustColor>
+    <mnuPwrdCreate>Create Password</mnuPwrdCreate>
+    <mnuPwrdChange>Change Password</mnuPwrdChange>
+    <mnuPwrdRemove>Remove Password</mnuPwrdRemove>
+  </cp_menu>
+  <bin_menu>
+    <mnuEmptyRecycleBin>Empty Recycle Bin</mnuEmptyRecycleBin>
+    <mnuRestoreAllBin>Restore All From Recycle Bin</mnuRestoreAllBin>
+  </bin_menu>
+  <settings_menu>
+    <cmdSetFontUI>Change</cmdSetFontUI>
+    <cmdResetFontUI>Reset to default font</cmdResetFontUI>
+  </settings_menu>
+  <controls>
+    <DlgSettings>Preferences</DlgSettings>
+    <cmdGeneral>General settings</cmdGeneral>
+    <cmdSchedule>Schedule</cmdSchedule>
+    <cmdAppearance>Appearance</cmdAppearance>
+    <cmdBehavior>Behavior</cmdBehavior>
+    <cmdNetwork>Network</cmdNetwork>
+    <cmdProtection>Protection</cmdProtection>
+    <cmdDef>Default preferences</cmdDef>
+    <cmdOK>OK</cmdOK>
+    <cmdSave>Save</cmdSave>
+    <cmdCancel>Cancel</cmdCancel>
+    <cmdApply>Apply</cmdApply>
+    <chkDefSettIncGroups>Include settings for groups</chkDefSettIncGroups>
+    <!--general settings-->
+    <cmdAddLang>Add language</cmdAddLang>
+    <pnsLanguage>Language</pnsLanguage>
+    <pnsStartup>Startup options</pnsStartup>
+    <chkRunOnStart>Run on system start</chkRunOnStart>
+    <chkNoSplash>Do not show splash screen on program start</chkNoSplash>
+    <chkShowCPOnStart>Show Control Panel on program start</chkShowCPOnStart>
+    <chkCheckNewVersionOnStart>Check for new version on program start</chkCheckNewVersionOnStart>
+    <cmdNewVersion>Check now</cmdNewVersion>
+    <grpUpdate>Update options</grpUpdate>
+    <chkCheckCriticalOnStart>Check for critical updates on program start</chkCheckCriticalOnStart>
+    <chkCheckCriticalPeriodically>Check for critical updates during program's work</chkCheckCriticalPeriodically>
+    <pnsAppearance>Appearance</pnsAppearance>
+    <chkHideToolbar>Hide note's toolbar</chkHideToolbar>
+    <chkCustomFont>Use custom fonts</chkCustomFont>
+    <chkShowScrollbar>Show scrollbars</chkShowScrollbar>
+    <chkHideDelete>Hide "Delete" button</chkHideDelete>
+    <chkChangeHideToDelete>Change appearance of "Hide" button to "Delete" button</chkChangeHideToDelete>
+    <chkHideHide>Hide "Hide" button</chkHideHide>
+    <pnsEditArea>Edit area</pnsEditArea>
+    <lblIndent>Bullets indent (in twips) ( * )</lblIndent>
+    <lblParIndent>Step of paragraph indent's increasing/decreasing (in twips)</lblParIndent>
+    <lblMargins>Left and right margin width - for skinless notes</lblMargins>
+    <pnsSaveDelete>Saving/Deletion</pnsSaveDelete>
+    <chkSaveOnExit>Save all on program exit</chkSaveOnExit>
+    <chkConfirmSave>Confirm saving</chkConfirmSave>
+    <chkConfirmDelete>Confirmation before note deletion</chkConfirmDelete>
+    <chkSaveWithoutConfirm>Save notes without confirmation while hiding</chkSaveWithoutConfirm>
+    <chkWarnBeforeEmptyBin>Warn when note is deleted automatically from Recycle Bin</chkWarnBeforeEmptyBin>
+    <chkDeleteShortExit>Delete desktop shortcuts on program exit</chkDeleteShortExit>
+    <chkRestoreShortStart>Restore desktop shortcuts on program start</chkRestoreShortStart>
+    <chkCloseOnShortcut>Close note after desktop shortcut creation</chkCloseOnShortcut>
+    <chkAutosave>Save automatically every (minutes):</chkAutosave>
+    <chkRestoreAutomatically>Restore auto-saved notes automatically</chkRestoreAutomatically>
+    <lblDeleBin>Delete note from Recycle Bin after selected period (days)</lblDeleBin>
+    <pnsDTFormat>Date/time formats</pnsDTFormat>
+    <lblDTFormat>Date format</lblDTFormat>
+    <lblDTSample>Date sample</lblDTSample>
+    <lblTFormat>Time format</lblTFormat>
+    <lblTSample>Time sample</lblTSample>
+    <cmdAddTag>Add tag</cmdAddTag>
+    <cmdEditTag>Modify tag</cmdEditTag>
+    <cmdDeleteTag>Remove tag</cmdDeleteTag>
+    <cmdAddExt>Add external program</cmdAddExt>
+    <cmdEditExt>Modify external program</cmdEditExt>
+    <cmdDeleteExt>Remove external program</cmdDeleteExt>
+    <cmdAddProv>Add search provider</cmdAddProv>
+    <cmdEditProv>Modify search provider</cmdEditProv>
+    <cmdDeleteProv>Remove search provider</cmdDeleteProv>
+    <pnsMiscMisc>Miscellaneous</pnsMiscMisc>
+    <lblPreTags>Predefined tags</lblPreTags>
+    <lblTag>Tag</lblTag>
+    <lblExternals>External programs</lblExternals>
+    <lblSearchProvs>Search providers</lblSearchProvs>
+    <pnsSkinlessGeneral>Skinless notes</pnsSkinlessGeneral>
+    <lblWidthSknlsDef>Width</lblWidthSknlsDef>
+    <lblHeightSknlsDef>Height</lblHeightSknlsDef>
+    <lblSpellColor>Underlining color of spell checker</lblSpellColor>
+    <pnsSkinless>Skinless notes</pnsSkinless>
+    <chkRandBack>Use random background color</chkRandBack>
+    <chkInvertText>Invert text color</chkInvertText>
+    <chkRoll>Roll/unroll note by double click on caption</chkRoll>
+    <chkFitRolled>Fit to caption when rolled</chkFitRolled>
+    <chkShowPriority>Always show notes marked as "High Priority" on program start</chkShowPriority>
+    <lblButtonsSize>Toolbar buttons size</lblButtonsSize>
+    <chkAutoHeight>Automatically adjust note's height depending on its content</chkAutoHeight>
+    <chkAutomaticSmilies>Automatically insert smilies while typing ':)' or ':('</chkAutomaticSmilies>
+    <lblParagraphSpace>Distance used for adding space before/after paragraph (in points)</lblParagraphSpace>
+    <cmdFontUI>Font of windows and menus</cmdFontUI>
+    <!--groups settings-->
+    <cmdAddTheme>Search for updates/new themes</cmdAddTheme>
+    <pnsInterface>User interface</pnsInterface>
+    <optSkinless>Skinless</optSkinless>
+    <optSkinnable>Skinnable</optSkinnable>
+    <pnsGroups>Groups</pnsGroups>
+    <pnsGroupSettings>Settings</pnsGroupSettings>
+    <cmdChangeFont>Change font ( * )</cmdChangeFont>
+    <tbFontColor>Font color</tbFontColor>
+    <tbFontSize>Font size</tbFontSize>
+    <lblFontSample>The quick brown fox jumps over the lazy dog</lblFontSample>
+    <tbpSkinless>Skinless notes</tbpSkinless>
+    <tbpSkinnable>Skinnable notes</tbpSkinnable>
+    <lblMoreSkins>More skins</lblMoreSkins>
+    <lblBackSknls>Background</lblBackSknls>
+    <cmdFontSknls>Caption font</cmdFontSknls>
+    <previewCaption>Caption</previewCaption>
+    <pnsDiaryCust>Misc (Diary)</pnsDiaryCust>
+    <chkAddWeekdayName>Add weekday name to note's name</chkAddWeekdayName>
+    <chkFullWeekdayName>Full weekday name</chkFullWeekdayName>
+    <chkWeekdayAtTheEnd>Add weekday name at the end of note's name</chkWeekdayAtTheEnd>
+    <chkNoPreviousDiary>Do not show diary "pages" from previous dates in "Diary" menu</chkNoPreviousDiary>
+    <chkDiaryAscOrder>Ascending sort of "pages" in "Diary" menu (starting from earliest)</chkDiaryAscOrder>
+    <lblNumberOfDiaries>Number of diary "pages" shown in "Diary" menu</lblNumberOfDiaries>
+    <lblDiaryNaming>Date format used for naming of notes that belong to "Diary" group</lblDiaryNaming>
+    <pnsMiscDocking>Misc (Docking)</pnsMiscDocking>
+    <lblDockWidth>Width</lblDockWidth>
+    <lblDockHeight>Height</lblDockHeight>
+    <!--<chkAutohideDock>Hide panels</chkAutohideDock>-->
+    <!--schedule-->
+    <pnsConduct>Conduct</pnsConduct>
+    <chkAllowSound>Allow sound alert</chkAllowSound>
+    <chkTrackOverdue>Track overdue reminders</chkTrackOverdue>
+    <chkVisualNotify>Enable visual notification</chkVisualNotify>
+    <chkCenterScreen>Move notes to the center of screen</chkCenterScreen>
+    <grpDOW>First day of week</grpDOW>
+    <optDOWStandard>Accordingly to language settings</optDOWStandard>
+    <optDOWCustom>User-defined</optDOWCustom>
+    <pnsSounds>Sound alert</pnsSounds>
+    <cmdAddSound>Add</cmdAddSound>
+    <cmdRemoveSound>Remove</cmdRemoveSound>
+    <cmdListenSound>Listen</cmdListenSound>
+    <pnsTTS>Text-to-speech settings</pnsTTS>
+    <pnsVoices>Available voices</pnsVoices>
+    <cmdDefVoice>Default voice</cmdDefVoice>
+    <lblVoiceSample>Enter sample text:</lblVoiceSample>
+    <cmdVoiceSample>Listen sample</cmdVoiceSample>
+    <lblVolume>Volume</lblVolume>
+    <lblSpeed>Speed</lblSpeed>
+    <lblPitch>Pitch</lblPitch>
+    <!--docking-->
+    <!--<pnsCustDockSkinnable>Skinnable notes</pnsCustDockSkinnable>
+    <chkDockCustSettings>Custom settings</chkDockCustSettings>
+    <pnsDockCustSkinless>Skinless notes</pnsDockCustSkinless>
+
+    <chkDockCustInverseOrder>Inverse docking order</chkDockCustInverseOrder>
+    <lblDockWidth>Width</lblDockWidth>
+    <lblDockHeight>Height</lblDockHeight>
+    <lblDockBGC>Background</lblDockBGC>
+    <cmdDockCaptionFont>Caption font</cmdDockCaptionFont>
+    <lblDockDistance>Distance between notes (in pixels):</lblDockDistance>-->
+    <!--behavior-->
+    <pnsHotkeys>Hot keys</pnsHotkeys>
+    <cmdHotkeys>Hot keys management</cmdHotkeys>
+    <pnsMenus>Menus</pnsMenus>
+    <cmdMenus>Menus management</cmdMenus>
+    <chkNewOnTop>New note always on top</chkNewOnTop>
+    <chkRelationalPosition>Relational notes positioning</chkRelationalPosition>
+    <chkShowSeparateNotes>Show separate notes under each group in Show/Hide menus</chkShowSeparateNotes>
+    <chkHideCompleted>Hide notes marked as "Completed"</chkHideCompleted>
+    <chkShowBigIcons>Show big icons on PNotes.NET Control Panel's toolbar</chkShowBigIcons>
+    <chkDontShowList>Do not show notes in the list of opened windows (Alt+Tab) ( * )</chkDontShowList>
+    <chkHideMainWindow>Do not show main (invisible) program window in the list of opened windows (Alt+Tab) ( *** )</chkHideMainWindow>
+    <chkKeepVisibleOnShowdesktop>Keep notes visible while hovering over "Show Desktop" button ( ** )</chkKeepVisibleOnShowdesktop>
+    <chkPreventResizing>Prevent notes from being automatically arranged when moved to the edge of the screen ( ** )</chkPreventResizing>
+    <lblDblAction>Action after double click on system tray icon</lblDblAction>
+    <lblSingleAction>Action after single click on system tray icon</lblSingleAction>
+    <lblDefName>Use following as default name of new note</lblDefName>
+    <lblLengthOfName>Length of note's text used as default name for new note</lblLengthOfName>
+    <lblLengthOfContent>Length of note's text shown in "Content" column at Control Panel</lblLengthOfContent>
+    <pnsEffects>Effects</pnsEffects>
+    <chkHideFluently>Hide notes fluently</chkHideFluently>
+    <chkPlaySoundOnHide>Play sound when hide note</chkPlaySoundOnHide>
+    <grpTransparency>Transparency</grpTransparency>
+    <lblTransWarning>Value of 100% will result in fully transparent window!</lblTransWarning>
+    <lblPinClick>Action after click on "Pin" icon</lblPinClick>
+    <grpStyles>Controls style</grpStyles>
+    <lblNoteStartPosition>New note initial position</lblNoteStartPosition>
+    <grpThemes>Color themes ( *** )</grpThemes>
+    <grpDockPanel>Notes panel</grpDockPanel>
+    <chkShowPanel>Show notes panel</chkShowPanel>
+    <lblPanelDock>Panel placement</lblPanelDock>
+    <chkPanelAutoHide>Hide notes panel automatically</chkPanelAutoHide>
+    <chkPanelSwitchOffAnimation>Switch off animation</chkPanelSwitchOffAnimation>
+    <lblPanelRemove>Action to remove note from panel</lblPanelRemove>
+    <tbPanelDelay>Delay of automatic panel appearance (in seconds)</tbPanelDelay>
+    <!--protection-->
+    <pnsPassword>Password</pnsPassword>
+    <cmdCreatePwrd>Create password</cmdCreatePwrd>
+    <cmdChangePwrd>Change password</cmdChangePwrd>
+    <cmdRemovePwrd>Remove password</cmdRemovePwrd>
+    <pnsPasswordSet>If password set</pnsPasswordSet>
+    <pnsBehaviorMisc>Miscellaneous</pnsBehaviorMisc>
+    <pnsEncryption>Encryption</pnsEncryption>
+    <chkStoreEncrypted>Store notes as encrypted files</chkStoreEncrypted>
+    <pnsLocked>When program is locked</pnsLocked>
+    <chkHideTrayIcon>Hide icon from system tray if program is locked</chkHideTrayIcon>
+    <pnsBackup>Backup</pnsBackup>
+    <chkBackupBeforeSaving>Backup notes before saving</chkBackupBeforeSaving>
+    <chkSilentFullBackup>Silent manual full backup</chkSilentFullBackup>
+    <lblBackupDeepness>Backup deepness (amount of copies for each note)</lblBackupDeepness>
+    <grpFullBackup>Automatic full backup</grpFullBackup>
+    <lblFullBackup>At:</lblFullBackup>
+    <pnsBackupMisc>Miscellaneous</pnsBackupMisc>
+    <chkDonotShowProtected>Do not show note's content at Control Panel if note or its group is password protected</chkDonotShowProtected>
+    <pnsLocalSync>Local synchronization</pnsLocalSync>
+    <chkIncludeBinInLocalSync>Include notes from Recycle Bin in local synchronization</chkIncludeBinInLocalSync>
+    <tbLocalSyncPeriod>Synchronize in background</tbLocalSyncPeriod>
+    <optLocalSyncPeriod>Every (minutes):</optLocalSyncPeriod>
+    <optLocalSyncTime>Once a day at:</optLocalSyncTime>
+    <tbSyncPeriod>Synchronize in background</tbSyncPeriod>
+    <optSyncPeriod>Every (minutes):</optSyncPeriod>
+    <optSyncTime>Once a day at:</optSyncTime>
+    <lblLocalSyncCompList>Automatically synchronize with following computers when started from USB drive</lblLocalSyncCompList>
+    <cmdAddComp>Add</cmdAddComp>
+    <cmdEditComp>Modify</cmdEditComp>
+    <cmdRemoveComp>Remove</cmdRemoveComp>
+    <chkPromptForPassword>Prompt for password on attempts to save as text file/copy text from/send password protected note</chkPromptForPassword>
+    <chkLocalAutoRestart>If restart is required after background synchronization, do it automatically</chkLocalAutoRestart>
+    <!--network-->
+    <chkIncludeBinInSync>Include notes from Recycle Bin in synchronization</chkIncludeBinInSync>
+    <chkSyncOnStart>Synchronize notes on program start</chkSyncOnStart>
+    <chkSaveBeforeSync>Save notes before synchronization</chkSaveBeforeSync>
+    <pnsExchange>Notes exchange</pnsExchange>
+    <chkEnableExchange>Enable exchange</chkEnableExchange>
+    <chkAllowPing>Allow checking of connection with recipient's computer (ping)</chkAllowPing>
+    <chkSaveBeforeSending>Save note before sending</chkSaveBeforeSending>
+    <chkNoNotifyOnArrive>Do not show notification when new note arrives</chkNoNotifyOnArrive>
+    <chkShowRecOnClick>Show received note after click on notification message</chkShowRecOnClick>
+    <chkRecOnTop>Received note always on top</chkRecOnTop>
+    <chkShowIncomingOnClick>Show "Incoming" group after click on notification message</chkShowIncomingOnClick>
+    <chkNoSoundOnArrive>Do not play sound when new note arrives</chkNoSoundOnArrive>
+    <chkNoNotifyOnSend>Do not show notification when note is sending</chkNoNotifyOnSend>
+    <chkShowAfterReceiving>Show note after receiving</chkShowAfterReceiving>
+    <chkHideAfterSending>Hide note after sending</chkHideAfterSending>
+    <chkNoContInContextMenu>Do not show contacts in context menu</chkNoContInContextMenu>
+    <pnsPlugins>Social networks</pnsPlugins>
+    <cmdRemovePostPlugin>Remove plugin</cmdRemovePostPlugin>
+    <tbpSyncPlugins>Synchronization</tbpSyncPlugins>
+    <tbpSmtp>SMTP mail</tbpSmtp>
+    <pnsSocialNetworks>Social networks plugins</pnsSocialNetworks>
+    <pnsSyncPlugins>Synchronization plugins</pnsSyncPlugins>
+    <cmdRemoveSyncPlugin>Remove plugin</cmdRemoveSyncPlugin>
+    <cmdSyncNow>Synchronize now</cmdSyncNow>
+    <pnsContacts>Contacts details</pnsContacts>
+    <lblGroups>Groups</lblGroups>
+    <lblExchPort>Port</lblExchPort>
+    <tbSendTimeout>Max timeout for sending note and processing it on recipient's side (seconds)</tbSendTimeout>
+    <cmdAddContact>Add contact</cmdAddContact>
+    <cmdEditContact>Modify contact</cmdEditContact>
+    <cmdDeleteContact>Remove contact</cmdDeleteContact>
+    <cmdAddContactGroup>Add group</cmdAddContactGroup>
+    <cmdEditContactGroup>Modify group</cmdEditContactGroup>
+    <cmdDeleteContactGroup>Remove group</cmdDeleteContactGroup>
+    <lblContacts>Contacts</lblContacts>
+    <lblPostCount>Count of posts to receive</lblPostCount>
+    <pnsSocPluginDetails>Plugin details</pnsSocPluginDetails>
+    <lblSocPluginAuthor>Author:</lblSocPluginAuthor>
+    <lblSocPluginVersion>Version:</lblSocPluginVersion>
+    <lblSocPluginInfo>Info:</lblSocPluginInfo>
+    <cmdCheckSocPlugUpdate>Search for updates/new plugins</cmdCheckSocPlugUpdate>
+    <pnsSyncPluginDetails>Plugin details</pnsSyncPluginDetails>
+    <lblSyncPluginAuthor>Author:</lblSyncPluginAuthor>
+    <lblSyncPluginVersion>Version:</lblSyncPluginVersion>
+    <lblSyncPluginInfo>Info:</lblSyncPluginInfo>
+    <cmdCheckSyncPlugUpdate>Search for updates/new plugins</cmdCheckSyncPlugUpdate>
+    <lblSmtp>Select profile for sending mails instead of standard e-mail program</lblSmtp>
+    <cmdAddSmtp>Add SMTP profile</cmdAddSmtp>
+    <cmdEditSmtp>Modify SMTP profile</cmdEditSmtp>
+    <cmdDeleteSmtp>Remove SMTP profile</cmdDeleteSmtp>
+    <pnsSmtp>SMTP profiles</pnsSmtp>
+    <pnsMailContacts>Mail contacts</pnsMailContacts>
+    <cmdAddMailContact>Add contact</cmdAddMailContact>
+    <cmdEditMailContact>Modify contact</cmdEditMailContact>
+    <cmdDeleteMailContact>Remove contact</cmdDeleteMailContact>
+    <cmdImportMailContact>Import contacts</cmdImportMailContact>
+    <cmdClearMailContacts>Clear contacts</cmdClearMailContacts>
+    <chkStoreOnserver>Store undelivered notes on server</chkStoreOnserver>
+    <tbStoreOnserver>(requires PNExchangeService installation on local network)</tbStoreOnserver>
+    <tbServerIp>Server IP address</tbServerIp>
+    <tbServerPort>Server port</tbServerPort>
+    <cmdCheckConnection>Test connection</cmdCheckConnection>
+    <cmdCheckForNotes>Check for messages</cmdCheckForNotes>
+    <chkAutoRestart>If restart is required after background synchronization, do it automatically</chkAutoRestart>
+    <!--smtp dialog-->
+    <lblSmtpHost>Host name (like: smtp.gmail.com)</lblSmtpHost>
+    <lblSmtpAddress>Sender address (like: myaddress@gmail.com)</lblSmtpAddress>
+    <lblSmtpPort>Port (like: 587)</lblSmtpPort>
+    <lblSmtpPassword>Password</lblSmtpPassword>
+    <lblSmtpDisplayName>Display name</lblSmtpDisplayName>
+    <chkSmtpShowPassword>Show symbols</chkSmtpShowPassword>
+    <!--smtp send dialog-->
+    <DlgSendSmtp>Send via SMTP</DlgSendSmtp>
+    <lblSmtpRecipients>Recipients (delimited by semicolon)</lblSmtpRecipients>
+    <lblSmtpSubject>Subject</lblSmtpSubject>
+    <lblSmtpAttachments>Attachments</lblSmtpAttachments>
+    <lblSmtpBody>Message body</lblSmtpBody>
+    <!--mail contact dialog-->
+    <lblMailDisplayName>Display name</lblMailDisplayName>
+    <lblMailAddress>E-mail address</lblMailAddress>
+    <!--sync comps dialog-->
+    <lblCompName>Computer name</lblCompName>
+    <lblDataDir>Notes files location</lblDataDir>
+    <lblDBDir>DB file location</lblDBDir>
+    <chkUseDataDir>Use notes files location</chkUseDataDir>
+    <!--password dialog-->
+    <lblEnterPwrd>Enter password</lblEnterPwrd>
+    <lblConfirmPwrd>Confirm password</lblConfirmPwrd>
+    <lblOldPwrd>Old password</lblOldPwrd>
+    <!--groups dialog-->
+    <lblContactGroupName>Contacts group name</lblContactGroupName>
+    <!--contacts dialog-->
+    <lblContactName>Contact name</lblContactName>
+    <optUseCompName>Use computer name</optUseCompName>
+    <optUseAddress>Use IP address</optUseAddress>
+    <!--delete group dialog-->
+    <lblDeleteContactsGroup>Delete selected group of contacts and:</lblDeleteContactsGroup>
+    <optContsToNone>Move underlying contacts to group</optContsToNone>
+    <optContsDelete>Delete underlying contacts</optContsDelete>
+    <!--search providers dialog-->
+    <lblSPWarning>Please, check the query line of search provider in browser before adding. It may looks like "http://www.google.com/search?q="</lblSPWarning>
+    <lblSPQuery>Query string</lblSPQuery>
+    <lblSPName>Name</lblSPName>
+    <!--externals dialog-->
+    <lblExtName>Name</lblExtName>
+    <lblExtProgram>Program</lblExtProgram>
+    <lblCommandLine>Command line</lblCommandLine>
+    <!--about dialog-->
+    <cmdLicense>Show license</cmdLicense>
+    <lblSQL>SQLite database engine by Hwaci</lblSQL>
+    <!--hot keys dialog-->
+    <tbpHKMain>Main menu</tbpHKMain>
+    <tbpHKNote>Note</tbpHKNote>
+    <tbpHKEdit>Edit area</tbpHKEdit>
+    <tbpHKGroups>Groups</tbpHKGroups>
+    <expDeterminated>Defined hot keys</expDeterminated>
+    <lblEnterHK>Type the keys to be used as hot keys for selected command</lblEnterHK>
+    <cmdAddHK>Add hot keys</cmdAddHK>
+    <cmdEditHK>Edit hot keys</cmdEditHK>
+    <cmdDeleteHK>Remove hot keys</cmdDeleteHK>
+    <lblRestrictedHotkeys>Restricted hot keys:</lblRestrictedHotkeys>
+    <txbWatermark>Enter hot key here...</txbWatermark>
+    <!--menu dialog-->
+    <DlgMenusManager>Menus management</DlgMenusManager>
+    <tbpMain>Main menu</tbpMain>
+    <tbpNote>Note</tbpNote>
+    <tbpEdit>Edit area</tbpEdit>
+    <tbpGroups>Groups</tbpGroups>
+    <tbpCP>Control Panel</tbpCP>
+    <cmdResetCurrent>Reset current</cmdResetCurrent>
+    <cmdResetAll>Reset all</cmdResetAll>
+    <cmdUp>Up</cmdUp>
+    <cmdDown>Down</cmdDown>
+    <cmdRestoreOrder>Restore</cmdRestoreOrder>
+    <!--save as dialog-->
+    <lblNoteName>Note name</lblNoteName>
+    <lblInGroup>Save in group</lblInGroup>
+    <!--tags dialog-->
+    <lblAvailableTags>Available tags</lblAvailableTags>
+    <lblCurrentTags>Current tags</lblCurrentTags>
+    <!--links dialog-->
+    <DlgLinkToNote>Add link to note</DlgLinkToNote>
+    <lblAvailableLinks>Available notes</lblAvailableLinks>
+    <lblCurrentLinks>Current linked notes</lblCurrentLinks>
+    <!--search by tags dialog-->
+    <cmdSelectAll>Select all</cmdSelectAll>
+    <cmdClearSelection>Clear selection</cmdClearSelection>
+    <lblSearchResults>Search results</lblSearchResults>
+    <cmdFind>Find</cmdFind>
+    <!--search by dates dialog-->
+    <lblFrom>From:</lblFrom>
+    <lblTo>To:</lblTo>
+    <!--help file chooser-->
+    <lblHelpMissing>Local help file is missing. Please, choose one of the options below:</lblHelpMissing>
+    <optGoOnlineHelp>Continue to on-line documentation</optGoOnlineHelp>
+    <optGetCHM>Download help file in CHM format</optGetCHM>
+    <optGetPDF>Download help file in PDF format</optGetPDF>
+    <lblDownloadInProgress>Download in progress...</lblDownloadInProgress>
+    <!--search in notes dialog-->
+    <lblFind>Find what:</lblFind>
+    <lblReplace>Replace with:</lblReplace>
+    <chkMatchCase>Match case</chkMatchCase>
+    <chkWholeWord>Whole word</chkWholeWord>
+    <chkIncludeHidden>Include hidden notes</chkIncludeHidden>
+    <lblSearchCriteria>Search criteria</lblSearchCriteria>
+    <lblSearchScope>Search scope</lblSearchScope>
+    <cmdClearHistory>Clear search history</cmdClearHistory>
+    <cmdClearSettings>Reset search settings</cmdClearSettings>
+    <cmdReplaceAll>Replace all</cmdReplaceAll>
+    <!--new note in group dialog-->
+    <DlgNewInGroup>New note in group</DlgNewInGroup>
+    <lblNewInGroup>Create note in group</lblNewInGroup>
+    <!--control panel-->
+    <DlgCP>Control Panel</DlgCP>
+    <cmdAddTopGroup>Add top level group</cmdAddTopGroup>
+    <cmdAddSubgroup>Add subgroup to selected group</cmdAddSubgroup>
+    <cmdEditGroup>Edit group</cmdEditGroup>
+    <cmdRemoveGroup>Delete group</cmdRemoveGroup>
+    <cmdShowAllFromGroup>Show all notes from selected group</cmdShowAllFromGroup>
+    <cmdShowAllIncSubgroups>Show group (include subgroups)</cmdShowAllIncSubgroups>
+    <cmdHideAllFromGroup>Hide all notes from selected group</cmdHideAllFromGroup>
+    <cmdHideAllIncSubgroups>Hide group (include subgroups)</cmdHideAllIncSubgroups>
+    <cmdSetGroupPassword>Set group password</cmdSetGroupPassword>
+    <cmdRemoveGroupPassword>Remove group password</cmdRemoveGroupPassword>
+    <cmdNewNote>New Note</cmdNewNote>
+    <cmdLoadNotes>Load Notes</cmdLoadNotes>
+    <cmdNoteFromCB>New Note From Clipboard</cmdNoteFromCB>
+    <cmdDuplicate>Duplicate Note</cmdDuplicate>
+    <cmdDiary>Diary</cmdDiary>
+    <!--<cmdSave>Save</cmdSave>-->
+    <cmdSaveAs>Rename/Change Group</cmdSaveAs>
+    <cmdSaveAsText>Save As Text File</cmdSaveAsText>
+    <cmdRestoreFromBackup>Restore From Backup</cmdRestoreFromBackup>
+    <cmdPrint>Print</cmdPrint>
+    <cmdAdjust>Adjust</cmdAdjust>
+    <cmdDelete>Delete</cmdDelete>
+    <cmdSaveAll>Save All</cmdSaveAll>
+    <cmdBackup>Backup/Synchronization</cmdBackup>
+    <cmdPlacement>Placement/Visibility</cmdPlacement>
+    <cmdSendAsText>Send As Text</cmdSendAsText>
+    <cmdSendAsAttachment>Send As Attachment</cmdSendAsAttachment>
+    <cmdSendZip>Send In ZIP Archive</cmdSendZip>
+    <cmdSendNetwork>Send Via Network</cmdSendNetwork>
+    <cmdTags>Tags</cmdTags>
+    <cmdSwitches>Switches</cmdSwitches>
+    <cmdFavorites>Add To Favorites</cmdFavorites>
+    <cmdRemoveFromFavorites>Remove From Favorites</cmdRemoveFromFavorites>
+    <cmdRun>Run</cmdRun>
+    <cmdEmptyBin>Empty Recycle Bin</cmdEmptyBin>
+    <cmdRestoreNote>Restore Note</cmdRestoreNote>
+    <cmdPreview>Preview</cmdPreview>
+    <cmdPreviewRight>Preview Window On The Right</cmdPreviewRight>
+    <cmdPreviewSettings>Preview Window Background Settings</cmdPreviewSettings>
+    <cmdViews>Views</cmdViews>
+    <cmdPreferences>Preferences</cmdPreferences>
+    <cmdHotkeysCP>Hot Keys Management</cmdHotkeysCP>
+    <cmdMenusManagementCP>Menus Management</cmdMenusManagementCP>
+    <cmdSearch>Search</cmdSearch>
+    <cmdHelp>Help</cmdHelp>
+    <cmdQuickSearch>Quick Search</cmdQuickSearch>
+    <cmdSupport>Support PNotes.NET Project</cmdSupport>
+    <cmdPassword>Password</cmdPassword>
+    <cmdShowGroups>Show Groups</cmdShowGroups>
+    <cmdColReset>Reset Columns Width/Visibility</cmdColReset>
+    <txtSearch>Quick search</txtSearch>
+    <!--add/edit group dialog-->
+    <lblGroupName>Group name</lblGroupName>
+    <tbReadOnly>(read only)</tbReadOnly>
+    <cmdGroupIcon>Group icon</cmdGroupIcon>
+    <cmdStandard>Standard view</cmdStandard>
+
+    <!--choose group icon dialog-->
+    <DlgFolderIcons>Pick an icon for group</DlgFolderIcons>
+    <cmdFromFile>Load from file</cmdFromFile>
+
+    <!--adjust dialog-->
+    <DlgAdjustAppearance>Appearance of note</DlgAdjustAppearance>
+    <!--adjust schedule dialog-->
+    <DlgAdjustSchedule>Schedule of note</DlgAdjustSchedule>
+    <lblScheduleType>Schedule type</lblScheduleType>
+    <expAdvanced>Advanced settings</expAdvanced>
+    <chkTrak>Do not track the overdue note</chkTrak>
+    <chkHideUntilAlert>Hide note until notification</chkHideUntilAlert>
+    <lblRunExternal>Run external program after notification</lblRunExternal>
+    <noExternal>(Run nothing)</noExternal>
+    <lblStopAlert>Stop alert/notification after:</lblStopAlert>
+    <lblTimeZone>Time zone</lblTimeZone>
+    <cmdAddAlert>Add alert</cmdAddAlert>
+    <cmdDeleteAlert>Remove alert</cmdDeleteAlert>
+    <grpSound>Sound alert</grpSound>
+    <optSoundFile>File</optSoundFile>
+    <optSoundText>Text</optSoundText>
+    <chkRepeat>Repeat in loop</chkRepeat>
+    <lblAfterYears>Years</lblAfterYears>
+    <lblAfterMonths>Months</lblAfterMonths>
+    <lblAfterWeeks>Weeks</lblAfterWeeks>
+    <lblAfterDays>Days</lblAfterDays>
+    <lblAfterHours>Hours</lblAfterHours>
+    <lblAfterMinutes>Minutes</lblAfterMinutes>
+    <lblAfterSeconds>Seconds</lblAfterSeconds>
+    <lblAfterStart>Starting from:</lblAfterStart>
+    <optAfterExact>Exact time</optAfterExact>
+    <optAfterProgram>Program start</optAfterProgram>
+    <lblRepeatYears>Years</lblRepeatYears>
+    <lblRepeatMonths>Months</lblRepeatMonths>
+    <lblRepeatWeeks>Weeks</lblRepeatWeeks>
+    <lblRepeatDays>Days</lblRepeatDays>
+    <lblRepeatHours>Hours</lblRepeatHours>
+    <lblRepeatMinutes>Minutes</lblRepeatMinutes>
+    <lblRepeatSeconds>Seconds</lblRepeatSeconds>
+    <lblRepeatStart>Starting from:</lblRepeatStart>
+    <optRepeatExact>Exact time</optRepeatExact>
+    <optRepeatProgram>Program start</optRepeatProgram>
+    <lblWeeklyAt>At:</lblWeeklyAt>
+    <lblExactDate>Date</lblExactDate>
+    <lblExactTime>Time</lblExactTime>
+    <lblMonthExactWarning>If there is no such date in current month, the nearest date will be used instead.</lblMonthExactWarning>
+    <lblDW>Day of week</lblDW>
+    <lblOrdinal>Ordinal number</lblOrdinal>
+    <lblDWTime>Time</lblDWTime>
+
+    <!--color choosing dialog-->
+    <DlgColorChooser>Color choosing</DlgColorChooser>
+
+    <!--smilies dialog-->
+    <DlgSmilies>Smilies</DlgSmilies>
+
+    <lblArchName>Archive name</lblArchName>
+
+    <!--search/replace dialog-->
+    <cmdFindNext>Find next</cmdFindNext>
+    <cmdReplace>Replace</cmdReplace>
+    <grdSearchOptions>Search options</grdSearchOptions>
+    <chkSearchUp>Search up</chkSearchUp>
+    <chkRegExp>Use regular expressions</chkRegExp>
+
+    <!--sync dialog-->
+    <DlgSync>Synchronization</DlgSync>
+    <lblSyncInProgress>Synchronization in progress...</lblSyncInProgress>
+
+    <!--local sync folder chooser-->
+    <DlgLocalSync>Local synchronization parameters</DlgLocalSync>
+
+    <!--Overdue notes dialog-->
+    <DlgOverdue>Overdue notes</DlgOverdue>
+
+    <!--Select groups dialog-->
+    <DlgSelectGroups>Contacts groups</DlgSelectGroups>
+
+    <!--Pin dialog-->
+    <DlgPin>Pin note to window</DlgPin>
+    <lblWindows>Available windows</lblWindows>
+    <chkUseWildcards>Use wildcards (* and/or ?)</chkUseWildcards>
+
+    <!--Import notes dialog-->
+    <DlgImportNotes>Import notes from PNotes</DlgImportNotes>
+    <chkNoRecycle>Do not import notes from Recycle Bin</chkNoRecycle>
+    <chkImportGroups>Import groups (groups hierarchy would not be preserved)</chkImportGroups>
+    <lblIniLocations>Initialization file (notes.ini)</lblIniLocations>
+    <chkKeepInvisible>Keep notes invisible (check if you import a large amount of notes)</chkKeepInvisible>
+    <!--Import settings dialog-->
+    <DlgImportSettings>Import settings from PNotes</DlgImportSettings>
+    <chkImpSounds>Import sounds</chkImpSounds>
+    <chkImpFTP>Import FTP settings</chkImpFTP>
+    <chkImpContacts>Import contacts</chkImpContacts>
+    <chkImpSearchEngines>Import search engines</chkImpSearchEngines>
+    <chkImpTags>Import tags</chkImpTags>
+    <chkImpExtPrograms>Import external programs</chkImpExtPrograms>
+    <lblINIFile>Initialization file (notes.ini)</lblINIFile>
+    <lblImportSettingsWarning>ATTENTION! Import selected settings will override existing ones.</lblImportSettingsWarning>
+
+    <!--Download plugins dialog-->
+    <DlgGetPlugins>Download plugins</DlgGetPlugins>
+    <DlgGetThemes>Download themes</DlgGetThemes>
+    <DlgGetDicts>Download dictionaries</DlgGetDicts>
+    <cmdBrowser>Open in browser</cmdBrowser>
+    <cmdDownload>Download</cmdDownload>
+
+    <DlgLocalComps>Computers on local network</DlgLocalComps>
+
+    <DlgPosts>Available posts %PLACEHOLDER1% for note %PLACEHOLDER2%</DlgPosts>
+
+    <DlgAddTable>Table properties</DlgAddTable>
+    <lblTableRows>Rows</lblTableRows>
+    <lblTableColumns>Columns</lblTableColumns>
+    <lblTableColumnWidth>Column width (in twips)</lblTableColumnWidth>
+    <lblTableTextIndent>Text indent (in twips)</lblTableTextIndent>
+    <lblTableBorders>Borders width</lblTableBorders>
+    <lblTableBorderColor>Border color</lblTableBorderColor>
+
+    <DlgSpecialSymbols>Special symbols</DlgSpecialSymbols>
+
+    <DlgImportMailContacts>Import mail contacts</DlgImportMailContacts>
+    <cmdLoadImport>Load</cmdLoadImport>
+    <chkNoDuplicates>Do not show duplicates</chkNoDuplicates>
+    <pnsImportContacts>Import mail contacts from:</pnsImportContacts>
+
+    <DlgChooseMailContacts>Choose mail contacts</DlgChooseMailContacts>
+
+    <!--scramble dialog-->
+    <lblScramble>Enter encryption/decryption key</lblScramble>
+
+    <DlgFontChooser>Choose font</DlgFontChooser>
+    <grpNames>Font names</grpNames>
+    <grpWeight>Font weight</grpWeight>
+    <grpStyle>Font style</grpStyle>
+    <grpSize>Font size</grpSize>
+    <grpStretch>Font stretch</grpStretch>
+    <grpSample>Sample</grpSample>
+    <grpColors>Color</grpColors>
+
+    <DlgLotusCred>IBM Notes credentials</DlgLotusCred>
+    <tbLotusPassword>Password (required field)</tbLotusPassword>
+    <tbLotusServer>Server (optional field)</tbLotusServer>
+
+    <DlgConfigureReport>Configure report</DlgConfigureReport>
+    <grpFields>Show following fields</grpFields>
+    <chkName>Note name</chkName>
+    <chkGroup>Note group</chkGroup>
+    <chkCreated>Created at</chkCreated>
+    <chkSaved>Last saved</chkSaved>
+    <chkSentAt>Sent at</chkSentAt>
+    <chkReceivedAt>Received at</chkReceivedAt>
+    <chkSentTo>Sent to</chkSentTo>
+    <chkReceivedFrom>Received from</chkReceivedFrom>
+    <chkText>Note text</chkText>
+    <grpDates>Dates scope</grpDates>
+    <chkAllDates>All dates</chkAllDates>
+    <chkCreation>Creation date</chkCreation>
+    <tbCrFrom>From:</tbCrFrom>
+    <tbCrTo>To:</tbCrTo>
+    <chkSaving>Saving date</chkSaving>
+    <tbSvFrom>From:</tbSvFrom>
+    <tbSvTo>To:</tbSvTo>
+    <grpMisc>Miscellaneous</grpMisc>
+    <chkFlags>Show flags</chkFlags>
+
+    <chkDontShowMessage>Do not show this message again</chkDontShowMessage>
+    <lblWarn1>( * ) - New value will be used in newly created notes only</lblWarn1>
+    <lblWarn2>( *** ) - Requires program restart</lblWarn2>
+    <lblWarn3>( ** ) - Requires Windows Vista or above</lblWarn3>
+  </controls>
+  <grid_columns>
+    <grdNotes_Note_Name>Note Name</grdNotes_Note_Name>
+    <grdNotes_Note_Id>ID</grdNotes_Note_Id>
+    <grdNotes_Note_Priority>Priority</grdNotes_Note_Priority>
+    <grdNotes_Note_Completed>Completed</grdNotes_Note_Completed>
+    <grdNotes_Note_Locked>Protected</grdNotes_Note_Locked>
+    <grdNotes_Note_Password_Protected>Password Protected</grdNotes_Note_Password_Protected>
+    <grdNotes_Note_Pinned>Pinned</grdNotes_Note_Pinned>
+    <grdNotes_Note_Favorites>Favorites</grdNotes_Note_Favorites>
+    <grdNotes_Note_Sent_Received>Sent/Received</grdNotes_Note_Sent_Received>
+    <grdNotes_Note_Encrypted>Encrypted</grdNotes_Note_Encrypted>
+    <grdNotes_Note_Group>Group</grdNotes_Note_Group>
+    <grdNotes_Note_PrevGroup>Group</grdNotes_Note_PrevGroup>
+    <grdNotes_Note_Created>Created</grdNotes_Note_Created>
+    <grdNotes_Note_Saved>Last Saved</grdNotes_Note_Saved>
+    <grdNotes_Note_Schedule_Type>Schedule Type</grdNotes_Note_Schedule_Type>
+    <grdNotes_Note_Deleted>Deleted</grdNotes_Note_Deleted>
+    <grdNotes_Note_Tags>Tags</grdNotes_Note_Tags>
+    <grdNotes_Note_Content>Content</grdNotes_Note_Content>
+    <grdNotes_Note_Sent_To>Sent To</grdNotes_Note_Sent_To>
+    <grdNotes_Note_Sent_At>Sent At</grdNotes_Note_Sent_At>
+    <grdNotes_Note_Received_From>Received From</grdNotes_Note_Received_From>
+    <grdNotes_Note_Received_At>Received At</grdNotes_Note_Received_At>
+    <grdBackup_Back_Name>Note Name</grdBackup_Back_Name>
+    <grdBackup_Back_Original>Original Note</grdBackup_Back_Original>
+    <grdBackup_Back_Saved>Time Saved</grdBackup_Back_Saved>
+    <grdSearchProvs_SP_Name>Name</grdSearchProvs_SP_Name>
+    <grdSearchProvs_SP_Query_Line>Query line</grdSearchProvs_SP_Query_Line>
+    <grdLocalSync_Sync_Name>Computer name</grdLocalSync_Sync_Name>
+    <grdLocalSync_Sync_File_Location>Notes files location</grdLocalSync_Sync_File_Location>
+    <grdLocalSync_Sync_DB_Location>DB file location</grdLocalSync_Sync_DB_Location>
+    <grdContacts_Cont_Name>Name</grdContacts_Cont_Name>
+    <grdContacts_Cont_Comp>Computer name</grdContacts_Cont_Comp>
+    <grdContacts_Cont_IP>IP address</grdContacts_Cont_IP>
+    <grdExternals_Ext_Name>Name</grdExternals_Ext_Name>
+    <grdExternals_Ext_Program>Program</grdExternals_Ext_Program>
+    <grdExternals_Ext_Command_Line>Command line</grdExternals_Ext_Command_Line>
+    <grdTagsResults_Tag_Name>Note name</grdTagsResults_Tag_Name>
+    <grdTagsResults_Tag_Tag>Tags</grdTagsResults_Tag_Tag>
+    <grdAvailableTags_Tag_Tag>Tag</grdAvailableTags_Tag_Tag>
+    <grdFields_Field>Search by:</grdFields_Field>
+    <grdDates_Date_Name>Note name</grdDates_Date_Name>
+    <grdDates_Date_Created>Date created</grdDates_Date_Created>
+    <grdDates_Date_Saved>Date saved</grdDates_Date_Saved>
+    <grdDates_Date_Sent>Date sent</grdDates_Date_Sent>
+    <grdDates_Date_Received>Date received</grdDates_Date_Received>
+    <grdDates_Date_Deleted>Date deleted</grdDates_Date_Deleted>
+    <grdWindows_Win_Text>Window text</grdWindows_Win_Text>
+    <grdWindows_Win_Class>Window class</grdWindows_Win_Class>
+    <grdOverdue_Over_Name>Note Name</grdOverdue_Over_Name>
+    <grdOverdue_Over_Type>Schedule Type</grdOverdue_Over_Type>
+    <grdOverdue_Over_Zone>Time zone</grdOverdue_Over_Zone>
+    <grdOverdue_Over_Id>Id</grdOverdue_Over_Id>
+    <grdPosts_PostDate>Post date</grdPosts_PostDate>
+    <grdPosts_PostText>Post content</grdPosts_PostText>
+    <grdSmtp_HostName>Host name</grdSmtp_HostName>
+    <grdSmtp_SenderAddress>Sender address</grdSmtp_SenderAddress>
+    <grdSmtp_DisplayName>Display name</grdSmtp_DisplayName>
+    <grdSmtp_SmtpPort>Port</grdSmtp_SmtpPort>
+    <grdMailContacts_DispName>Display name</grdMailContacts_DispName>
+    <grdMailContacts_MailAddress>E-mail address</grdMailContacts_MailAddress>
+    <grdDefHotkeys_DHK_Group>Hot keys range</grdDefHotkeys_DHK_Group>
+    <grdDefHotkeys_DHK_Menu>Menu</grdDefHotkeys_DHK_Menu>
+    <grdDefHotkeys_DHK_Shortcut>Hot keys</grdDefHotkeys_DHK_Shortcut>
+    <grdLinks_Note_Name>Note name</grdLinks_Note_Name>
+    <grdLinks_Note_Group>Group</grdLinks_Note_Group>
+    <grdLinks_Note_Created>Date created</grdLinks_Note_Created>
+    <grdLinks_Note_Saved>Date saved</grdLinks_Note_Saved>
+  </grid_columns>
+  <messages>
+    <def_warning>You are about to reset ALL program settings to their default values. Continue?</def_warning>
+    <sound_exists>The file already exists in your 'sounds' directory. Copy anyway?</sound_exists>
+    <sound_delete>Delete selected sound?</sound_delete>
+    <sync_comp_exists>Local synchronization target with this name already exists</sync_comp_exists>
+    <sync_comp_delete>Delete selected synchronization target?</sync_comp_delete>
+    <pwrd_not_identical>Both password strings should be identical. Please, check the spelling.</pwrd_not_identical>
+    <pwrd_old_not_match>Invalid old password</pwrd_old_not_match>
+    <pwrd_not_match>Invalid password</pwrd_not_match>
+    <group_exists>Contacts group with this name already exists</group_exists>
+    <group_delete>Delete selected group of contacts?</group_delete>
+    <contact_exists>Contact with this name already exists</contact_exists>
+    <contact_delete>Delete selected contact?</contact_delete>
+    <ext_exists>External program with this name already exists</ext_exists>
+    <ext_delete>Delete selected external program?</ext_delete>
+    <sp_exists>Search provider with this name already exists</sp_exists>
+    <sp_delete>Delete selected search provider?</sp_delete>
+    <tag_exists>The same tag already exists</tag_exists>
+    <tag_delete>Delete selected tag?</tag_delete>
+    <new_version_1>New version of PNotes.NET is available - %PLACEHOLDER1%.</new_version_1>
+    <new_version_2>Click 'OK' in order to install new version (restart of program is required).</new_version_2>
+    <new_version_3>Click here in order to install new version (restart of program is required).</new_version_3>
+    <new_version_plugins>New versions of following plugins are available:</new_version_plugins>
+    <latest_version>You are using the latest version of PNotes.NET.</latest_version>
+    <plugins_latest_version>All plugins are up-to-date.</plugins_latest_version>
+    <themes_latest_version>All themes are up-to-date.</themes_latest_version>
+    <first_baloon_caption>Thank you for using PNotes.NET!</first_baloon_caption>
+    <first_baloon_message>Right click on system tray icon to begin the work.</first_baloon_message>
+    <license>This program is distributed under the terms of the GNU General Public License version 2 or later.</license>
+    <thanks>Thanks to all over the world who tests, translates and simply uses the program.</thanks>
+    <code_thanks>Special thanks for very helpful code snippets and examples to:</code_thanks>
+    <sug_thanks>Thanks for suggestions and selfless testing to:</sug_thanks>
+    <hk_registered_1>This combination of keys is already registered.</hk_registered_1>
+    <hk_registered_2>Choose another one, please.</hk_registered_2>
+    <hk_exists>The same combination of keys already exists</hk_exists>
+    <delete_hot_keys>Delete selected hot keys combination?</delete_hot_keys>
+    <delete_to_bin>Do you want to send this note to Recycle Bin?</delete_to_bin>
+    <delete_completely>Do you want to completely delete this note?</delete_completely>
+    <delete_note>Note:</delete_note>
+    <delete_created>Created:</delete_created>
+    <delete_to_bin_many>Do you want to send these %PLACEHOLDER1% notes to Recycle Bin?</delete_to_bin_many>
+    <delete_completely_many>Do you want to completely delete these %PLACEHOLDER1% notes?</delete_completely_many>
+    <delete_group_warning>Are you sure you want to delete this group - %PLACEHOLDER1% - and all included subgroups and notes?</delete_group_warning>
+    <save_note_1>Note has been changed:</save_note_1>
+    <save_note_2>Do you want to save it?</save_note_2>
+    <id_exists>The note with the same ID already exists.</id_exists>
+    <search_complete>Search complete.</search_complete>
+    <matches_found>Matches found:</matches_found>
+    <nothing_found>Nothing found.</nothing_found>
+    <clear_search_history>Clear search history?</clear_search_history>
+    <replace_complete>Search and replace complete.</replace_complete>
+    <matches_replaced>Matches replaced:</matches_replaced>
+    <replace_hidden_1>You have selected option</replace_hidden_1>
+    <replace_hidden_2>All matched entries in hidden notes will be replaced and saved. Continue?</replace_hidden_2>
+    <no_backup_copies>There are no backup copies for current note</no_backup_copies>
+    <restore_question>Do you want to restore the note's content from selected backup copy?</restore_question>
+    <mail_subject_text>Sent from PNotes.NET. Note name:</mail_subject_text>
+    <mail_subject_attachment>Sent from PNotes.NET.</mail_subject_attachment>
+    <mail_error>MAPI error:</mail_error>
+    <empty_bin_warning>Emptying of Recycle Bin cannot be rolled back. Continue?</empty_bin_warning>
+    <selection_objects_warning>Selected text contains one or more non-text objects (pictures etc). If you continue, these objects will be deleted. Continue anyway?</selection_objects_warning>
+    <many_files_dropped>Only one file may be dropped onto note</many_files_dropped>
+    <full_backup_complete>Full backup operation completed successfully</full_backup_complete>
+    <full_restore_complete>Restoration from full backup copy completed successfully.</full_restore_complete>
+    <full_restore_warning>ATTENTION! All existing notes will be removed and replaced by notes from backup copy. Continue?</full_restore_warning>
+    <message_posted>Successfully posted on</message_posted>
+    <sync_complete>Synchronization completed successfully</sync_complete>
+    <sync_complete_reload>Synchronization completed successfully. The program has to be restarted for applying all changes.</sync_complete_reload>
+    <diff_versions>Current version of database is different from previously synchronized version. Synchronization cannot be performed.</diff_versions>
+    <outlook_not_running>MS Outlook application is not running. Please, start the application and try again.</outlook_not_running>
+    <load_autosaved>Program did not finish correctly last time. Would you like to load auto-saved notes?</load_autosaved>
+    <clean_bin_1>The following notes will be permanently deleted from Recycle Bin:</clean_bin_1>
+    <clean_bin_2>Choose "Yes" to continue or "No" to postpone the deletion to a future time.</clean_bin_2>
+    <sender>Sender:</sender>
+    <recipient>Recipient(s):</recipient>
+    <hide_on_lock_warning>In order to allow the tray icon to be hidden when program is locked you have to set a hot key for "Lock Program" menu item</hide_on_lock_warning>
+    <continue_anyway>Continue anyway?</continue_anyway>
+    <load_program_settings>Loading program settings</load_program_settings>
+    <load_database>Loading database</load_database>
+    <create_database>Creating database</create_database>
+    <load_hotkeys>Applying hot keys</load_hotkeys>
+    <load_spellchecker>Initializing spell checker</load_spellchecker>
+    <load_notes>Loading notes</load_notes>
+    <load_menus>Preparing menus order table</load_menus>
+    <update_menus_order>Updating menus indexes</update_menus_order>
+    <no_posts>There are no posts available</no_posts>
+    <confirm_plugin_remove>Do you really want to remove selected plugin?</confirm_plugin_remove>
+    <confirm_plugin_remove_1>Plugin removal requires program restart. Do you want to restart the program now?</confirm_plugin_remove_1>
+    <confirm_plugin_remove_2>Yes - to restart now, No - to restart later, Cancel - to cancel removal</confirm_plugin_remove_2>
+    <confirm_restart_1>In order for the new settings to take effect you have to restart the program.</confirm_restart_1>
+    <confirm_restart_2>Press 'Yes' to restart it now, or 'No' to restart later.</confirm_restart_2>
+    <sync_in_progress>Synchronization in progress...</sync_in_progress>
+    <ini_file_path_required>Initialization file (notes.ini) path is required</ini_file_path_required>
+    <dicts_found>Applying new dictionaries requires program restart. Do you want to restart now?</dicts_found>
+    <sync_error_1>An error occurred during synchronization.</sync_error_1>
+    <sync_error_2>Please, refer to log file of appropriate plugin.</sync_error_2>
+    <send_error_1>An error occurred during note(s) sending.</send_error_1>
+    <send_error_2>Please, refer to log file for details.</send_error_2>
+    <smtp_same_address>There is already SMTP profile with the same address</smtp_same_address>
+    <mail_contact_same_address>There is already mail contact with the same name and address</mail_contact_same_address>
+    <invalid_host>Invalid host name</invalid_host>
+    <invalid_email>Invalid e-mail address</invalid_email>
+    <invalid_port>Invalid port number</invalid_port>
+    <remove_mail_contact>Remove selected mail contact?</remove_mail_contact>
+    <remove_smtp>Remove selected SMTP profile?</remove_smtp>
+    <critical_check>Checking for critical updates</critical_check>
+    <critical_applied>The program has restarted for applying critical updates.</critical_applied>
+    <new_edition>You have started the new edition of PNotes.NET. All your settings from previous edition have been saved as ZIP archive at</new_edition>
+    <same_actions>You can not choose the same action for double click and single click</same_actions>
+    <delete_backups>Delete selected backup copies?</delete_backups>
+    <image_size_message>The size of image has to be 16x16</image_size_message>
+    <completed_hidden>In order to show notes marked as "Completed" uncheck appropriate check box at "Behavior" page of Preferences dialog</completed_hidden>
+    <back_prev>Backing up files from previous edition...</back_prev>
+    <host_unknown>Computer %PLACEHOLDER1% cannot be found on network</host_unknown>
+    <contact_disconnected>Computer of contact %PLACEHOLDER1% is not connected to network</contact_disconnected>
+    <address_not_found>One or more of specified IP addresses cannot be found</address_not_found>
+    <contacts_disconnected>Computers of one or more contacts are not connected to network</contacts_disconnected>
+    <hosts_unknown>One or more computers cannot be found on network</hosts_unknown>
+    <inv_lotus_server>Invalid IBM Notes server name</inv_lotus_server>
+    <inv_file_link>Invalid link to file system object</inv_file_link>
+    <sec_ex_link>You have no permissions to work with file</sec_ex_link>
+    <file_not_exist>The link is pointing to not existing file (directory)</file_not_exist>
+    <dict_connection_problem>The dictionaries download server is unavailable. Open dictionaries page in browser?</dict_connection_problem>
+    <link_not_exists>The linked note does not exist. Perhaps it has been moved to Recycle Bin or deleted completely.</link_not_exists>
+    <export_in_progress>Export notes is in progress. The destination file is:</export_in_progress>
+    <invalid_start_date>Starting date should not be more than ending date</invalid_start_date>
+    <invalid_exp_comm_line>Invalid file specified for notes report</invalid_exp_comm_line>
+    <invalid_dates_com_line>Invalid dates in command line</invalid_dates_com_line>
+    <report_lib_missing>Export to PDF, DOC or TIF requires downloading of additional libraries. Continue?</report_lib_missing>
+    <no_server_props>You must specify server IP address and port</no_server_props>
+    <server_check_success>Test connection succeeded</server_check_success>
+    <server_check_failed>Test connection failed</server_check_failed>
+    <no_net_adapter>No network adapter found</no_net_adapter>
+    <sending_progress>Send operation in progress...</sending_progress>
+    <encrypt_warning_1>You are about to load notes into the program which is using encryption.</encrypt_warning_1>
+    <encrypt_warning_2>If these notes have been encrypted before, it may cause them to become unreadable. Continue?</encrypt_warning_2>
+    <invalid_file_format>Invalid file format. Perhaps it has been encrypted before.</invalid_file_format>
+    <restart_required>Program restart is required.</restart_required>
+  </messages>
+  <time_format_chars_h12>
+    <h>Hours with no leading zero for single-digit hours; 12-hour clock.</h>
+    <hh>Hours with leading zero for single-digit hours; 12-hour clock.</hh>
+  </time_format_chars_h12>
+  <time_format_chars_h24>
+    <H>Hours with no leading zero for single-digit hours; 24-hour clock.</H>
+    <HH>Hours with leading zero for single-digit hours; 24-hour clock.</HH>
+  </time_format_chars_h24>
+  <time_format_chars>
+    <m>Minutes with no leading zero for single-digit minutes.</m>
+    <mm>Minutes with leading zero for single-digit minutes.</mm>
+    <s>Seconds with no leading zero for single-digit seconds.</s>
+    <ss>Seconds with leading zero for single-digit seconds.</ss>
+    <t>One character time-marker string, such as A or P.</t>
+    <tt>Multi-character time-marker string, such as AM or PM.</tt>
+  </time_format_chars>
+  <date_format_chars>
+    <d>Day of month as digits with no leading zero for single-digit days.</d>
+    <dd>Day of month as digits with leading zero for single-digit days.</dd>
+    <ddd>Day of week as a three-letter abbreviation.</ddd>
+    <dddd>Day of week as its full name.</dddd>
+    <M>Month as digits with no leading zero for single-digit months.</M>
+    <MM>Month as digits with leading zero for single-digit months.</MM>
+    <MMM>Month as a three-letter abbreviation.</MMM>
+    <MMMM>Month as its full name.</MMMM>
+    <y>Year as last two digits, but with no leading zero for years less than 10.</y>
+    <yy>Year as last two digits, but with leading zero for years less than 10.</yy>
+    <yyyy>Year represented by full four digits.</yyyy>
+  </date_format_chars>
+  <captions>
+    <note>Note</note>
+    <group>Group</group>
+    <confirm>Confirmation</confirm>
+    <choose_sound>Choose sound</choose_sound>
+    <date_formats>Possible date formats</date_formats>
+    <time_formats>Possible time formats</time_formats>
+    <sync_comps_add>New local synchronization target</sync_comps_add>
+    <sync_comps_edit>Edit local synchronization target</sync_comps_edit>
+    <choose_dir>Choose directory</choose_dir>
+    <pwrd_create>Create password</pwrd_create>
+    <pwrd_edit>Edit password</pwrd_edit>
+    <pwrd_delete>Remove password</pwrd_delete>
+    <pwrd_login>Enter password</pwrd_login>
+    <group_new>New group of contacts</group_new>
+    <group_edit>Edit group of contacts</group_edit>
+    <contact_new>New contact</contact_new>
+    <contact_edit>Edit contact</contact_edit>
+    <choose_def_browser>Choose preferred browser</choose_def_browser>
+    <ext_new>New external program</ext_new>
+    <ext_edit>Edit external program</ext_edit>
+    <choose_new_ext>Choose external program</choose_new_ext>
+    <sp_new>New search provider</sp_new>
+    <sp_edit>Edit search provider</sp_edit>
+    <about>About</about>
+    <dlg_hot_keys>Hot keys</dlg_hot_keys>
+    <restricted_keys>Invalid keys</restricted_keys>
+    <add_hot_key>Add hot keys</add_hot_key>
+    <edit_hot_keys>Edit hot keys</edit_hot_keys>
+    <save_as>Save note as...</save_as>
+    <save_as_text>Save note as text file</save_as_text>
+    <save_as_filter>Text files (*.txt)|*.txt</save_as_filter>
+    <pdf_filter>PDF files (*.pdf)|*.pdf</pdf_filter>
+    <tif_filter>TIF images (*.tif)|*.tif</tif_filter>
+    <doc_filter>Word documents (*.doc)|*.doc</doc_filter>
+    <rtf_filter>RTF documents (*.rtf)|*.rtf</rtf_filter>
+    <restore_note>Restore note</restore_note>
+    <restore_filter>Backup copies of notes</restore_filter>
+    <load_notes>Load notes</load_notes>
+    <tags>Tags</tags>
+    <linked_notes>Linked notes</linked_notes>
+    <serach_tags>Search by tags</serach_tags>
+    <search_dates>Search by dates</search_dates>
+    <help_chooser>Help file chooser</help_chooser>
+    <search_in_notes>Search in notes</search_in_notes>
+    <cp_total>Total notes:</cp_total>
+    <cp_count>Notes in group:</cp_count>
+    <cp_group>Group:</cp_group>
+    <add_new_group>New group</add_new_group>
+    <edit_group>Edit group</edit_group>
+    <transparency>Transparency</transparency>
+    <image_filter>Image files</image_filter>
+    <show_group>Show group</show_group>
+    <hide_group>Hide group</hide_group>
+    <full_backup>Create full backup copy</full_backup>
+    <full_backup_filter>PNotes.NET full backup files</full_backup_filter>
+    <resture_full_backup>Restore from full backup</resture_full_backup>
+    <dlg_search_find>Find</dlg_search_find>
+    <dlg_search_replace>Replace</dlg_search_replace>
+    <sync_local>Local</sync_local>
+    <received>New notes received</received>
+    <sent>Notes successfully sent</sent>
+    <sent_to_server>Following notes have been sent to server due to unreachable recipients</sent_to_server>
+    <retrievivg_data>Retrieving data</retrievivg_data>
+    <import_warning_1>Before you proceed:</import_warning_1>
+    <import_warning_2>1.   Decrypt all encrypted notes in old version of PNotes</import_warning_2>
+    <import_warning_3>2.   Remove password protection from all protected notes in old version of PNotes</import_warning_3>
+    <ini_file_filter>PNotes initialization file (notes.ini)|notes.ini</ini_file_filter>
+    <ini_file_text>PNotes initialization file</ini_file_text>
+    <update_progress>Update in progress...</update_progress>
+    <downloading>Downloading:</downloading>
+    <extracting>Extracting:</extracting>
+    <copying>Copying:</copying>
+    <upd_plugin>(update)</upd_plugin>
+    <new_plugin>(new plugin)</new_plugin>
+    <upd_theme>(update)</upd_theme>
+    <new_theme>(new theme)</new_theme>
+    <b_size_normal>Normal</b_size_normal>
+    <b_size_large>Large</b_size_large>
+    <import_fonts_caption>PNotes fonts directory</import_fonts_caption>
+    <import_dicts_caption>PNotes dictionaries directory</import_dicts_caption>
+    <smtp_new>New SMTP client</smtp_new>
+    <smtp_edit>Edit SMTP client</smtp_edit>
+    <mail_contact_new>New mail contact</mail_contact_new>
+    <mail_contact_edit>Edit mail contact</mail_contact_edit>
+    <scramble_caption>Encrypt note:</scramble_caption>
+    <unscramble_caption>Decrypt note:</unscramble_caption>
+    <scramble_warning>Encryption of note's text will remove all rich text formatting!</scramble_warning>
+    <alerts>Alerts</alerts>
+    <panel_remove_single>Single click</panel_remove_single>
+    <panel_remove_double>Double click</panel_remove_double>
+    <no_cont_group>(No group)</no_cont_group>
+    <now>Now</now>
+  </captions>
+  <misc>
+    <tray_tooltip>PNotes.NET - your virtual desktop notes organizer</tray_tooltip>
+    <never>(Never)</never>
+    <line>Line:</line>
+    <column>Column:</column>
+    <text_and_title>(text and title)</text_and_title>
+    <title_only>(title only)</title_only>
+    <text_only>(text only)</text_only>
+    <auto_hide_set>Hide panel automatically</auto_hide_set>
+    <auto_hide_remove>Fix panel's position</auto_hide_remove>
+    <orient_top>Put panel along the top edge</orient_top>
+    <orient_left>Put panel along the left edge</orient_left>
+  </misc>
+  <list_cboDblAction>
+    <_0>(No Action)</_0>
+    <_1>New Note</_1>
+    <_2>Control Panel</_2>
+    <_3>Preferences</_3>
+    <_4>Search In Notes</_4>
+    <_5>New Note In Group</_5>
+    <_6>Load Notes</_6>
+    <_7>New Note From Clipboard</_7>
+    <_8>Bring All To Front</_8>
+    <_9>Save All</_9>
+    <_10>Show All/Hide All</_10>
+    <_11>Search By Tags</_11>
+    <_12>Search By Dates</_12>
+  </list_cboDblAction>
+  <list_cboSingleAction>
+    <_0>(No Action)</_0>
+    <_1>New Note</_1>
+    <_2>Control Panel</_2>
+    <_3>Preferences</_3>
+    <_4>Search In Notes</_4>
+    <_5>New Note In Group</_5>
+    <_6>Load Notes</_6>
+    <_7>New Note From Clipboard</_7>
+    <_8>Bring All To Front</_8>
+    <_9>Save All</_9>
+    <_10>Show All/Hide All</_10>
+    <_11>Search By Tags</_11>
+    <_12>Search By Dates</_12>
+  </list_cboSingleAction>
+  <list_cboDefName>
+    <_0>First characters of note</_0>
+    <_1>Current date/time</_1>
+    <_2>Current date/time and first characters of note</_2>
+  </list_cboDefName>
+  <list_cboSearchСriteria>
+    <_0>Match entire search string</_0>
+    <_1>Match every word in search string</_1>
+    <_2>Match at least one word in search string</_2>
+  </list_cboSearchСriteria>
+  <list_cboSearchScope>
+    <_0>Search in text</_0>
+    <_1>Search in titles</_1>
+    <_2>Search in text and titles</_2>
+  </list_cboSearchScope>
+  <list_cboStopAlert>
+    <_0>Never</_0>
+    <_1>5 sec</_1>
+    <_2>10 sec</_2>
+    <_3>15 sec</_3>
+    <_4>30 sec</_4>
+    <_5>45 sec</_5>
+    <_6>1 min</_6>
+    <_7>2 min</_7>
+    <_8>3 min</_8>
+    <_9>5 min</_9>
+    <_10>15 min</_10>
+    <_11>30 min</_11>
+  </list_cboStopAlert>
+  <list_cboOrdinal>
+    <_0>First</_0>
+    <_1>Second</_1>
+    <_2>Third</_2>
+    <_3>Fourth</_3>
+    <_4>Last</_4>
+  </list_cboOrdinal>
+  <list_cboPinClick>
+    <_0>Unpin</_0>
+    <_1>Show pinned window</_1>
+  </list_cboPinClick>
+  <list_cboNoteStartPosition>
+    <_0>Center of screen</_0>
+    <_1>Left docked</_1>
+    <_2>Top docked</_2>
+    <_3>Right docked</_3>
+    <_4>Bottom docked</_4>
+  </list_cboNoteStartPosition>
+  <list_cboSymbols>
+    <_0>Miscellaneous</_0>
+    <_1>Arrows</_1>
+    <_2>Mathematical operators</_2>
+    <_3>Geometric shapes</_3>
+  </list_cboSymbols>
+  <list_cboScrollBars>
+    <_0>No scroll bars</_0>
+    <_1>Horizontal</_1>
+    <_2>Vertical</_2>
+    <_3>Both</_3>
+  </list_cboScrollBars>
+  <list_cboLocalSyncPeriod>
+    <_0>Never</_0>
+    <_4>10 min</_4>
+    <_5>15 min</_5>
+    <_6>20 min</_6>
+    <_7>30 min</_7>
+    <_8>45 min</_8>
+    <_9>60 min</_9>
+    <_10>120 min</_10>
+    <_11>180 min</_11>
+    <_12>240 min</_12>
+  </list_cboLocalSyncPeriod>
+  <list_cboSyncPeriod>
+    <_0>Never</_0>
+    <_4>10 min</_4>
+    <_5>15 min</_5>
+    <_6>20 min</_6>
+    <_7>30 min</_7>
+    <_8>45 min</_8>
+    <_9>60 min</_9>
+    <_10>120 min</_10>
+    <_11>180 min</_11>
+    <_12>240 min</_12>
+  </list_cboSyncPeriod>
+  <note>
+    <def_caption>Untitled</def_caption>
+    <cmdFontFamily>Font</cmdFontFamily>
+    <cmdFontSize>Font Size</cmdFontSize>
+    <cmdFontColor>Font Color</cmdFontColor>
+    <cmdBold>Bold</cmdBold>
+    <cmdItalic>Italic</cmdItalic>
+    <cmdUnderline>Underline</cmdUnderline>
+    <cmdStrikethrough>Strikethrough</cmdStrikethrough>
+    <cmdHighlight>Highlight</cmdHighlight>
+    <cmdLeft>Align Left</cmdLeft>
+    <cmdCenter>Center</cmdCenter>
+    <cmdRight>Align Right</cmdRight>
+    <cmdBullets>Bullets/Numbering</cmdBullets>
+    <cmdHide>Hide</cmdHide>
+    <cmdDelete>Delete</cmdDelete>
+    <cmdPanel>Put In Panel</cmdPanel>
+  </note>
+  <groups>
+    <AllGroups>All groups</AllGroups>
+    <RecycleBin>Recycle Bin</RecycleBin>
+    <Diary>Diary</Diary>
+    <SearchResults>Search results</SearchResults>
+    <Backup>Backup</Backup>
+    <Favorites>Favorites</Favorites>
+    <Incoming>Incoming</Incoming>
+    <General>General</General>
+    <Docking>Docking</Docking>
+  </groups>
+  <schedule_description>
+    <_0>No schedule</_0>
+    <_1>Once at:</_1>
+    <_2>Every day at:</_2>
+    <_3>Repeat every:</_3>
+    <_4>Weekly on:</_4>
+    <_5>After:</_5>
+    <_6>Monthly (exact date)</_6>
+    <_7>Monthly (day of week)</_7>
+    <_8>Multiple alerts</_8>
+  </schedule_description>
+  <spellchecking>
+    <DlgSpelling>Spell checking</DlgSpelling>
+    <lblNotInDic>Not in dictionary</lblNotInDic>
+    <lblSuggestions>Suggestions</lblSuggestions>
+    <cmdIgnoreOnce>Ignore once</cmdIgnoreOnce>
+    <cmdIgnoreAll>Ignore all</cmdIgnoreAll>
+    <cmdAddToDict>Add to dictionary</cmdAddToDict>
+    <cmdChange>Change</cmdChange>
+    <cmdChangeAll>Change all</cmdChangeAll>
+    <cmdCancel>Cancel</cmdCancel>
+    <msgComplete>Spell checking complete</msgComplete>
+    <mnuAddToDict>Add to dictionary</mnuAddToDict>
+    <mnuNoSuggestions>No suggestions</mnuNoSuggestions>
+  </spellchecking>
+  <report_parameters>
+    <Title>PNotes.NET notes report</Title>
+    <NoteName>Note name</NoteName>
+    <NoteGroup>Note group</NoteGroup>
+    <DateTaken>Printed at</DateTaken>
+    <Created>Created at</Created>
+    <Saved>Last saved</Saved>
+    <Sent>Sent at</Sent>
+    <Received>Received at</Received>
+    <SentTo>Sent to</SentTo>
+    <RceceivedFrom>Received from</RceceivedFrom>
+    <NoteText>Note text</NoteText>
+    <filter_creation>Creation date of notes between %PLACEHOLDER1% and %PLACEHOLDER2%</filter_creation>
+    <filter_saving>Saving date of notes between %PLACEHOLDER1% and %PLACEHOLDER2%</filter_saving>
+  </report_parameters>
+</language>

@@ -1,0 +1,1371 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language culture="ru-RU">
+  <main_menu>
+    <mnuNewNote>Новая записка</mnuNewNote>
+    <mnuLoadNote>Загрузить записки</mnuLoadNote>
+    <mnuNewNoteInGroup>Новая записка в группе</mnuNewNoteInGroup>
+    <mnuNoteFromClipboard>Новая записка из буфера обмена</mnuNoteFromClipboard>
+    <mnuDiary>Дневник</mnuDiary>
+    <mnuTodayDiary>Сегодня</mnuTodayDiary>
+    <mnuPrefs>Настройки</mnuPrefs>
+    <mnuCP>Панель управления</mnuCP>
+    <mnuShowHide>Показать/Скрыть</mnuShowHide>
+    <mnuShowGroups>Показать группы</mnuShowGroups>
+    <mnuShowAll>Показать все</mnuShowAll>
+    <mnuShowIncoming>Входящие</mnuShowIncoming>m
+    <mnuHideGroups>Скрыть группы</mnuHideGroups>
+    <mnuHideAll>Скрыть все</mnuHideAll>
+    <mnuHideIncoming>Входящие</mnuHideIncoming>
+    <mnuShowByTag>Показать по тегу</mnuShowByTag>
+    <mnuHideByTag>Скрыть по тегу</mnuHideByTag>
+    <mnuLastModified>Недавно измененные записки</mnuLastModified>
+    <mnuTodayLast>Сегодня</mnuTodayLast>
+    <mnu1DayAgo>1 день назад</mnu1DayAgo>
+    <mnu2DaysAgo>2 дня назад</mnu2DaysAgo>
+    <mnu3DaysAgo>3 дня назад</mnu3DaysAgo>
+    <mnu4DaysAgo>4 дня назад</mnu4DaysAgo>
+    <mnu5DaysAgo>5 дней назад</mnu5DaysAgo>
+    <mnu6DaysAgo>6 дней назад</mnu6DaysAgo>
+    <mnu7DaysAgo>7 дней назад</mnu7DaysAgo>
+    <mnuAllToFront>Вывести все на передний план</mnuAllToFront>
+    <mnuSaveAll>Сохранить все</mnuSaveAll>
+    <mnuBackup>Резервирование/Синхронизация</mnuBackup>
+    <mnuBackupCreate>Создать полную резервную копию</mnuBackupCreate>
+    <mnuBackupRestore>Восстановить из полной резервной копии</mnuBackupRestore>
+    <mnuSyncLocal>Ручная локальная синхронизация</mnuSyncLocal>
+    <mnuReloadAll>Перегрузить все</mnuReloadAll>
+    <mnuDockAll>Привязка (все записки)</mnuDockAll>
+    <mnuDAllNone>Нет</mnuDAllNone>
+    <mnuDAllLeft>Слева</mnuDAllLeft>
+    <mnuDAllTop>Сверху</mnuDAllTop>
+    <mnuDAllRight>Справа</mnuDAllRight>
+    <mnuDAllBottom>Снизу</mnuDAllBottom>
+    <mnuSwitchOnAll>Включить (все записки)</mnuSwitchOnAll>
+    <mnuSOnHighPriority>Установить высокий приоритет</mnuSOnHighPriority>
+    <mnuSOnProtection>Включить защитный режим</mnuSOnProtection>
+    <mnuSOnComplete>Отметить как завершенные</mnuSOnComplete>
+    <mnuSOnRoll>Свернуть</mnuSOnRoll>
+    <mnuSOnOnTop>Режим "Поверх остальных"</mnuSOnOnTop>
+    <mnuSwitchOffAll>Выключить (все записки)</mnuSwitchOffAll>
+    <mnuSpecialOptions>Специальные возможности</mnuSpecialOptions>
+    <mnuOnScreenKbrd>Включить/выключить экранную клавиатуру</mnuOnScreenKbrd>
+    <mnuMagnifier>Включить/выключить "Лупу"</mnuMagnifier>
+    <mnuSOffHighPriority>Снять высокий приоритет</mnuSOffHighPriority>
+    <mnuSOffProtection>Отключить защитный режим</mnuSOffProtection>
+    <mnuSOffComplete>Убрать отметку завершения</mnuSOffComplete>
+    <mnuSOffUnroll>Развернуть</mnuSOffUnroll>
+    <mnuSOffOnTop>Режим "Поверх остальных"</mnuSOffOnTop>
+    <mnuSearch>Поиск</mnuSearch>
+    <mnuSearchInNotes>Поиск в записках</mnuSearchInNotes>
+    <mnuSearchByTags>Поиск по тегам</mnuSearchByTags>
+    <mnuSearchByDates>Поиск по датам</mnuSearchByDates>
+    <mnuFavorites>Избранное</mnuFavorites>
+    <mnuShowAllFavorites>Показать все избранное</mnuShowAllFavorites>
+    <mnuLockProg>Блокировать программу</mnuLockProg>
+    <mnuRun>Запустить</mnuRun>
+    <mnuHelp>Помощь</mnuHelp>
+    <mnuAbout>О программе</mnuAbout>
+    <mnuSupport>Поддержать проект PNotes.NET</mnuSupport>
+    <mnuHomepage>Домашняя страница PNotes.NET</mnuHomepage>
+    <mnuExit>Выход</mnuExit>
+    <mnuVisibility>Видимость</mnuVisibility>
+    <mnuShowNote>Показать</mnuShowNote>
+    <mnuHideNote>Скрыть</mnuHideNote>
+    <mnuIncBinInQSearch>Включить записки из Корзины в "Быстрый поиск"</mnuIncBinInQSearch>
+    <mnuClearQSearch>Очистить "Быстрый поиск"</mnuClearQSearch>
+    <mnuQSearchIgnoreCase>Не учитывать регистр</mnuQSearchIgnoreCase>
+    <mnuTagsCurrent>Теги (текущая записка)</mnuTagsCurrent>
+    <mnuImportNotes>Импортировать записки из PNotes</mnuImportNotes>
+    <mnuImportSettings>Импортировать настройки из PNotes</mnuImportSettings>
+    <mnuImportFonts>Импортировать шрифты из PNotes</mnuImportFonts>
+    <mnuImportDictionaries>Импортировать словари из PNotes</mnuImportDictionaries>
+    <mnuHotkeys>Управление горячими клавишами</mnuHotkeys>
+    <mnuMenusManagement>Управление меню</mnuMenusManagement>
+    <mnuCentralize>В центр</mnuCentralize>
+    <mnuToPanelAll>Поместить в панель (все записки)</mnuToPanelAll>
+    <mnuFromPanelAll>Удалить из панели (все записки)</mnuFromPanelAll>
+    <mnuPanelAll>Панель</mnuPanelAll>
+    <mnuExportAll>Экспортировать все записки</mnuExportAll>
+    <mnuExpPdf>Файл PDF</mnuExpPdf>
+    <mnuExpTif>Изображение TIF</mnuExpTif>
+    <mnuExpDoc>Документ Word</mnuExpDoc>
+    <mnuExpRtf>Документ RTF</mnuExpRtf>
+    <mnuExpTxt>Текстовый файл</mnuExpTxt>
+    <mnuPrintFields>Настройка отчета</mnuPrintFields>
+  </main_menu>
+  <note_menu>
+    <mnuSave>Сохранить</mnuSave>
+    <mnuRename>Переименовать/поменять группу</mnuRename>
+    <mnuSaveAsText>Сохранить как текстовый файл</mnuSaveAsText>
+    <mnuRestoreFromBackup>Восстановить из резервной копии</mnuRestoreFromBackup>
+    <mnuDuplicateNote>Дублировать записку</mnuDuplicateNote>
+    <mnuSaveAsShortcut>Сохранить как ярлык на рабочем столе</mnuSaveAsShortcut>
+    <mnuPrint>Печать</mnuPrint>
+    <mnuAdjustAppearance>Настроить внешний вид</mnuAdjustAppearance>
+    <mnuAdjustSchedule>Настроить расписание</mnuAdjustSchedule>
+    <mnuHideNote>Скрыть</mnuHideNote>
+    <mnuDeleteNote>Удалить</mnuDeleteNote>
+    <mnuPanel>Поместить в панель</mnuPanel>
+    <mnuDock>Привязка</mnuDock>
+    <mnuDockNone>Нет</mnuDockNone>
+    <mnuDockLeft>Слева</mnuDockLeft>
+    <mnuDockTop>Сверху</mnuDockTop>
+    <mnuDockRight>Справа</mnuDockRight>
+    <mnuDockBottom>Снизу</mnuDockBottom>
+    <mnuSend>Послать</mnuSend>
+    <mnuSendAsText>Послать как текст</mnuSendAsText>
+    <mnuSendAsAttachment>Послать как вложение</mnuSendAsAttachment>
+    <mnuSendZip>Послать в ZIP архиве</mnuSendZip>
+    <mnuSendNetwork>Переслать по сети</mnuSendNetwork>
+    <mnuAddContact>Добавить контакт</mnuAddContact>
+    <mnuAddGroup>Добавить группу контактов</mnuAddGroup>
+    <mnuSelectContact>Выбрать контакты</mnuSelectContact>
+    <mnuSelectGroup>Выбрать группы контактов</mnuSelectGroup>
+    <mnuReply>Ответить</mnuReply>
+    <mnuPostNote>Опубликовать записку целиком на:</mnuPostNote>
+    <mnuReplacePost>Заменить текст записки на сообщение с:</mnuReplacePost>
+    <mnuTags>Теги</mnuTags>
+    <mnuLinked>Связанные записки</mnuLinked>
+    <mnuManageLinks>Управление связанными записками</mnuManageLinks>
+    <mnuAddToFavorites>Добавить в Избранное</mnuAddToFavorites>
+    <mnuRemoveFromFavorites>Удалить из Избранного</mnuRemoveFromFavorites>
+    <mnuOnTop>Поверх остальных</mnuOnTop>
+    <mnuToggleHighPriority>Назначить высокий приоритет</mnuToggleHighPriority>
+    <mnuToggleProtectionMode>Включить защитный режим</mnuToggleProtectionMode>
+    <mnuSetPassword>Установить пароль для записки</mnuSetPassword>
+    <mnuRemovePassword>Удалить пароль для записки</mnuRemovePassword>
+    <mnuMarkAsComplete>Отметить как завершенную</mnuMarkAsComplete>
+    <mnuRollUnroll>Свернуть/развернуть</mnuRollUnroll>
+    <mnuPin>Прикрепить к окну</mnuPin>
+    <mnuUnpin>Открепить</mnuUnpin>
+    <mnuExportToOffice>Экспортировать в MS Office как:</mnuExportToOffice>
+    <mnuExportOutlookNote>Заметку Outlook</mnuExportOutlookNote>
+    <mnuScramble>Зашифровать текст</mnuScramble>
+    <mnuUnscramble>Дешифровать текст</mnuUnscramble>
+  </note_menu>
+  <edit_menu>
+    <mnuUndo>Отменить</mnuUndo>
+    <mnuRedo>Повторить</mnuRedo>
+    <mnuCut>Вырезать</mnuCut>
+    <mnuCopy>Копировать</mnuCopy>
+    <mnuPaste>Вставить</mnuPaste>
+    <mnuCopyPlain>Копировать как простой текст</mnuCopyPlain>
+    <mnuPastePlain>Вставить как простой текст</mnuPastePlain>
+    <mnuFormat>Формат</mnuFormat>
+    <mnuFont>Шрифт</mnuFont>
+    <mnuFontSize>Размер шрифта</mnuFontSize>
+    <mnuFontColor>Цвет шрифта</mnuFontColor>
+    <mnuBold>Полужирный</mnuBold>
+    <mnuItalic>Наклонный</mnuItalic>
+    <mnuUnderline>Подчеркнутый</mnuUnderline>
+    <mnuStrikethrough>Перечеркнутый</mnuStrikethrough>
+    <mnuHighlight>Выделение</mnuHighlight>
+    <mnuAlignLeft>Выравнивание влево</mnuAlignLeft>
+    <mnuAlignCenter>По центру</mnuAlignCenter>
+    <mnuAlignRight>Выравнивание вправо</mnuAlignRight>
+    <mnuBulletsNumbering>Маркеры/нумерация</mnuBulletsNumbering>
+    <mnuInsert>Вставка</mnuInsert>
+    <mnuInsertPicture>Вставить изображение</mnuInsertPicture>
+    <mnuInsertSmiley>Вставить смайлик</mnuInsertSmiley>
+    <mnuInsertTable>Вставить таблицу</mnuInsertTable>
+    <mnuInsertDT>Вставить дату/время</mnuInsertDT>
+    <mnuSpell>Проверка правописания</mnuSpell>
+    <mnuCheckSpellNow>Проверить сейчас</mnuCheckSpellNow>
+    <mnuCheckSpellAuto>Проверять автоматически</mnuCheckSpellAuto>
+    <mnuDownloadDict>Загрузить словари</mnuDownloadDict>
+    <mnuFind>Найти</mnuFind>
+    <mnuFindNext>Найти далее</mnuFindNext>
+    <mnuReplace>Заменить</mnuReplace>
+    <mnuSearchWeb>Искать выделенное на:</mnuSearchWeb>
+    <mnuPostOn>Опубликовать выделенное на:</mnuPostOn>
+    <mnuInsertPost>Вставить сообщение с:</mnuInsertPost>
+    <mnuSelectAll>Выделить все</mnuSelectAll>
+    <mnuToUpper>Перевести в верхний регистр</mnuToUpper>
+    <mnuToLower>Перевести в нижний регистр</mnuToLower>
+    <mnuCapSent>Прописные буквы в начале предложений</mnuCapSent>
+    <mnuCapWord>Прописные буквы в начале слов</mnuCapWord>
+    <mnuToggleCase>Поменять регистры</mnuToggleCase>
+    <mnuNoHighlight>Без заливки</mnuNoHighlight>
+    <mnuColorAutomatic>Автоматический</mnuColorAutomatic>
+    <mnuNoBullets>Без маркеров/нумерации</mnuNoBullets>
+    <mnuBullets>Простые маркеры</mnuBullets>
+    <mnuSuperscript>Надстрочный знак</mnuSuperscript>
+    <mnuSubscript>Подстрочный знак</mnuSubscript>
+    <mnuInsertSpecialSymbol>Вставить специальный символ</mnuInsertSpecialSymbol>
+    <mnuLineSpacing>Междустрочный интервал</mnuLineSpacing>
+    <mnuAddSpaceBefore>Добавить интервал перед абзацем</mnuAddSpaceBefore>
+    <mnuRemoveSpaceAfter>Удалить интервал после абзаца</mnuRemoveSpaceAfter>
+    <mnuRemoveSpaceBefore>Удалить интервал перед абзацем</mnuRemoveSpaceBefore>
+    <mnuAddSpaceAfter>Добавить интервал после абзаца</mnuAddSpaceAfter>
+    <mnuSortAscending>Сортировка по возрастанию</mnuSortAscending>
+    <mnuSortDescending>Сортировка по убыванию</mnuSortDescending>
+    <mnuClearFormat>Очистить формат</mnuClearFormat>
+    <mnuDrawing>Вставить произвольный рисунок</mnuDrawing>
+    <mnuInsertLinkToNote>Вставить ссылку на другую записку</mnuInsertLinkToNote>
+    <mnuIncreaseIndent>Увеличить отступ</mnuIncreaseIndent>
+    <mnuDecreaseIndent>Уменьшить отступ</mnuDecreaseIndent>
+  </edit_menu>
+  <insert_menu>
+    <mnuInsertContent>Вставить содержимое файла</mnuInsertContent>
+    <mnuInsertObject>Вставить как объект</mnuInsertObject>
+    <mnuInsertLink>Вставить ссылку на файл</mnuInsertLink>
+  </insert_menu>
+  <cp_menu>
+    <mnuViewLarge>Значки</mnuViewLarge>
+    <mnuViewSmall>Мелкие значки</mnuViewSmall>
+    <mnuViewList>Список</mnuViewList>
+    <mnuViewDetails>Детали</mnuViewDetails>
+    <mnuUseCustColor>Использовать собственный цвет</mnuUseCustColor>
+    <mnuChooseCustColor>Выбрать цвет</mnuChooseCustColor>
+    <mnuPwrdCreate>Создать пароль</mnuPwrdCreate>
+    <mnuPwrdChange>Изменить пароль</mnuPwrdChange>
+    <mnuPwrdRemove>Удалить пароль</mnuPwrdRemove>
+  </cp_menu>
+  <bin_menu>
+    <mnuEmptyRecycleBin>Очистить Корзину</mnuEmptyRecycleBin>
+    <mnuRestoreAllBin>Восстановить все из Корзины</mnuRestoreAllBin>
+  </bin_menu>
+  <settings_menu>
+    <cmdSetFontUI>Изменить</cmdSetFontUI>
+    <cmdResetFontUI>Восстановить шрифт по умолчанию</cmdResetFontUI>
+  </settings_menu>
+  <controls>
+    <DlgSettings>Настройки</DlgSettings>
+    <cmdGeneral>Общие настройки</cmdGeneral>
+    <cmdSchedule>Расписание</cmdSchedule>
+    <cmdAppearance>Внешний вид</cmdAppearance>
+    <cmdBehavior>Поведение</cmdBehavior>
+    <cmdNetwork>Сеть</cmdNetwork>
+    <cmdProtection>Защита</cmdProtection>
+    <cmdDef>Настройки по умолчанию</cmdDef>
+    <cmdOK>OK</cmdOK>
+    <cmdSave>Сохранить</cmdSave>
+    <cmdCancel>Отмена</cmdCancel>
+    <cmdApply>Применить</cmdApply>
+    <chkDefSettIncGroups>Включая настройки для групп</chkDefSettIncGroups>
+    <!--general settings-->
+    <cmdAddLang>Добавить язык</cmdAddLang>
+    <pnsLanguage>Язык</pnsLanguage>
+    <pnsStartup>Опции загрузки</pnsStartup>
+    <chkRunOnStart>Запустить при старте системы</chkRunOnStart>
+    <chkNoSplash>Не показывать заставку при запуске программы</chkNoSplash>
+    <chkShowCPOnStart>Показать Панель управления при запуске программы</chkShowCPOnStart>
+    <chkCheckNewVersionOnStart>Проверять наличие новой версии при запуске программы</chkCheckNewVersionOnStart>
+    <grpUpdate>Обновления</grpUpdate>
+    <chkCheckCriticalOnStart>Проверять наличие критических обновлений при запуске программы</chkCheckCriticalOnStart>
+    <chkCheckCriticalPeriodically>Проверять наличие критических обновлений в течение работы программы</chkCheckCriticalPeriodically>
+    <pnsAppearance>Внешний вид</pnsAppearance>
+    <chkHideToolbar>Скрыть панель инструментов для записки</chkHideToolbar>
+    <chkCustomFont>Использовать собственные шрифты</chkCustomFont>
+    <chkShowScrollbar>Показать полосы прокрутки</chkShowScrollbar>
+    <chkHideDelete>Скрыть кнопку "Удалить"</chkHideDelete>
+    <chkChangeHideToDelete>Изменить внешний вид кнопки "Скрыть" на кнопку "Удалить"</chkChangeHideToDelete>
+    <chkHideHide>Скрыть кнопку "Скрыть"</chkHideHide>
+    <pnsEditArea>Текстовая область</pnsEditArea>
+    <lblIndent>Отступ для маркеров (в типографских единицах) ( * )</lblIndent>
+    <lblParIndent>Шаг увеличения/уменьшения отступа параграфа (в типографских единицах)</lblParIndent>
+    <lblMargins>Ширина левого и правого полей - для записок без скина</lblMargins>
+    <cmdNewVersion>Проверить сейчас</cmdNewVersion>
+    <pnsSaveDelete>Сохранение/Удаление</pnsSaveDelete>
+    <chkSaveOnExit>Сохранять все при выходе из программы</chkSaveOnExit>
+    <chkConfirmSave>Подтверждать сохранение</chkConfirmSave>
+    <chkConfirmDelete>Подтверждение перед удалением записки</chkConfirmDelete>
+    <chkSaveWithoutConfirm>Сохранять скрываемые записки без подтверждения</chkSaveWithoutConfirm>
+    <chkWarnBeforeEmptyBin>Предупреждать, когда записка автоматически удаляется из корзины</chkWarnBeforeEmptyBin>
+    <chkDeleteShortExit>Удалить ярлыки с рабочего стола при выходе из программы</chkDeleteShortExit>
+    <chkRestoreShortStart>Восстановить ярлыки на рабочем столе при запуске программы</chkRestoreShortStart>
+    <chkCloseOnShortcut>Скрыть записку после создания ярлыка на рабочем столе</chkCloseOnShortcut>
+    <chkAutosave>Автоматически сохранять каждые (минут):</chkAutosave>
+    <chkRestoreAutomatically>Восстанавливать сохраненные записки автоматически</chkRestoreAutomatically>
+    <lblDeleBin>Удалить записку из корзины по истечении указанного периода (дни)</lblDeleBin>
+    <pnsDTFormat>Формат даты/времени</pnsDTFormat>
+    <lblDTFormat>Формат даты</lblDTFormat>
+    <lblDTSample>Образец даты</lblDTSample>
+    <lblTFormat>Формат времени</lblTFormat>
+    <lblTSample>Образец времени</lblTSample>
+    <lblPreTags>Теги, определенные заранее</lblPreTags>
+    <lblTag>Тег</lblTag>
+    <lblExternals>Внешние программы</lblExternals>
+    <lblSearchProvs>Поисковые системы</lblSearchProvs>
+    <cmdAddTag>Добавить тег</cmdAddTag>
+    <cmdEditTag>Изменить тег</cmdEditTag>
+    <cmdDeleteTag>Удалить тег</cmdDeleteTag>
+    <cmdAddExt>Добавить внешнюю программу</cmdAddExt>
+    <cmdEditExt>Изменить внешнюю программу</cmdEditExt>
+    <cmdDeleteExt>Удалить внешнюю программу</cmdDeleteExt>
+    <cmdAddProv>Добавить поисковую систему</cmdAddProv>
+    <cmdEditProv>Изменить поисковую систему</cmdEditProv>
+    <cmdDeleteProv>Удалить поисковую систему</cmdDeleteProv>
+    <pnsMiscMisc>Разное</pnsMiscMisc>
+    <pnsSkinlessGeneral>Записки без скина</pnsSkinlessGeneral>
+    <lblWidthSknlsDef>Ширина</lblWidthSknlsDef>
+    <lblHeightSknlsDef>Высота</lblHeightSknlsDef>
+    <lblSpellColor>Цвет подчеркивания для проверки правописания</lblSpellColor>
+    <pnsSkinless>Записки без скина</pnsSkinless>
+    <chkRandBack>Использовать случайный цвет фона</chkRandBack>
+    <chkInvertText>Инвертировать цвет текста</chkInvertText>
+    <chkRoll>Свернуть/развернуть записку по двойному щелчку на заголовке</chkRoll>
+    <chkFitRolled>В свернутом состоянии уменьшить до размера заголовка</chkFitRolled>
+    <chkShowPriority>Всегда показывать записки с пометкой "Высокий приоритет" при запуске программы</chkShowPriority>
+    <lblButtonsSize>Размер кнопок на панели инструментов</lblButtonsSize>
+    <chkAutoHeight>Автоматически устанавливать высоту записки в зависимости от ее содержимого</chkAutoHeight>
+    <chkAutomaticSmilies>Автоматически вставлять смайлики при наборе ':)' или ':('</chkAutomaticSmilies>
+    <lblParagraphSpace>Расстояние используемое при добавлении промежутка до/после абзаца (в пунктах)</lblParagraphSpace>
+    <cmdFontUI>Шрифт окон и меню</cmdFontUI>
+    <!--groups settings-->
+    <cmdAddTheme>Поиск обновлений/новых тем</cmdAddTheme>
+    <pnsInterface>Пользовательский интерфейс</pnsInterface>
+    <optSkinless>Не использовать скины</optSkinless>
+    <optSkinnable>Использовать скины</optSkinnable>
+    <pnsGroups>Группы</pnsGroups>
+    <pnsGroupSettings>Настройки</pnsGroupSettings>
+    <cmdChangeFont>Изменить шрифт ( * )</cmdChangeFont>
+    <tbFontColor>Цвет шрифта</tbFontColor>
+    <tbFontSize>Размер шрифта</tbFontSize>
+    <lblFontSample>Проворный рыжий лис перепрыгивает через ленивого пса</lblFontSample>
+    <tbpSkinless>Записки без скина</tbpSkinless>
+    <tbpSkinnable>Записки со скином</tbpSkinnable>
+    <previewCaption>Заголовок</previewCaption>
+    <lblMoreSkins>Дополнительные скины</lblMoreSkins>
+    <lblBackSknls>Цвет фона</lblBackSknls>
+    <cmdFontSknls>Шрифт заголовка</cmdFontSknls>
+    <pnsDiaryCust>Разное (Дневник)</pnsDiaryCust>
+    <chkAddWeekdayName>Добавлять день недели к названию записки</chkAddWeekdayName>
+    <chkFullWeekdayName>Полное название дня недели</chkFullWeekdayName>
+    <chkWeekdayAtTheEnd>Добавлять день недели в конце названия</chkWeekdayAtTheEnd>
+    <chkNoPreviousDiary>Не показывать "страницы" дневника для предыдущих дат в меню "Дневник"</chkNoPreviousDiary>
+    <chkDiaryAscOrder>Восходящая сортировка в меню "Дневник" (начиная с наиболее ранних)</chkDiaryAscOrder>
+    <lblNumberOfDiaries>Количество "страниц" дневника показываемых в меню "Дневник"</lblNumberOfDiaries>
+    <lblDiaryNaming>Формат даты, используемый для наименования записок из "Дневника"</lblDiaryNaming>
+    <pnsMiscDocking>Разное (Привязка)</pnsMiscDocking>
+    <lblDockWidth>Ширина</lblDockWidth>
+    <lblDockHeight>Высота</lblDockHeight>
+    <!--<chkAutohideDock>Скрыть панели</chkAutohideDock>-->
+    <!--schedule-->
+    <pnsConduct>Поведение</pnsConduct>
+    <chkAllowSound>Разрешить звуковой сигнал</chkAllowSound>
+    <chkTrackOverdue>Отслеживать просроченные напоминания</chkTrackOverdue>
+    <chkVisualNotify>Визуальное предупреждение</chkVisualNotify>
+    <chkCenterScreen>Перемещать записки в центр экрана</chkCenterScreen>
+    <grpDOW>Первый день недели</grpDOW>
+    <optDOWStandard>В соответствии с установками языка</optDOWStandard>
+    <optDOWCustom>Определяемый пользователем</optDOWCustom>
+    <pnsSounds>Звуковой сигнал</pnsSounds>
+    <cmdAddSound>Добавить</cmdAddSound>
+    <cmdRemoveSound>Удалить</cmdRemoveSound>
+    <cmdListenSound>Прослушать</cmdListenSound>
+    <pnsTTS>Настройки Text-to-speech</pnsTTS>
+    <pnsVoices>Доступные голоса</pnsVoices>
+    <cmdDefVoice>Голос по-умолчанию</cmdDefVoice>
+    <lblVoiceSample>Введите образец текста:</lblVoiceSample>
+    <cmdVoiceSample>Прослушать образец</cmdVoiceSample>
+    <lblVolume>Громкость</lblVolume>
+    <lblSpeed>Скорость</lblSpeed>
+    <lblPitch>Высота</lblPitch>
+    <!--docking-->
+    <!--<pnsCustDockSkinnable>Скины</pnsCustDockSkinnable>
+    <chkDockCustSettings>Особые настройки</chkDockCustSettings>
+    <pnsDockCustSkinless>Записки без скина</pnsDockCustSkinless>
+
+    <chkDockCustInverseOrder>Обратный порядок привязки</chkDockCustInverseOrder>
+    <lblDockWidth>Ширина</lblDockWidth>
+    <lblDockHeight>Высота</lblDockHeight>
+    <lblDockBGC>Цвет фона</lblDockBGC>
+    <cmdDockCaptionFont>Шрифт заголовка</cmdDockCaptionFont>
+    <lblDockDistance>Расстояние между записками (в пикселах):</lblDockDistance>-->
+    <!--behavior-->
+    <pnsHotkeys>Горячие клавиши</pnsHotkeys>
+    <cmdHotkeys>Управление горячими клавишами</cmdHotkeys>
+    <pnsMenus>Меню</pnsMenus>
+    <cmdMenus>Управление меню</cmdMenus>
+    <pnsBehaviorMisc>Разное</pnsBehaviorMisc>
+    <chkNewOnTop>Новая записка всегда поверх остальных</chkNewOnTop>
+    <chkRelationalPosition>Относительное позиционирование записок</chkRelationalPosition>
+    <chkShowSeparateNotes>Показывать отдельные записки для каждой группы в меню Показать/Скрыть</chkShowSeparateNotes>
+    <chkHideCompleted>Скрыть записки, обозначенные, как "Завершенные"</chkHideCompleted>
+    <chkShowBigIcons>Показывать большие значки на панели инструментов в Панели управления</chkShowBigIcons>
+    <chkDontShowList>Не показывать записки в списке окон (Alt+Tab) ( * )</chkDontShowList>
+    <chkHideMainWindow>Не показывать главное (невидимое) окно программы в списке окон (Alt+Tab) ( *** )</chkHideMainWindow>
+    <chkKeepVisibleOnShowdesktop>Оставить записки видимыми при наведении курсора на кнопку "Показать Рабочий Стол" ( ** )</chkKeepVisibleOnShowdesktop>
+    <chkPreventResizing>Предотвратить автоматическое изменение размеров записок при перемещении к краю экрана ( ** )</chkPreventResizing>
+    <lblDblAction>Действие при двойном щелчке на значке в системной панели</lblDblAction>
+    <lblSingleAction>Действие при одинарном щелчке на значке в системной панели</lblSingleAction>
+    <lblDefName>Использовать в качестве названия по-умолчанию для новых записок</lblDefName>
+    <lblLengthOfName>Длина текста записки, используемого в качестве названия по-умолчанию для новых записок</lblLengthOfName>
+    <lblLengthOfContent>Длина текста записки в колонке "Содержимое" на панели управления</lblLengthOfContent>
+    <pnsEffects>Эффекты</pnsEffects>
+    <chkHideFluently>Плавное закрытие записок</chkHideFluently>
+    <chkPlaySoundOnHide>Проигрывать звуковой сигнал при закрытии записки</chkPlaySoundOnHide>
+    <grpTransparency>Прозрачность</grpTransparency>
+    <lblTransWarning>Значение 100% приведет к полностью прозрачному окну!</lblTransWarning>
+    <lblPinClick>Действие при щелчке на значке "прикрепления"</lblPinClick>
+    <grpStyles>Стиль управляющих элементов</grpStyles>
+    <lblNoteStartPosition>Начальная позиция новой записки</lblNoteStartPosition>
+    <grpThemes>Цветовые темы ( *** )</grpThemes>
+    <grpDockPanel>Панель записок</grpDockPanel>
+    <chkShowPanel>Показать панель записок</chkShowPanel>
+    <lblPanelDock>Расположение панели</lblPanelDock>
+    <chkPanelAutoHide>Автоматически скрывать панель записок</chkPanelAutoHide>
+    <chkPanelSwitchOffAnimation>Отключить анимацию</chkPanelSwitchOffAnimation>
+    <lblPanelRemove>Действие для удаления записки из панели</lblPanelRemove>
+    <tbPanelDelay>Задержка автоматического появления панели (в секундах)</tbPanelDelay>
+    <!--protection-->
+    <pnsPassword>Пароль</pnsPassword>
+    <cmdCreatePwrd>Создать пароль</cmdCreatePwrd>
+    <cmdChangePwrd>Изменить пароль</cmdChangePwrd>
+    <cmdRemovePwrd>Удалить пароль</cmdRemovePwrd>
+    <pnsPasswordSet>Если установлен пароль</pnsPasswordSet>
+    <pnsEncryption>Шифрование</pnsEncryption>
+    <chkStoreEncrypted>Сохранять записки в виде зашифрованных файлов</chkStoreEncrypted>
+    <pnsLocked>Когда программа заблокирована</pnsLocked>
+    <chkHideTrayIcon>Скрыть значок в системной панели, если программа заблокирована</chkHideTrayIcon>
+    <pnsBackup>Резервное копирование</pnsBackup>
+    <chkBackupBeforeSaving>Резервировать записки перед сохранением</chkBackupBeforeSaving>
+    <chkSilentFullBackup>"Тихое" ручное полное резервное копирование</chkSilentFullBackup>
+    <lblBackupDeepness>Глубина резервирования (количество копий для каждой записки)</lblBackupDeepness>
+    <grpFullBackup>Автоматическое полное резервное копирование</grpFullBackup>
+    <lblFullBackup>В:</lblFullBackup>
+    <pnsBackupMisc>Разное</pnsBackupMisc>
+    <chkDonotShowProtected>Не показывать содержимое записки в Панели управления, если записка или ее группа защищены паролем</chkDonotShowProtected>
+    <pnsLocalSync>Локальная синхронизация</pnsLocalSync>
+    <chkIncludeBinInLocalSync>Включить в локальную синхронизацию записки из Корзины</chkIncludeBinInLocalSync>
+    <tbLocalSyncPeriod>Синхронизировать в фоновом режиме</tbLocalSyncPeriod>
+    <optLocalSyncPeriod>Каждые (минут):</optLocalSyncPeriod>
+    <optLocalSyncTime>Раз в день в:</optLocalSyncTime>
+    <tbSyncPeriod>Синхронизировать в фоновом режиме</tbSyncPeriod>
+    <optSyncPeriod>Каждые (минут):</optSyncPeriod>
+    <optSyncTime>Раз в день в:</optSyncTime>
+    <lblLocalSyncCompList>Автоматически синхронизировать со следующими компьютерами, если программ запущена с USB диска</lblLocalSyncCompList>
+    <cmdAddComp>Добавить</cmdAddComp>
+    <cmdEditComp>Изменить</cmdEditComp>
+    <cmdRemoveComp>Удалить</cmdRemoveComp>
+    <chkPromptForPassword>Запрашивать пароль при попытке сохранения в текстовый файл/печати/пересылки записки, защищенной паролем</chkPromptForPassword>
+    <chkLocalAutoRestart>Перезапустить (если необходимо) программу автоматически после фоновой синхронизации</chkLocalAutoRestart>
+    <!--network-->
+    <chkIncludeBinInSync>Включить в синхронизацию записки из Корзины</chkIncludeBinInSync>
+    <chkSyncOnStart>Синхронизировать при старте программы</chkSyncOnStart>
+    <chkSaveBeforeSync>Сохранять записки перед синхронизацией</chkSaveBeforeSync>
+    <pnsExchange>Обмен записками</pnsExchange>
+    <chkEnableExchange>Разрешить обмен</chkEnableExchange>
+    <chkAllowPing>Разрешить проверку соединения с компьютером получателя (ping)</chkAllowPing>
+    <chkSaveBeforeSending>Сохранять записку перед отправкой</chkSaveBeforeSending>
+    <chkNoNotifyOnArrive>Не показывать уведомление при получении новой записки</chkNoNotifyOnArrive>
+    <chkShowRecOnClick>Показать полученную записку после щелчка на уведомлении</chkShowRecOnClick>
+    <chkRecOnTop>Полученная записка всегда поверх остальных</chkRecOnTop>
+    <chkShowIncomingOnClick>Показать группу "Входящие" после щелчка на уведомлении</chkShowIncomingOnClick>
+    <chkNoSoundOnArrive>Не проигрывать звуковой сигнал при получении новой записки</chkNoSoundOnArrive>
+    <chkNoNotifyOnSend>Не показывать уведомление при отправке записки</chkNoNotifyOnSend>
+    <chkShowAfterReceiving>Показать записку после получения</chkShowAfterReceiving>
+    <chkHideAfterSending>Скрыть записку после отправки</chkHideAfterSending>
+    <chkNoContInContextMenu>Не показывать контакты в контекстном меню</chkNoContInContextMenu>
+    <cmdRemoveSyncPlugin>Удалить расширение</cmdRemoveSyncPlugin>
+    <cmdSyncNow>Синхронизировать сейчас</cmdSyncNow>
+    <pnsContacts>Контакты (детали)</pnsContacts>
+    <lblGroups>Группы</lblGroups>
+    <lblExchPort>Порт</lblExchPort>
+    <tbSendTimeout>Максимальное время пересылки записки и ее обработки на стороне получателя (в секундах)</tbSendTimeout>
+    <cmdAddContact>Добавить контакт</cmdAddContact>
+    <cmdEditContact>Изменить контакт</cmdEditContact>
+    <cmdDeleteContact>Удалить контакт</cmdDeleteContact>
+    <cmdAddContactGroup>Добавить группу</cmdAddContactGroup>
+    <cmdEditContactGroup>Изменить группу</cmdEditContactGroup>
+    <cmdDeleteContactGroup>Удалить группу</cmdDeleteContactGroup>
+    <lblContacts>Контакты</lblContacts>
+    <pnsPlugins>Социальные сети</pnsPlugins>
+    <cmdRemovePostPlugin>Удалить расширение</cmdRemovePostPlugin>
+    <tbpSyncPlugins>Синхронизация</tbpSyncPlugins>
+    <tbpSmtp>SMTP почта</tbpSmtp>
+    <pnsSocialNetworks>Расширения для социальных сетей</pnsSocialNetworks>
+    <pnsSyncPlugins>Расширения синхронизации</pnsSyncPlugins>
+    <lblPostCount>Загружаемое количество публикаций</lblPostCount>
+    <pnsSocPluginDetails>О расширении</pnsSocPluginDetails>
+    <lblSocPluginAuthor>Автор:</lblSocPluginAuthor>
+    <lblSocPluginVersion>Версия:</lblSocPluginVersion>
+    <lblSocPluginInfo>Информация:</lblSocPluginInfo>
+    <cmdCheckSocPlugUpdate>Поиск обновлений/новых расширений</cmdCheckSocPlugUpdate>
+    <pnsSyncPluginDetails>О расширении</pnsSyncPluginDetails>
+    <lblSyncPluginAuthor>Автор:</lblSyncPluginAuthor>
+    <lblSyncPluginVersion>Версия:</lblSyncPluginVersion>
+    <lblSyncPluginInfo>Информация:</lblSyncPluginInfo>
+    <cmdCheckSyncPlugUpdate>Поиск обновлений/новых расширений</cmdCheckSyncPlugUpdate>
+    <lblSmtp>Выберите профиль для отправки почты вместо стандартной почтовой программы</lblSmtp>
+    <cmdAddSmtp>Добавить профиль SMTP</cmdAddSmtp>
+    <cmdEditSmtp>Изменить профиль SMTP</cmdEditSmtp>
+    <cmdDeleteSmtp>Удалить профиль SMTP</cmdDeleteSmtp>
+    <pnsSmtp>SMTP профили</pnsSmtp>
+    <pnsMailContacts>Почтовые контакты</pnsMailContacts>
+    <cmdAddMailContact>Добавить контакт</cmdAddMailContact>
+    <cmdEditMailContact>Изменить контакт</cmdEditMailContact>
+    <cmdDeleteMailContact>Удалить контакт</cmdDeleteMailContact>
+    <cmdImportMailContact>Импортировать контакты</cmdImportMailContact>
+    <cmdClearMailContacts>Очистить контакты</cmdClearMailContacts>
+    <chkStoreOnserver>Сохранять не доставленные записки на сервере</chkStoreOnserver>
+    <tbStoreOnserver>(требует установки PNExchangeService в локальной сети)</tbStoreOnserver>
+    <tbServerIp>IP адрес сервера</tbServerIp>
+    <tbServerPort>Порт сервера</tbServerPort>
+    <cmdCheckConnection>Проверить соединение</cmdCheckConnection>
+    <cmdCheckForNotes>Проверить сообщения</cmdCheckForNotes>
+    <chkAutoRestart>Перезапустить (если необходимо) программу автоматически после фоновой синхронизации</chkAutoRestart>
+    <!--smtp dialog-->
+    <lblSmtpHost>Имя сервера (например: smtp.gmail.com)</lblSmtpHost>
+    <lblSmtpAddress>Адрес отправителя (например: myaddress@gmail.com)</lblSmtpAddress>
+    <lblSmtpPort>Порт (например: 587)</lblSmtpPort>
+    <lblSmtpPassword>Пароль</lblSmtpPassword>
+    <lblSmtpDisplayName>Отображаемое имя</lblSmtpDisplayName>
+    <chkSmtpShowPassword>Показать символы</chkSmtpShowPassword>
+    <!--smtp send dialog-->
+    <DlgSendSmtp>Послать через SMTP</DlgSendSmtp>
+    <lblSmtpRecipients>Получатели (разделенные точкой с запятой)</lblSmtpRecipients>
+    <lblSmtpSubject>Тема</lblSmtpSubject>
+    <lblSmtpAttachments>Вложения</lblSmtpAttachments>
+    <lblSmtpBody>Текст сообщения</lblSmtpBody>
+    <!--mail contact dialog-->
+    <lblMailDisplayName>Отображаемое имя</lblMailDisplayName>
+    <lblMailAddress>Адрес e-mail</lblMailAddress>
+    <!--sync comps dialog-->
+    <lblCompName>Имя компьютера</lblCompName>
+    <lblDataDir>Директория файлов записок</lblDataDir>
+    <lblDBDir>Директория файла базы данных</lblDBDir>
+    <chkUseDataDir>Использовать директорию файлов записок</chkUseDataDir>
+    <!--password dialog-->
+    <lblEnterPwrd>Введите пароль</lblEnterPwrd>
+    <lblConfirmPwrd>Подтвердите пароль</lblConfirmPwrd>
+    <lblOldPwrd>Старый пароль</lblOldPwrd>
+    <!--groups dialog-->
+    <lblContactGroupName>Название группы контактов</lblContactGroupName>
+    <!--contacts dialog-->
+    <lblContactName>Имя контакта</lblContactName>
+    <optUseCompName>Использовать имя компьютера</optUseCompName>
+    <optUseAddress>Использовать адрес IP</optUseAddress>
+    <!--delete group dialog-->
+    <lblDeleteContactsGroup>Удалить выбранную группу контактов и:</lblDeleteContactsGroup>
+    <optContsToNone>Перенести все контакты из данной группы в группу</optContsToNone>
+    <optContsDelete>Удалить все контакты</optContsDelete>
+    <!--search providers dialog-->
+    <lblSPWarning>Пожалуйста, проверьте строку запроса поисковой системы в броузере перед редактированием. Она может выглядеть, как "http://www.google.com/search?q="</lblSPWarning>
+    <lblSPQuery>Строка запроса</lblSPQuery>
+    <lblSPName>Название</lblSPName>
+    <!--externals dialog-->
+    <lblExtName>Название</lblExtName>
+    <lblExtProgram>Программа</lblExtProgram>
+    <lblCommandLine>Командная строка</lblCommandLine>
+    <!--about dialog-->
+    <cmdLicense>Показать лицензию</cmdLicense>
+    <lblSQL>SQLite database engine by Hwaci</lblSQL>
+    <!--hotkeys dialog-->
+    <tbpHKMain>Главное меню</tbpHKMain>
+    <tbpHKNote>Записка</tbpHKNote>
+    <tbpHKEdit>Текстовая область</tbpHKEdit>
+    <tbpHKGroups>Группы</tbpHKGroups>
+    <expDeterminated>Установленные горячие клавиши</expDeterminated>
+    <lblEnterHK>Нажмите клавиши, которые будут использоваться как горячие</lblEnterHK>
+    <cmdAddHK>Добавить горячие клавиши</cmdAddHK>
+    <cmdEditHK>Редактировать горячие клавиши</cmdEditHK>
+    <cmdDeleteHK>Удалить горячие клавиши</cmdDeleteHK>
+    <lblRestrictedHotkeys>Запрещенные горячие клавиши:</lblRestrictedHotkeys>
+    <txbWatermark>Введите горячие клавиши...</txbWatermark>
+    <!--menu dialog-->
+    <DlgMenusManager>Управление меню</DlgMenusManager>
+    <tbpMain>Главное меню</tbpMain>
+    <tbpNote>Записка</tbpNote>
+    <tbpEdit>Текстовая область</tbpEdit>
+    <tbpGroups>Группы</tbpGroups>
+    <tbpCP>Панель управления</tbpCP>
+    <cmdResetCurrent>Сбросить текущее</cmdResetCurrent>
+    <cmdResetAll>Сбросить все</cmdResetAll>
+    <cmdUp>Вверх</cmdUp>
+    <cmdDown>Вниз</cmdDown>
+    <cmdRestoreOrder>Восстановить</cmdRestoreOrder>
+    <!--save as dialog-->
+    <lblNoteName>Название записки</lblNoteName>
+    <lblInGroup>Сохранить в группе</lblInGroup>
+    <!--tags dialog-->
+    <lblAvailableTags>Доступные теги</lblAvailableTags>
+    <lblCurrentTags>Текущие теги</lblCurrentTags>
+    <!--links dialog-->
+    <DlgLinkToNote>Добавить ссылку на записку</DlgLinkToNote>
+    <lblAvailableLinks>Доступные записки</lblAvailableLinks>
+    <lblCurrentLinks>Текущие связанные записки</lblCurrentLinks>
+    <!--search by tags dialog-->
+    <cmdSelectAll>Отметить все</cmdSelectAll>
+    <cmdClearSelection>Очистить все</cmdClearSelection>
+    <lblSearchResults>Результаты поиска</lblSearchResults>
+    <cmdFind>Искать</cmdFind>
+    <!--search by dates dialog-->
+    <lblFrom>Начиная с:</lblFrom>
+    <lblTo>Заканчивая:</lblTo>
+    <!--help file chooser-->
+    <lblHelpMissing>Локальный файл справки отсутствует, Пожалуйста, выберите один из следующих вариантов:</lblHelpMissing>
+    <optGoOnlineHelp>Использовать онлайн документацию</optGoOnlineHelp>
+    <optGetCHM>Загрузить файл справки в формате CHM</optGetCHM>
+    <optGetPDF>Загрузить файл справки в формате PDF</optGetPDF>
+    <lblDownloadInProgress>Идет процесс загрузки...</lblDownloadInProgress>
+    <!--search in notes dialog-->
+    <lblFind>Найти:</lblFind>
+    <lblReplace>Заменить на:</lblReplace>
+    <chkMatchCase>Учитывать регистр</chkMatchCase>
+    <chkWholeWord>Слово целиком</chkWholeWord>
+    <chkIncludeHidden>Включая скрытые записки</chkIncludeHidden>
+    <lblSearchCriteria>Критерий поиска</lblSearchCriteria>
+    <lblSearchScope>Область поиска</lblSearchScope>
+    <cmdClearHistory>Очистить историю поиска</cmdClearHistory>
+    <cmdClearSettings>Восстановить настройки поиска по-умолчанию</cmdClearSettings>
+    <cmdReplaceAll>Заменить все</cmdReplaceAll>
+    <!--new note in group dialog-->
+    <DlgNewInGroup>Новая записка в группе</DlgNewInGroup>
+    <lblNewInGroup>Создать записку в группе</lblNewInGroup>
+    <!--control panel-->
+    <DlgCP>Панель управления</DlgCP>
+    <cmdAddTopGroup>Добавить группу верхнего уровня</cmdAddTopGroup>
+    <cmdAddSubgroup>Добавить подгруппу в выбранную группу</cmdAddSubgroup>
+    <cmdEditGroup>Редактировать группу</cmdEditGroup>
+    <cmdRemoveGroup>Удалить группу</cmdRemoveGroup>
+    <cmdShowAllFromGroup>Показать все записки из выбранной группы</cmdShowAllFromGroup>
+    <cmdShowAllIncSubgroups>Показать группу (включая подгруппы)</cmdShowAllIncSubgroups>
+    <cmdHideAllFromGroup>Скрыть все записки из выбранной группы</cmdHideAllFromGroup>
+    <cmdHideAllIncSubgroups>Скрыть группу (включая подгруппы)</cmdHideAllIncSubgroups>
+    <cmdSetGroupPassword>Установить пароль для группы</cmdSetGroupPassword>
+    <cmdRemoveGroupPassword>Удалить пароль для группы</cmdRemoveGroupPassword>
+    <cmdNewNote>Новая записка</cmdNewNote>
+    <cmdLoadNotes>Загрузить записки</cmdLoadNotes>
+    <cmdNoteFromCB>Новая записка из буфера обмена</cmdNoteFromCB>
+    <cmdDuplicate>Дублировать записку</cmdDuplicate>
+    <cmdDiary>Дневник</cmdDiary>
+    <!--<cmdSave>Сохранить</cmdSave>-->
+    <cmdSaveAs>Переименовать/поменять группу</cmdSaveAs>
+    <cmdSaveAsText>Сохранить как текстовый файл</cmdSaveAsText>
+    <cmdRestoreFromBackup>Восстановить из резервной копии</cmdRestoreFromBackup>
+    <cmdPrint>Печать</cmdPrint>
+    <cmdAdjust>Настроить</cmdAdjust>
+    <cmdDelete>Удалить</cmdDelete>
+    <cmdSaveAll>Сохранить все</cmdSaveAll>
+    <cmdBackup>Резервирование/синхронизация</cmdBackup>
+    <cmdPlacement>Расположение/видимость</cmdPlacement>
+    <cmdSendAsText>Послать как текст</cmdSendAsText>
+    <cmdSendAsAttachment>Послать как вложение</cmdSendAsAttachment>
+    <cmdSendZip>Послать в ZIP архиве</cmdSendZip>
+    <cmdSendNetwork>Переслать по сети</cmdSendNetwork>
+    <cmdTags>Теги</cmdTags>
+    <cmdSwitches>Переключатели</cmdSwitches>
+    <cmdFavorites>Добавить в Избранное</cmdFavorites>
+    <cmdRemoveFromFavorites>Удалить из Избранного</cmdRemoveFromFavorites>
+    <cmdRun>Запустить</cmdRun>
+    <cmdEmptyBin>Очистить Корзину</cmdEmptyBin>
+    <cmdRestoreNote>Восстановить записку</cmdRestoreNote>
+    <cmdPreview>Просмотр</cmdPreview>
+    <cmdPreviewRight>Окно просмотра справа</cmdPreviewRight>
+    <cmdPreviewSettings>Установки фона окна просмотра</cmdPreviewSettings>
+    <cmdViews>Вид</cmdViews>
+    <cmdPreferences>Настройки</cmdPreferences>
+    <cmdHotkeysCP>Управление горячими клавишами</cmdHotkeysCP>
+    <cmdMenusManagementCP>Управление меню</cmdMenusManagementCP>
+    <cmdSearch>Поиск</cmdSearch>
+    <cmdHelp>Помощь</cmdHelp>
+    <cmdQuickSearch>Быстрый поиск</cmdQuickSearch>
+    <cmdSupport>Поддержать проект PNotes.NET</cmdSupport>
+    <cmdPassword>Пароль</cmdPassword>
+    <cmdShowGroups>Показать группы</cmdShowGroups>
+    <cmdColReset>Восстановить ширину/видимость колонок по-умолчанию</cmdColReset>
+    <txtSearch>Быстрый поиск</txtSearch>
+    <!--add/edit group dialog-->
+    <lblGroupName>Название группы</lblGroupName>
+    <tbReadOnly>(только для чтения)</tbReadOnly>
+    <cmdGroupIcon>Значок группы</cmdGroupIcon>
+    <cmdStandard>Стандартный вид</cmdStandard>
+
+    <!--choose group icon dialog-->
+    <DlgFolderIcons>Выберите значок для группы</DlgFolderIcons>
+    <cmdFromFile>Загрузить из файла</cmdFromFile>
+
+    <!--adjust dialog-->
+    <DlgAdjustAppearance>Внешний вид записки</DlgAdjustAppearance>
+    <!--adjust schedule dialog-->
+    <DlgAdjustSchedule>Расписание записки</DlgAdjustSchedule>
+    <lblScheduleType>Тип расписания</lblScheduleType>
+    <expAdvanced>Расширенные настройки</expAdvanced>
+    <chkTrak>Не отслеживать просроченную записку</chkTrak>
+    <chkHideUntilAlert>Скрывать записку до срабатывания</chkHideUntilAlert>
+    <lblRunExternal>Запустить внешнюю программу после срабатывания</lblRunExternal>
+    <noExternal>(Не запускать ничего)</noExternal>
+    <lblStopAlert>Прервать оповещение по-истечении:</lblStopAlert>
+    <lblTimeZone>Часовой пояс</lblTimeZone>
+    <cmdAddAlert>Добавить оповещение</cmdAddAlert>
+    <cmdDeleteAlert>Удалить оповещение</cmdDeleteAlert>
+    <grpSound>Звуковой сигнал</grpSound>
+    <optSoundFile>Файл</optSoundFile>
+    <optSoundText>Текст</optSoundText>
+    <chkRepeat>Повторять в замкнутом цикле</chkRepeat>
+    <lblAfterYears>Лет</lblAfterYears>
+    <lblAfterMonths>Месяцев</lblAfterMonths>
+    <lblAfterWeeks>Недель</lblAfterWeeks>
+    <lblAfterDays>Дней</lblAfterDays>
+    <lblAfterHours>Часов</lblAfterHours>
+    <lblAfterMinutes>Минут</lblAfterMinutes>
+    <lblAfterSeconds>Секунд</lblAfterSeconds>
+    <lblAfterStart>Начиная с:</lblAfterStart>
+    <optAfterExact>Точного времени</optAfterExact>
+    <optAfterProgram>Запуска программы</optAfterProgram>
+    <lblRepeatYears>Лет</lblRepeatYears>
+    <lblRepeatMonths>Месяцев</lblRepeatMonths>
+    <lblRepeatWeeks>Недель</lblRepeatWeeks>
+    <lblRepeatDays>Дней</lblRepeatDays>
+    <lblRepeatHours>Часов</lblRepeatHours>
+    <lblRepeatMinutes>Минут</lblRepeatMinutes>
+    <lblRepeatSeconds>Секунд</lblRepeatSeconds>
+    <lblRepeatStart>Начиная с:</lblRepeatStart>
+    <optRepeatExact>Точного времени</optRepeatExact>
+    <optRepeatProgram>Запуска программы</optRepeatProgram>
+    <lblWeeklyAt>В:</lblWeeklyAt>
+    <lblExactDate>Число</lblExactDate>
+    <lblExactTime>Время</lblExactTime>
+    <lblMonthExactWarning>Если в текущем месяце отсутствует указанное число, будет использовано ближайшее к нему число.</lblMonthExactWarning>
+    <lblDW>День недели</lblDW>
+    <lblOrdinal>Порядковый номер</lblOrdinal>
+    <lblDWTime>Время</lblDWTime>
+
+    <!--color choosing dialog-->
+    <DlgColorChooser>Выбор цвета</DlgColorChooser>
+
+    <DlgSmilies>Смайлики</DlgSmilies>
+
+    <lblArchName>Название архива</lblArchName>
+
+    <!--search/replace dialog-->
+    <cmdFindNext>Найти далее</cmdFindNext>
+    <cmdReplace>Заменить</cmdReplace>
+    <grdSearchOptions>Параметры поиска</grdSearchOptions>
+    <chkSearchUp>Искать снизу вверх</chkSearchUp>
+    <chkRegExp>Использовать регулярные выражения</chkRegExp>
+
+    <!--sync dialog-->
+    <DlgSync>Синхронизация</DlgSync>
+    <lblSyncInProgress>Идет процесс синхронизации...</lblSyncInProgress>
+
+    <!--local sync folder chooser-->
+    <DlgLocalSync>Параметры локальной синхронизации</DlgLocalSync>
+
+    <!--Overdue notes dialog-->
+    <DlgOverdue>Просроченные записки</DlgOverdue>
+
+    <!--Select groups dialog-->
+    <DlgSelectGroups>Группы контактов</DlgSelectGroups>
+
+    <!--Pin dialog-->
+    <DlgPin>Прикрепить записку к окну</DlgPin>
+    <lblWindows>Доступные окна</lblWindows>
+    <chkUseWildcards>Использовать групповые символы (* и/или ?)</chkUseWildcards>
+
+    <!--Import notes dialog-->
+    <DlgImportNotes>Импорт записок из PNotes</DlgImportNotes>
+    <chkNoRecycle>Не импортировать записки из Корзины</chkNoRecycle>
+    <chkImportGroups>Импортировать группы (иерархическая структура не будет сохранена)</chkImportGroups>
+    <lblIniLocations>Файл инициализации (notes.ini)</lblIniLocations>
+    <chkKeepInvisible>Не показывать записки (отметьте, если импортируете большое количество записок)</chkKeepInvisible>
+    <!--Import settings dialog-->
+    <DlgImportSettings>Импорт настроек из PNotes</DlgImportSettings>
+    <chkImpSounds>Импортировать звуковые файлы</chkImpSounds>
+    <chkImpFTP>Импортировать настройки FTP</chkImpFTP>
+    <chkImpContacts>Импортировать контакты</chkImpContacts>
+    <chkImpSearchEngines>Импортировать поисковые системы</chkImpSearchEngines>
+    <chkImpTags>Импортировать теги</chkImpTags>
+    <chkImpExtPrograms>Импортировать внешние программы</chkImpExtPrograms>
+    <lblINIFile>Файл инициализации (notes.ini)</lblINIFile>
+    <lblImportSettingsWarning>ВНИМАНИЕ! Существующие настройки будут изменены при импорте отмеченных настроек.</lblImportSettingsWarning>
+
+    <!--Download plugins dialog-->
+    <DlgGetPlugins>Загрузка расширений</DlgGetPlugins>
+    <DlgGetThemes>Загрузка тем</DlgGetThemes>
+    <DlgGetDicts>Загрузка словарей</DlgGetDicts>
+    <cmdBrowser>Открыть в броузере</cmdBrowser>
+    <cmdDownload>Загрузить</cmdDownload>
+
+    <DlgLocalComps>Компьютеры в локальной сети</DlgLocalComps>
+
+    <DlgPosts>Доступные сообщения с %PLACEHOLDER1% для записки %PLACEHOLDER2%</DlgPosts>
+
+    <DlgAddTable>Свойства таблицы</DlgAddTable>
+    <lblTableRows>Строчки</lblTableRows>
+    <lblTableColumns>Столбцы</lblTableColumns>
+    <lblTableColumnWidth>Ширина столбца (в тип. единицах)</lblTableColumnWidth>
+    <lblTableTextIndent>Отступ текста (в тип. единицах)</lblTableTextIndent>
+    <lblTableBorders>Толщина границы</lblTableBorders>
+    <lblTableBorderColor>Цвет границы</lblTableBorderColor>
+
+    <DlgSpecialSymbols>Специальные символы</DlgSpecialSymbols>
+
+    <DlgImportMailContacts>Импорт почтовых контактов</DlgImportMailContacts>
+    <cmdLoadImport>Загрузить</cmdLoadImport>
+    <chkNoDuplicates>Не показывать дубликаты</chkNoDuplicates>
+    <pnsImportContacts>Импортировать почтовые контакты из:</pnsImportContacts>
+
+    <DlgChooseMailContacts>Выберите почтовые контакты</DlgChooseMailContacts>
+
+    <lblScramble>Введите ключ шифрования/дешифрования</lblScramble>
+
+    <DlgLotusCred>Права доступа IBM Notes</DlgLotusCred>
+    <tbLotusPassword>Пароль (обязательное поле)</tbLotusPassword>
+    <tbLotusServer>Сервер (необязательное поле)</tbLotusServer>
+
+    <DlgConfigureReport>Настройка отчета</DlgConfigureReport>
+    <grpFields>Показать следующие поля</grpFields>
+    <chkName>Название записки</chkName>
+    <chkGroup>Группа записки</chkGroup>
+    <chkCreated>Время создания</chkCreated>
+    <chkSaved>Последнее сохранение</chkSaved>
+    <chkSentAt>Отправлена (когда)</chkSentAt>
+    <chkReceivedAt>Получена (когда)</chkReceivedAt>
+    <chkSentTo>Отправлена (кому)</chkSentTo>
+    <chkReceivedFrom>Получена (от кого)</chkReceivedFrom>
+    <chkText>Текст записки</chkText>
+    <grpDates>Диапазон дат</grpDates>
+    <chkAllDates>Все даты</chkAllDates>
+    <chkCreation>Дата создания</chkCreation>
+    <tbCrFrom>Начиная с:</tbCrFrom>
+    <tbCrTo>Заканчивая:</tbCrTo>
+    <chkSaving>Дата сохранения</chkSaving>
+    <tbSvFrom>Начиная с:</tbSvFrom>
+    <tbSvTo>Заканчивая:</tbSvTo>
+    <grpMisc>Разное</grpMisc>
+    <chkFlags>Показать переключатели</chkFlags>
+    
+    <DlgFontChooser>Выбор шрифта</DlgFontChooser>
+    <grpNames>Названия шрифта</grpNames>
+    <grpWeight>Толщина шрифта</grpWeight>
+    <grpStyle>Стиль шрифта</grpStyle>
+    <grpSize>Размер шрифта</grpSize>
+    <grpStretch>Растяжка шрифта</grpStretch>
+    <grpSample>Образец</grpSample>
+    <grpColors>Цвет</grpColors>
+
+    <chkDontShowMessage>Больше не показывать это сообщение</chkDontShowMessage>
+    <lblWarn1>( * ) - Новое значение будет использовано только в заново созданных записках</lblWarn1>
+    <lblWarn2>( *** ) - Требуется перезапуск программы</lblWarn2>
+    <lblWarn3>( ** ) - Требуется Windows Vista или выше</lblWarn3>
+  </controls>
+  <grid_columns>
+    <grdNotes_Note_Name>Название записки</grdNotes_Note_Name>
+    <grdNotes_Note_Id>ID</grdNotes_Note_Id>
+    <grdNotes_Note_Priority>Приоритет</grdNotes_Note_Priority>
+    <grdNotes_Note_Completed>Завершенная</grdNotes_Note_Completed>
+    <grdNotes_Note_Locked>Защищенная</grdNotes_Note_Locked>
+    <grdNotes_Note_Password_Protected>Защищенная паролем</grdNotes_Note_Password_Protected>
+    <grdNotes_Note_Pinned>Прикрепленная</grdNotes_Note_Pinned>
+    <grdNotes_Note_Favorites>Избранное</grdNotes_Note_Favorites>
+    <grdNotes_Note_Sent_Received>Отправлена/Получена</grdNotes_Note_Sent_Received>
+    <grdNotes_Note_Encrypted>Зашифрованная</grdNotes_Note_Encrypted>
+    <grdNotes_Note_Group>Группа</grdNotes_Note_Group>
+    <grdNotes_Note_PrevGroup>Группа</grdNotes_Note_PrevGroup>
+    <grdNotes_Note_Created>Время создания</grdNotes_Note_Created>
+    <grdNotes_Note_Saved>Последнее сохранение</grdNotes_Note_Saved>
+    <grdNotes_Note_Schedule_Type>Тип расписания</grdNotes_Note_Schedule_Type>
+    <grdNotes_Note_Deleted>Время удаления</grdNotes_Note_Deleted>
+    <grdNotes_Note_Tags>Теги</grdNotes_Note_Tags>
+    <grdNotes_Note_Content>Содержимое</grdNotes_Note_Content>
+    <grdNotes_Note_Sent_To>Отправлена (кому)</grdNotes_Note_Sent_To>
+    <grdNotes_Note_Sent_At>Отправлена (когда)</grdNotes_Note_Sent_At>
+    <grdNotes_Note_Received_From>Получена (от кого)</grdNotes_Note_Received_From>
+    <grdNotes_Note_Received_At>Получена (когда)</grdNotes_Note_Received_At>
+    <grdBackup_Back_Name>Название записки</grdBackup_Back_Name>
+    <grdBackup_Back_Original>Оригинальная записка</grdBackup_Back_Original>
+    <grdBackup_Back_Saved>Время сохранения</grdBackup_Back_Saved>
+    <grdSearchProvs_SP_Name>Название</grdSearchProvs_SP_Name>
+    <grdSearchProvs_SP_Query_Line>Строка запроса</grdSearchProvs_SP_Query_Line>
+    <grdLocalSync_Sync_Name>Имя компьютера</grdLocalSync_Sync_Name>
+    <grdLocalSync_Sync_File_Location>Директория файлов записок</grdLocalSync_Sync_File_Location>
+    <grdLocalSync_Sync_DB_Location>Директория файла базы данных</grdLocalSync_Sync_DB_Location>
+    <grdContacts_Cont_Name>Имя</grdContacts_Cont_Name>
+    <grdContacts_Cont_Comp>Имя компьютера</grdContacts_Cont_Comp>
+    <grdContacts_Cont_IP>Адрес IP</grdContacts_Cont_IP>
+    <grdExternals_Ext_Name>Название</grdExternals_Ext_Name>
+    <grdExternals_Ext_Program>Программа</grdExternals_Ext_Program>
+    <grdExternals_Ext_Command_Line>Командная строка</grdExternals_Ext_Command_Line>
+    <grdTagsResults_Tag_Name>Название записки</grdTagsResults_Tag_Name>
+    <grdTagsResults_Tag_Tag>Теги</grdTagsResults_Tag_Tag>
+    <grdAvailableTags_Tag_Tag>Тег</grdAvailableTags_Tag_Tag>
+    <grdFields_Field>Поиск по:</grdFields_Field>
+    <grdDates_Date_Name>Название записки</grdDates_Date_Name>
+    <grdDates_Date_Created>Дата создания</grdDates_Date_Created>
+    <grdDates_Date_Saved>Дата сохранения</grdDates_Date_Saved>
+    <grdDates_Date_Sent>Дата отправки</grdDates_Date_Sent>
+    <grdDates_Date_Received>Дата получения</grdDates_Date_Received>
+    <grdDates_Date_Deleted>Дата удаления</grdDates_Date_Deleted>
+    <grdWindows_Win_Text>Заголовок окна</grdWindows_Win_Text>
+    <grdWindows_Win_Class>Класс окна</grdWindows_Win_Class>
+    <grdOverdue_Over_Name>Название записки</grdOverdue_Over_Name>
+    <grdOverdue_Over_Type>Тип расписания</grdOverdue_Over_Type>
+    <grdOverdue_Over_Zone>Часовой пояс</grdOverdue_Over_Zone>
+    <grdOverdue_Over_Id>Id</grdOverdue_Over_Id>
+    <grdPosts_PostDate>Дата сообщения</grdPosts_PostDate>
+    <grdPosts_PostText>Содержание сообщения</grdPosts_PostText>
+    <grdSmtp_HostName>Название сервера</grdSmtp_HostName>
+    <grdSmtp_SenderAddress>Адрес отправителя</grdSmtp_SenderAddress>
+    <grdSmtp_DisplayName>Отображаемое имя</grdSmtp_DisplayName>
+    <grdSmtp_SmtpPort>Порт</grdSmtp_SmtpPort>
+    <grdMailContacts_DispName>Отображаемое имя</grdMailContacts_DispName>
+    <grdMailContacts_MailAddress>Адрес e-mail</grdMailContacts_MailAddress>
+    <grdDefHotkeys_DHK_Group>Область горячих клавиш</grdDefHotkeys_DHK_Group>
+    <grdDefHotkeys_DHK_Menu>Меню</grdDefHotkeys_DHK_Menu>
+    <grdDefHotkeys_DHK_Shortcut>Горячие клавиши</grdDefHotkeys_DHK_Shortcut>
+    <grdLinks_Note_Name>Название записки</grdLinks_Note_Name>
+    <grdLinks_Note_Group>Группа</grdLinks_Note_Group>
+    <grdLinks_Note_Created>Дата создания</grdLinks_Note_Created>
+    <grdLinks_Note_Saved>Дата сохранения</grdLinks_Note_Saved>
+  </grid_columns>
+  <messages>
+    <def_warning>Вы собираетесь вернуть значения по умолчанию для ВСЕХ настроек программы. Продолжить?</def_warning>
+    <sound_exists>Файл уже существует в директории 'sound'. Продолжить копирование?</sound_exists>
+    <sound_delete>Удалить выбранный звуковой файл?</sound_delete>
+    <sync_comp_exists>Объект локальной синхронизации с таким именем уже существует</sync_comp_exists>
+    <sync_comp_delete>Удалить выбранный объект синхронизации?</sync_comp_delete>
+    <pwrd_not_identical>Обе строки паролей должны быть одинаковыми. Проверьте, пожалуйста, правописание.</pwrd_not_identical>
+    <pwrd_old_not_match>Неверный старый пароль</pwrd_old_not_match>
+    <pwrd_not_match>Неверный пароль</pwrd_not_match>
+    <group_exists>Группа контактов с таким именем уже существует</group_exists>
+    <group_delete>Удалить выбранную группу контактов?</group_delete>
+    <contact_exists>Контакт с таким именем уже существует</contact_exists>
+    <contact_delete>Удалить выбранный контакт?</contact_delete>
+    <ext_exists>Внешняя программа с таким именем уже существует</ext_exists>
+    <ext_delete>Удалить выбранную внешнюю программу?</ext_delete>
+    <sp_exists>Поисковая система с таким именем уже существует</sp_exists>
+    <sp_delete>Удалить выбранную поисковую систему?</sp_delete>
+    <tag_exists>Такой же тег уже существует</tag_exists>
+    <tag_delete>Удалить выбранный тег?</tag_delete>
+    <new_version_1>Доступна новая версия PNotes.NET - %PLACEHOLDER1%.</new_version_1>
+    <new_version_2>Нажмите 'OK', чтобы установить новую версию (потребуется перезапуск программы).</new_version_2>
+    <new_version_3>Нажмите здесь, чтобы установить новую версию (потребуется перезапуск программы).</new_version_3>
+    <new_version_plugins>Доступны новые версии для следующих расширений:</new_version_plugins>
+    <first_baloon_caption>Спасибо за выбор PNotes.NET!</first_baloon_caption>
+    <latest_version>Вы используете последнюю версию PNotes.NET.</latest_version>
+    <plugins_latest_version>Вы используете последние версии расширений.</plugins_latest_version>
+    <themes_latest_version>Вы используете последние версии тем.</themes_latest_version>
+    <first_baloon_message>Щелкните правой кнопкой на значке в системной панели для начала работы.</first_baloon_message>
+    <license>Данная программа распространяется на условиях GNU General Public License версии 2 или выше.</license>
+    <thanks>Спасибо всем, кто проверяет, переводит и просто пользуется данной программой.</thanks>
+    <code_thanks>Особая благодарность за полезные примеры кода:</code_thanks>
+    <sug_thanks>Спасибо за ценные предложения и самоотверженное тестирование:</sug_thanks>
+    <hk_registered_1>Эта комбинация клавиш уже зарегистрирована.</hk_registered_1>
+    <hk_registered_2>Выберите, пожалуйста, другую.</hk_registered_2>
+    <hk_exists>Такая же комбинация клавиш уже существует</hk_exists>
+    <delete_hot_keys>Удалить выбранную комбинацию горячих клавиш?</delete_hot_keys>
+    <delete_to_bin>Послать записку в корзину?</delete_to_bin>
+    <delete_completely>Вы действительно хотите окончательно удалить эту записку?</delete_completely>
+    <delete_note>Записка:</delete_note>
+    <delete_created>Создана:</delete_created>
+    <delete_to_bin_many>Послать %PLACEHOLDER1% записки в корзину?</delete_to_bin_many>
+    <delete_completely_many>Вы действительно хотите окончательно удалить эти %PLACEHOLDER1% записки?</delete_completely_many>
+    <delete_group_warning>Вы уверены, что хотите удалить эту группу - %PLACEHOLDER1% - а также все содержащиеся в ней подгруппы и записки?</delete_group_warning>
+    <save_note_1>Записка была изменена:</save_note_1>
+    <save_note_2>Сохранить?</save_note_2>
+    <id_exists>Записка с таким же ID уже существует.</id_exists>
+    <search_complete>Поиск завершен.</search_complete>
+    <matches_found>Найдено совпадений:</matches_found>
+    <nothing_found>Совпадений не найдено.</nothing_found>
+    <clear_search_history>Очистить историю поиска?</clear_search_history>
+    <replace_complete>Поиск и замена завершены.</replace_complete>
+    <matches_replaced>Заменено совпадений:</matches_replaced>
+    <replace_hidden_1>Вы выбрали вариант</replace_hidden_1>
+    <replace_hidden_2>Все совпадения в скрытых записках будут заменены и сохранены. Продолжить?</replace_hidden_2>
+    <no_backup_copies>Резервные копии для данной записки отсутствуют</no_backup_copies>
+    <restore_question>Восстановить содержимое записки из выбранной резервной копии?</restore_question>
+    <mail_subject_text>Отправлено из PNotes.NET. Название записки:</mail_subject_text>
+    <mail_subject_attachment>Отправлено из PNotes.NET.</mail_subject_attachment>
+    <mail_error>Ошибка MAPI:</mail_error>
+    <empty_bin_warning>Очистка Корзины не может быть отменена. Продолжить?</empty_bin_warning>
+    <selection_objects_warning>Выделенный текст содержит один или несколько не-текстовых объектов (изображения и т.д.). Если Вы продолжите, эти объекты будут удалены. Продолжить?</selection_objects_warning>
+    <many_files_dropped>Только один файл может быть "сброшен" на записку</many_files_dropped>
+    <full_backup_complete>Операция по созданию полной резервной копии удачно завершена</full_backup_complete>
+    <full_restore_complete>Восстановление из полной резервной копии удачно завершено.</full_restore_complete>
+    <full_restore_warning>ВНИМАНИЕ! Все существующие записки будут удалены и заменены записками из резервной копии. Продолжить?</full_restore_warning>
+    <message_posted>Успешно опубликовано на</message_posted>
+    <sync_complete>Синхронизация успешно завершена</sync_complete>
+    <sync_complete_reload>Синхронизация успешно завершена. Программа должна быть перезапущена для реализации всех изменений.</sync_complete_reload>
+    <diff_versions>Текущая версия базы данных отличается от ранее синхронизированной. Синхронизация не может быть продолжена.</diff_versions>
+    <outlook_not_running>Аппликация MS Outlook не запущена. Пожалуйста, запустите аппликацию и попробуйте снова.</outlook_not_running>
+    <load_autosaved>Программа завершила работу некорректно в предыдущий раз. Загрузить автоматически сохраненные записки?</load_autosaved>
+    <clean_bin_1>Следующие записки будут окончательно удалены из Корзины:</clean_bin_1>
+    <clean_bin_2>Выберите "Yes" чтобы продолжить или "No" чтобы отложить удаление до следующего раза.</clean_bin_2>
+    <sender>Отправитель:</sender>
+    <recipient>Получатель(-и):</recipient>
+    <hide_on_lock_warning>Для того, чтобы скрыть значок в системной панели, когда программа заблокирована, необходимо назначить горячую клавишу для команды меню "Блокировать программу"</hide_on_lock_warning>
+    <continue_anyway>Продолжить в любом случае?</continue_anyway>
+    <load_program_settings>Загрузка настроек</load_program_settings>
+    <load_database>Загрузка базы данных</load_database>
+    <create_database>Создание базы данных</create_database>
+    <load_hotkeys>Загрузка горячих клавиш</load_hotkeys>
+    <load_spellchecker>Инициализация модуля проверки правописания</load_spellchecker>
+    <load_notes>Загрузка записок</load_notes>
+    <load_menus>Подготовка таблиц расположения меню</load_menus>
+    <update_menus_order>Обновление индексов меню</update_menus_order>
+    <no_posts>Нет доступных сообщений</no_posts>
+    <confirm_plugin_remove>Вы действительно хотите удалить выбранное расширение?</confirm_plugin_remove>
+    <confirm_plugin_remove_1>Удаление расширения потребует перезапуска программы. Перезапустить сейчас?</confirm_plugin_remove_1>
+    <confirm_plugin_remove_2>Yes - перезапустить немедленно, No - перезапустить позже, Cancel - отменить удаление</confirm_plugin_remove_2>
+    <sync_in_progress>Выполняется синхронизация...</sync_in_progress>
+    <confirm_restart_1>Для того, чтобы новые настройки вступили в силу, необходимо перезапустить программу.</confirm_restart_1>
+    <confirm_restart_2>Нажмите 'Yes', чтобы перезапустить ее сейчас или 'No', чтобы перезапустить позднее.</confirm_restart_2>
+    <ini_file_path_required>Необходимо указать путь к файлу инициализации (notes.ini)</ini_file_path_required>
+    <dicts_found>Применение новых словарей требует перезапуска программы. Перезапустить сейчас?</dicts_found>
+    <sync_error_1>В процессе синхронизации произошла ошибка.</sync_error_1>
+    <sync_error_2>Просмотрите лог-файл соответствующего расширения.</sync_error_2>
+    <send_error_1>В процессе посылки записок произошла ошибка.</send_error_1>
+    <send_error_2>Просмотрите лог-файл для подробной информации.</send_error_2>
+    <smtp_same_address>SMTP профиль с таким адресом уже существует</smtp_same_address>
+    <mail_contact_same_address>Контакт e-mail с таким именем и адресом уже существует</mail_contact_same_address>
+    <invalid_host>Неправильное имя сервера</invalid_host>
+    <invalid_email>Неправильный адрес электронной почты</invalid_email>
+    <invalid_port>Неправильный номер порта</invalid_port>
+    <remove_mail_contact>Удалить выбранный почтовый контакт?</remove_mail_contact>
+    <remove_smtp>Удалить выбранный SMTP профиль?</remove_smtp>
+    <critical_check>Проверка критических обновлений</critical_check>
+    <critical_applied>Программа была перезагружена для установки критических обновлений.</critical_applied>
+    <new_edition>Вы запустили новую редакцию PNotes.NET. Все Ваши предыдущие настройки были сохранены в</new_edition>
+    <same_actions>Вы не можете выбрать одинаковые действия для двойного и одинарного щелчка</same_actions>
+    <delete_backups>Удалить выбранные резервные копии?</delete_backups>
+    <image_size_message>Размер изображения должен быть 16x16</image_size_message>
+    <completed_hidden>Чтобы показать записку, обозначенную , как "Завершенная", измените настройку на странице "Поведение" в окне "Настройки"</completed_hidden>
+    <back_prev>Сохранение резервной копии файлов из старой редакции...</back_prev>
+    <host_unknown>Компьютер %PLACEHOLDER1% не обнаружен в сети</host_unknown>
+    <contact_disconnected>Компьютер контакта %PLACEHOLDER1% не подключен к сети</contact_disconnected>
+    <address_not_found>Один или несколько адресов IP не обнаружены</address_not_found>
+    <contacts_disconnected>Компьютеры одного или нескольких контактов не подключены к сети</contacts_disconnected>
+    <hosts_unknown>Один или несколько компьютеров не обнаружены в сети</hosts_unknown>
+    <inv_lotus_server>Неправильное имя сервера IBM Notes</inv_lotus_server>
+    <inv_file_link>Неверная ссылка на объект файловой системы</inv_file_link>
+    <sec_ex_link>Недостаточно прав для работы с файлом</sec_ex_link>
+    <file_not_exist>Ссылка на несуществующий файл (директорию)</file_not_exist>
+    <dict_connection_problem>Сервер загрузки словарей недоступен. Открыть страницу словарей в броузере?</dict_connection_problem>
+    <link_not_exists>Записка по указанной ссылке не существует. Возможно, она была перемещена в Корзину или полностью удалена.</link_not_exists>
+    <export_in_progress>Выполняется экспорт записок. Файл отчета:</export_in_progress>
+    <invalid_start_date>Начальная дата не должна быть больше конечной даты</invalid_start_date>
+    <invalid_exp_comm_line>Указано неверное имя файла отчета</invalid_exp_comm_line>
+    <invalid_dates_com_line>Неверные даты в командной строке</invalid_dates_com_line>
+    <report_lib_missing>Экспортирование в PDF, DOC или TIF требует загрузки дополнительных модулей. Продолжить?</report_lib_missing>
+    <no_server_props>Необходимо задать IP адрес сервера и порт</no_server_props>
+    <server_check_success>Соединение успешно проверено</server_check_success>
+    <server_check_failed>Невозможно установить соединение</server_check_failed>
+    <no_net_adapter>Отсутствует сетевой адаптер</no_net_adapter>
+    <sending_progress>Выполняется операция пересылки...</sending_progress>
+    <encrypt_warning_1>Вы собираетесь загрузить записки в программу, использующую шифрование.</encrypt_warning_1>
+    <encrypt_warning_2>Если записки уже были зашифрованы, это может сделать их непригодными для чтения. Продолжить?</encrypt_warning_2>
+    <invalid_file_format>Неподходящий формат файла. Возможно, он был зашифрован.</invalid_file_format>
+    <restart_required>Требуется перезагрузка программы.</restart_required>
+  </messages>
+  <time_format_chars_h12>
+    <h>Часы без ведущего нуля для однозначных чисел (12-часовой цикл).</h>
+    <hh>Часы с ведущим нулем для однозначных чисел (12-часовой цикл).</hh>
+  </time_format_chars_h12>
+  <time_format_chars_h24>
+    <H>Часы без ведущего нуля для однозначных чисел (24-часовой цикл).</H>
+    <HH>Часы с ведущим нулем для однозначных чисел (24-часовой цикл).</HH>
+  </time_format_chars_h24>
+  <time_format_chars>
+    <m>Минуты без ведущего нуля для однозначных чисел.</m>
+    <mm>Минуты с ведущим нулем для однозначных чисел.</mm>
+    <s>Секунды без ведущего нуля для однозначных чисел.</s>
+    <ss>Секунды с ведущим нулем для однозначных чисел.</ss>
+    <t>Первые символы в обозначениях AM и PM.</t>
+    <tt>Полные обозначения AM и PM.</tt>
+  </time_format_chars>
+  <date_format_chars>
+    <d>День месяца в виде числа без ведущего нуля для однозначных чисел.</d>
+    <dd>День месяца в виде числа с ведущим нулем для однозначных чисел.</dd>
+    <ddd>День недели в виде аббревиатуры.</ddd>
+    <dddd>День недели в виде полного названия.</dddd>
+    <M>Месяц в виде числа без ведущего нуля для однозначных чисел.</M>
+    <MM>Месяц в виде числа с ведущим нулем для однозначных чисел.</MM>
+    <MMM>Месяц в виде аббревиатуры.</MMM>
+    <MMMM>Месяц в виде полного названия.</MMMM>
+    <y>Год в виде двух последних цифр, но без ведущего нуля для чисел меньше 10.</y>
+    <yy>Год в виде двух последних цифр, но с ведущим нулем для чисел меньше 10.</yy>
+    <yyyy>Год в виде полных четырех цифр.</yyyy>
+  </date_format_chars>
+  <captions>
+    <note>Записка</note>
+    <group>Группа</group>
+    <confirm>Подтверждение</confirm>
+    <choose_sound>Выбор звука</choose_sound>
+    <date_formats>Возможные форматы даты</date_formats>
+    <time_formats>Возможные форматы времени</time_formats>
+    <sync_comps_add>Новый объект локальной синхронизации</sync_comps_add>
+    <sync_comps_edit>Редактирование объекта локальной синхронизации</sync_comps_edit>
+    <choose_dir>Выберите директорию</choose_dir>
+    <pwrd_create>Создание пароля</pwrd_create>
+    <pwrd_edit>Изменение пароля</pwrd_edit>
+    <pwrd_delete>Удаление пароля</pwrd_delete>
+    <pwrd_login>Введите пароль</pwrd_login>
+    <group_new>Новая группа контактов</group_new>
+    <group_edit>Редактирование группы контактов</group_edit>
+    <contact_new>Новый контакт</contact_new>
+    <contact_edit>Редактирование контакта</contact_edit>
+    <choose_def_browser>Выберите предпочтительный броузер</choose_def_browser>
+    <ext_new>Новая внешняя программа</ext_new>
+    <ext_edit>Редактирование внешней программы</ext_edit>
+    <choose_new_ext>Выберите внешнюю программу</choose_new_ext>
+    <sp_new>Новая поисковая система</sp_new>
+    <sp_edit>Редактирование поисковой системы</sp_edit>
+    <about>О программе</about>
+    <dlg_hot_keys>Горячие клавиши</dlg_hot_keys>
+    <restricted_keys>Неправильные клавиши</restricted_keys>
+    <add_hot_key>Новые горячие клавиши</add_hot_key>
+    <edit_hot_keys>Редактирование горячих клавиш</edit_hot_keys>
+    <save_as>Сохранить записку как...</save_as>
+    <save_as_text>Сохранить записку как текстовый файл</save_as_text>
+    <save_as_filter>Текстовые файлы (*.txt)|*.txt</save_as_filter>
+    <pdf_filter>Файлы PDF (*.pdf)|*.pdf</pdf_filter>
+    <tif_filter>Изображения TIF (*.tif)|*.tif</tif_filter>
+    <doc_filter>Документы Word (*.doc)|*.doc</doc_filter>
+    <rtf_filter>Документы RTF (*.rtf)|*.rtf</rtf_filter>
+    <restore_note>Восстановить записку</restore_note>
+    <restore_filter>Резервные копии записок</restore_filter>
+    <load_notes>Загрузить записки</load_notes>
+    <tags>Теги</tags>
+    <linked_notes>Связанные записки</linked_notes>
+    <serach_tags>Поиск по тегам</serach_tags>
+    <search_dates>Поиск по датам</search_dates>
+    <help_chooser>Выбор файла справки</help_chooser>
+    <search_in_notes>Поиск в записках</search_in_notes>
+    <cp_total>Всего записок:</cp_total>
+    <cp_count>Записок в группе:</cp_count>
+    <cp_group>Группа:</cp_group>
+    <add_new_group>Новая группа</add_new_group>
+    <edit_group>Редактирование группы</edit_group>
+    <transparency>Прозрачность</transparency>
+    <image_filter>Файлы изображений</image_filter>
+    <show_group>Показать группу</show_group>
+    <hide_group>Скрыть группу</hide_group>
+    <full_backup>Создание полной резервной копии</full_backup>
+    <full_backup_filter>Файлы полных резервных копий PNotes.NET</full_backup_filter>
+    <resture_full_backup>Восстановить из полной резервной копии</resture_full_backup>
+    <dlg_search_find>Поиск</dlg_search_find>
+    <dlg_search_replace>Замена</dlg_search_replace>
+    <sync_local>Локальная</sync_local>
+    <received>Получены новые записки</received>
+    <sent>Записки отправлены успешно</sent>
+    <sent_to_server>Следующие записки были отправлены на сервер из-за недоступности получателей</sent_to_server>
+    <retrievivg_data>Получение данных</retrievivg_data>
+    <import_warning_1>Перед тем, как продолжить</import_warning_1>
+    <import_warning_2>1.   Дешифруйте все зашифрованные записки в старой версии PNotes</import_warning_2>
+    <import_warning_3>2.   Снимите пароль со всех защищенных записок в старой версии PNotes</import_warning_3>
+    <ini_file_filter>Файл инициализации PNotes (notes.ini)|notes.ini</ini_file_filter>
+    <ini_file_text>Файл инициализации PNotes</ini_file_text>
+    <update_progress>Идет обновление...</update_progress>
+    <downloading>Загрузка:</downloading>
+    <extracting>Распаковка:</extracting>
+    <copying>Копирование:</copying>
+    <upd_plugin>(обновление)</upd_plugin>
+    <new_plugin>(новое расширение)</new_plugin>
+    <upd_theme>(обновление)</upd_theme>
+    <new_theme>(новая тема)</new_theme>
+    <b_size_normal>Нормальный</b_size_normal>
+    <b_size_large>Крупный</b_size_large>
+    <import_fonts_caption>Директория шрифтов PNotes</import_fonts_caption>
+    <import_dicts_caption>Директория словарей PNotes</import_dicts_caption>
+    <smtp_new>Новый профиль SMTP</smtp_new>
+    <smtp_edit>Редактирование профиля SMTP</smtp_edit>
+    <mail_contact_new>Новый почтовый контакт</mail_contact_new>
+    <mail_contact_edit>Редактирование почтового контакта</mail_contact_edit>
+    <scramble_caption>Зашифровать записку:</scramble_caption>
+    <unscramble_caption>Дешифровать записку:</unscramble_caption>
+    <scramble_warning>Шифрование текста записки приведет к потере всего форматирования!</scramble_warning>
+    <alerts>Оповещения</alerts>
+    <panel_remove_single>Одиночный щелчок</panel_remove_single>
+    <panel_remove_double>Двойной щелчок</panel_remove_double>
+    <no_cont_group>(Без группы)</no_cont_group>
+    <now>Сейчас</now>
+  </captions>
+  <misc>
+    <tray_tooltip>PNotes.NET - ваш центр виртуальных записок</tray_tooltip>
+    <never>(Никогда)</never>
+    <line>Строка:</line>
+    <column>Столбец:</column>
+    <text_and_title>(текст и название)</text_and_title>
+    <title_only>(только название)</title_only>
+    <text_only>(только текст)</text_only>
+    <auto_hide_set>Скрывать панель автоматически</auto_hide_set>
+    <auto_hide_remove>Закрепить позицию панели</auto_hide_remove>
+    <orient_top>Расположить панель вдоль верхнего края</orient_top>
+    <orient_left>Расположить панель вдоль левого края</orient_left>
+  </misc>
+  <list_cboDblAction>
+    <_0>(Ничего)</_0>
+    <_1>Новая записка</_1>
+    <_2>Панель управления</_2>
+    <_3>Настройки</_3>
+    <_4>Поиск в записках</_4>
+    <_5>Новая записка в группе</_5>
+    <_6>Загрузить записки</_6>
+    <_7>Новая записка из буфера обмена</_7>
+    <_8>Вывести все на передний план</_8>
+    <_9>Сохранить все</_9>
+    <_10>Показать все/Скрыть все</_10>
+    <_11>Поиск по тегам</_11>
+    <_12>Поиск по датам</_12>
+  </list_cboDblAction>
+  <list_cboSingleAction>
+    <_0>(Ничего)</_0>
+    <_1>Новая записка</_1>
+    <_2>Панель управления</_2>
+    <_3>Настройки</_3>
+    <_4>Поиск в записках</_4>
+    <_5>Новая записка в группе</_5>
+    <_6>Загрузить записки</_6>
+    <_7>Новая записка из буфера обмена</_7>
+    <_8>Вывести все на передний план</_8>
+    <_9>Сохранить все</_9>
+    <_10>Показать все/Скрыть все</_10>
+    <_11>Поиск по тегам</_11>
+    <_12>Поиск по датам</_12>
+  </list_cboSingleAction>
+  <list_cboDefName>
+    <_0>Первые символы записки</_0>
+    <_1>Текущие дату/время</_1>
+    <_2>Текущие дату/время и первые символы записки</_2>
+  </list_cboDefName>
+  <list_cboSearchСriteria>
+    <_0>Соответствие строке поиска целиком</_0>
+    <_1>Соответствие каждому слову из строки поиска</_1>
+    <_2>Соответствие по крайней мере одному слову из строки поиска</_2>
+  </list_cboSearchСriteria>
+  <list_cboSearchScope>
+    <_0>Поиск в тексте</_0>
+    <_1>Поиск в заголовках</_1>
+    <_2>Поиск в тексте и в заголовках</_2>
+  </list_cboSearchScope>
+  <list_cboStopAlert>
+    <_0>Никогда</_0>
+    <_1>5 сек</_1>
+    <_2>10 сек</_2>
+    <_3>15 сек</_3>
+    <_4>30 сек</_4>
+    <_5>45 сек</_5>
+    <_6>1 мин</_6>
+    <_7>2 мин</_7>
+    <_8>3 мин</_8>
+    <_9>5 мин</_9>
+    <_10>15 мин</_10>
+    <_11>30 мин</_11>
+  </list_cboStopAlert>
+  <list_cboOrdinal>
+    <_0>Первый</_0>
+    <_1>Второй</_1>
+    <_2>Третий</_2>
+    <_3>Четвертый</_3>
+    <_4>Последний</_4>
+  </list_cboOrdinal>
+  <list_cboPinClick>
+    <_0>Открепить</_0>
+    <_1>Показать прикрепленное окно</_1>
+  </list_cboPinClick>
+  <list_cboNoteStartPosition>
+    <_0>Центр экрана</_0>
+    <_1>Привязка влево</_1>
+    <_2>Привязка вверх</_2>
+    <_3>Привязка вправо</_3>
+    <_4>Привязка вниз</_4>
+  </list_cboNoteStartPosition>
+  <list_cboSymbols>
+    <_0>Разное</_0>
+    <_1>Стрелки</_1>
+    <_2>Математические операторы</_2>
+    <_3>Геометрические фигуры</_3>
+  </list_cboSymbols>
+  <list_cboScrollBars>
+    <_0>Не показывать полосы прокрутки</_0>
+    <_1>Горизонтальная</_1>
+    <_2>Вертикальная</_2>
+    <_3>Обе</_3>
+  </list_cboScrollBars>
+  <list_cboLocalSyncPeriod>
+    <_0>Никогда</_0>
+    <_4>10 мин</_4>
+    <_5>15 мин</_5>
+    <_6>20 мин</_6>
+    <_7>30 мин</_7>
+    <_8>45 мин</_8>
+    <_9>60 мин</_9>
+    <_10>120 мин</_10>
+    <_11>180 мин</_11>
+    <_12>240 мин</_12>
+  </list_cboLocalSyncPeriod>
+  <list_cboSyncPeriod>
+    <_0>Никогда</_0>
+    <_4>10 мин</_4>
+    <_5>15 мин</_5>
+    <_6>20 мин</_6>
+    <_7>30 мин</_7>
+    <_8>45 мин</_8>
+    <_9>60 мин</_9>
+    <_10>120 мин</_10>
+    <_11>180 мин</_11>
+    <_12>240 мин</_12>
+  </list_cboSyncPeriod>
+  <note>
+    <def_caption>Безымянная</def_caption>
+    <cmdFontFamily>Шрифт</cmdFontFamily>
+    <cmdFontSize>Размер шрифта</cmdFontSize>
+    <cmdFontColor>Цвет шрифта</cmdFontColor>
+    <cmdBold>Полужирный</cmdBold>
+    <cmdItalic>Наклонный</cmdItalic>
+    <cmdUnderline>Подчеркнутый</cmdUnderline>
+    <cmdStrikethrough>Перечеркнутый</cmdStrikethrough>
+    <cmdHighlight>Выделение</cmdHighlight>
+    <cmdLeft>Выравнивание влево</cmdLeft>
+    <cmdCenter>По центру</cmdCenter>
+    <cmdRight>Выравнивание вправо</cmdRight>
+    <cmdBullets>Маркеры/Нумерация</cmdBullets>
+    <cmdHide>Скрыть</cmdHide>
+    <cmdDelete>Удалить</cmdDelete>
+    <cmdPanel>Поместить в панель</cmdPanel>
+  </note>
+  <groups>
+    <AllGroups>Все записки</AllGroups>
+    <RecycleBin>Корзина</RecycleBin>
+    <Diary>Дневник</Diary>
+    <SearchResults>Результаты поиска</SearchResults>
+    <Backup>Резервные копии</Backup>
+    <Favorites>Избранное</Favorites>
+    <Incoming>Входящие</Incoming>
+    <General>Общие</General>
+    <Docking>Привязка</Docking>
+  </groups>
+  <schedule_description>
+    <_0>Не установлено</_0>
+    <_1>Один раз:</_1>
+    <_2>Ежедневно в:</_2>
+    <_3>Повторять каждые:</_3>
+    <_4>Еженедельно в:</_4>
+    <_5>Спустя:</_5>
+    <_6>Ежемесячно (точная дата)</_6>
+    <_7>Ежемесячно (день недели)</_7>
+    <_8>Несколько раз</_8>
+  </schedule_description>
+  <spellchecking>
+    <DlgSpelling>Проверка правописания</DlgSpelling>
+    <lblNotInDic>Нет в словаре</lblNotInDic>
+    <lblSuggestions>Варианты</lblSuggestions>
+    <cmdIgnoreOnce>Пропустить</cmdIgnoreOnce>
+    <cmdIgnoreAll>Пропустить все</cmdIgnoreAll>
+    <cmdAddToDict>Добавить в словарь</cmdAddToDict>
+    <cmdChange>Заменить</cmdChange>
+    <cmdChangeAll>Заменить все</cmdChangeAll>
+    <cmdCancel>Отмена</cmdCancel>
+    <msgComplete>Проверка правописания завершена</msgComplete>
+    <mnuAddToDict>Добавить в словарь</mnuAddToDict>
+    <mnuNoSuggestions>Нет вариантов</mnuNoSuggestions>
+  </spellchecking>
+  <report_parameters>
+    <Title>Отчет записок PNotes.NET</Title>
+    <NoteName>Название записки</NoteName>
+    <NoteGroup>Группа записки</NoteGroup>
+    <DateTaken>Дата печати</DateTaken>
+    <Created>Время создания</Created>
+    <Saved>Последнее сохранение</Saved>
+    <Sent>Отправлена (когда)</Sent>
+    <Received>Получена (когда)</Received>
+    <SentTo>Отправлена (кому)</SentTo>
+    <RceceivedFrom>Получена (от кого)</RceceivedFrom>
+    <NoteText>Текст записки</NoteText>
+    <filter_creation>Дата создания записок между %PLACEHOLDER1% и %PLACEHOLDER2%</filter_creation>
+    <filter_saving>Дата сохранения записок между %PLACEHOLDER1% и %PLACEHOLDER2%</filter_saving>
+  </report_parameters>
+</language>

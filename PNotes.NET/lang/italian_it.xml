@@ -1,0 +1,1292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language culture="it">
+  <main_menu>
+    <mnuNewNote>Nuovo appunto</mnuNewNote>
+    <mnuLoadNote>Carica appunto</mnuLoadNote>
+    <mnuNewNoteInGroup>Nuovo appunto nel gruppo</mnuNewNoteInGroup>
+    <mnuNoteFromClipboard>Nuovo appunto dagli Appunti</mnuNoteFromClipboard>
+    <mnuDiary>Diario</mnuDiary>
+    <mnuTodayDiary>Oggi</mnuTodayDiary>
+    <mnuPrefs>Impostazioni</mnuPrefs>
+    <mnuCP>Pannello di controllo</mnuCP>
+    <mnuShowHide>Visualizza/Nascondi</mnuShowHide>
+    <mnuShowGroups>Visualizza gruppi</mnuShowGroups>
+    <mnuShowAll>Visualizza tutto</mnuShowAll>
+    <mnuShowIncoming>In entrata</mnuShowIncoming>
+    <mnuHideGroups>Nascondi gruppi</mnuHideGroups>
+    <mnuHideAll>Nascondi tutto</mnuHideAll>
+    <mnuHideIncoming>In entrata</mnuHideIncoming>
+    <mnuShowByTag>Mostra per etichetta</mnuShowByTag>
+    <mnuHideByTag>Nascondi per etichetta</mnuHideByTag>
+    <mnuLastModified>Ultimi appunti modificati</mnuLastModified>
+    <mnuTodayLast>Oggi</mnuTodayLast>
+    <mnu1DayAgo>Ieri</mnu1DayAgo>
+    <mnu2DaysAgo>2 giorni fa</mnu2DaysAgo>
+    <mnu3DaysAgo>3 giorni fa</mnu3DaysAgo>
+    <mnu4DaysAgo>4 giorni fa</mnu4DaysAgo>
+    <mnu5DaysAgo>5 giorni fa</mnu5DaysAgo>
+    <mnu6DaysAgo>6 giorni fa</mnu6DaysAgo>
+    <mnu7DaysAgo>Una settimana fa</mnu7DaysAgo>
+    <mnuAllToFront>Sposta in alto</mnuAllToFront>
+    <mnuSaveAll>Salva tutto</mnuSaveAll>
+    <mnuBackup>Copia/Sincronizzazione</mnuBackup>
+    <mnuBackupCreate>Crea copia completa</mnuBackupCreate>
+    <mnuBackupRestore>Ripristina dalla copia completa</mnuBackupRestore>
+    <mnuSyncLocal>Sincronizzazione locale manuale</mnuSyncLocal>
+    <mnuReloadAll>Ricarica tutto</mnuReloadAll>
+    <mnuDockAll>Aggancia (tutti gli appunti)</mnuDockAll>
+    <mnuDAllNone>Nessuno</mnuDAllNone>
+    <mnuDAllLeft>Sinistra</mnuDAllLeft>
+    <mnuDAllTop>Alto</mnuDAllTop>
+    <mnuDAllRight>Destra</mnuDAllRight>
+    <mnuDAllBottom>Basso</mnuDAllBottom>
+    <mnuSwitchOnAll>Attiva (tutti gli appunti)</mnuSwitchOnAll>
+    <mnuSOnHighPriority>Imposta alta priorità</mnuSOnHighPriority>
+    <mnuSOnProtection>Attiva modalità protetta</mnuSOnProtection>
+    <mnuSOnComplete>Imposta contrassegno completo</mnuSOnComplete>
+    <mnuSOnRoll>Arrotola</mnuSOnRoll>
+    <mnuSOnOnTop>Stato "In evidenza"</mnuSOnOnTop>
+    <mnuSwitchOffAll>Disattiva (tutti gli appunti)</mnuSwitchOffAll>
+    <mnuSpecialOptions>Opzioni speciali</mnuSpecialOptions>
+    <mnuOnScreenKbrd>Visualizza/Nascondi Tastiera a schermo</mnuOnScreenKbrd>
+    <mnuMagnifier>Visualizza/Nascondi lente d'ingrandimento</mnuMagnifier>
+    <mnuSOffHighPriority>Rimuovi alta priorità</mnuSOffHighPriority>
+    <mnuSOffProtection>Disattiva modalità protetta</mnuSOffProtection>
+    <mnuSOffComplete>Rimuovi marcatura completa</mnuSOffComplete>
+    <mnuSOffUnroll>Srotola</mnuSOffUnroll>
+    <mnuSOffOnTop>Stato "In evidenza"</mnuSOffOnTop>
+    <mnuSearch>Cerca</mnuSearch>
+    <mnuSearchInNotes>Cerca negli appunti</mnuSearchInNotes>
+    <mnuSearchByTags>Cerca per etichetta</mnuSearchByTags>
+    <mnuSearchByDates>Cerca per data</mnuSearchByDates>
+    <mnuFavorites>Preferiti</mnuFavorites>
+    <mnuShowAllFavorites>Visualizza tutti i preferiti</mnuShowAllFavorites>
+    <mnuLockProg>Blocca programma</mnuLockProg>
+    <mnuRun>Avvia</mnuRun>
+    <mnuHelp>Guida</mnuHelp>
+    <mnuAbout>Informazioni sul programma</mnuAbout>
+    <mnuSupport>Sostieni il progetto PNotes</mnuSupport>
+    <mnuHomepage>Sito web di PNotes</mnuHomepage>
+    <mnuExit>Esci</mnuExit>
+    <mnuVisibility>Visibilità</mnuVisibility>
+    <mnuShowNote>Visualizza</mnuShowNote>
+    <mnuHideNote>Nascondi</mnuHideNote>
+    <mnuIncBinInQSearch>Includi gli appunti nel Cestino nella "Ricerca rapida"</mnuIncBinInQSearch>
+    <mnuClearQSearch>Svuota la "Ricerca rapida"</mnuClearQSearch>
+    <mnuQSearchIgnoreCase>Ignora sensibilità lettere</mnuQSearchIgnoreCase>
+    <mnuTagsCurrent>Etichetta (appunto in uso)</mnuTagsCurrent>
+    <mnuImportNotes>Importa gli appunti da PNotes</mnuImportNotes>
+    <mnuImportSettings>Importa le impostazioni da PNotes</mnuImportSettings>
+    <mnuImportFonts>Nascondi il carattere da PNotes</mnuImportFonts>
+    <mnuImportDictionaries>Importa i dizionari da PNotes</mnuImportDictionaries>
+    <mnuHotkeys>Gestione Scorciatoie</mnuHotkeys>
+    <mnuMenusManagement>Gestione menu</mnuMenusManagement>
+    <mnuCentralize>Accentra</mnuCentralize>
+    <mnuToPanelAll>Sposta sul pannello (Tutti gli appunti)</mnuToPanelAll>
+    <mnuFromPanelAll>Rimuovi dal pannello (Tutti gli appunti)</mnuFromPanelAll>
+    <mnuPanelAll>Pannello</mnuPanelAll>
+    <mnuExportAll>Esporta tutti gli appunti</mnuExportAll>
+    <mnuExpPdf>File PDF</mnuExpPdf>
+    <mnuExpTif>Immagine TIF</mnuExpTif>
+    <mnuExpDoc>Documento Word</mnuExpDoc>
+    <mnuExpRtf>Documento RTF</mnuExpRtf>
+    <mnuExpTxt>File di testo</mnuExpTxt>
+    <mnuPrintFields>Configura resoconto</mnuPrintFields>
+  </main_menu>
+  <note_menu>
+    <mnuSave>Salva</mnuSave>
+    <mnuRename>Rinomina/Cambia gruppo</mnuRename>
+    <mnuSaveAsText>Salva come testo</mnuSaveAsText>
+    <mnuRestoreFromBackup>Ripristina da copia</mnuRestoreFromBackup>
+    <mnuDuplicateNote>Duplica appunto</mnuDuplicateNote>
+    <mnuSaveAsShortcut>Salva come collegamento sul Desktop</mnuSaveAsShortcut>
+    <mnuPrint>Stampa</mnuPrint>
+    <mnuAdjustAppearance>Correggi aspetto</mnuAdjustAppearance>
+    <mnuAdjustSchedule>Correggi pianificazione</mnuAdjustSchedule>
+    <mnuHideNote>Nascondi</mnuHideNote>
+    <mnuDeleteNote>Elimina</mnuDeleteNote>
+    <mnuPanel>Sposta sul Pannello</mnuPanel>
+    <mnuDock>Aggancia</mnuDock>
+    <mnuDockNone>Nessuno</mnuDockNone>
+    <mnuDockLeft>Sinistra</mnuDockLeft>
+    <mnuDockTop>In alto</mnuDockTop>
+    <mnuDockRight>Destra</mnuDockRight>
+    <mnuDockBottom>In basso</mnuDockBottom>
+    <mnuSend>Invia</mnuSend>
+    <mnuSendAsText>Invia come testo</mnuSendAsText>
+    <mnuSendAsAttachment>Invia come allegato</mnuSendAsAttachment>
+    <mnuSendZip>Invia come archivio ZIP</mnuSendZip>
+    <mnuSendNetwork>Invia tramite rete</mnuSendNetwork>
+    <mnuAddContact>Aggiungi contatto</mnuAddContact>
+    <mnuAddGroup>Aggiungi gruppo di contatti</mnuAddGroup>
+    <mnuSelectContact>Seleziona contatti</mnuSelectContact>
+    <mnuSelectGroup>Seleziona gruppo di contatti</mnuSelectGroup>
+    <mnuReply>Rispondi</mnuReply>
+    <mnuPostNote>Invia intero appunto in:</mnuPostNote>
+    <mnuReplacePost>Sostituisci appunto testuale dall'appunto di:</mnuReplacePost>
+    <mnuTags>Etichetta</mnuTags>
+    <mnuLinked>Appunti collegati</mnuLinked>
+    <mnuManageLinks>Gestisci appunti collegati</mnuManageLinks>
+    <mnuAddToFavorites>Aggiungi ai preferiti</mnuAddToFavorites>
+    <mnuRemoveFromFavorites>Rimuovi dai preferiti</mnuRemoveFromFavorites>
+    <mnuOnTop>In alto</mnuOnTop>
+    <mnuToggleHighPriority>Rimuovi alta priorità</mnuToggleHighPriority>
+    <mnuToggleProtectionMode>Rimuovi modalità protetta</mnuToggleProtectionMode>
+    <mnuSetPassword>Imposta password</mnuSetPassword>
+    <mnuRemovePassword>Rimuovi password</mnuRemovePassword>
+    <mnuMarkAsComplete>Segna come completo</mnuMarkAsComplete>
+    <mnuRollUnroll>Arrotola/Srotola</mnuRollUnroll>
+    <mnuPin>Fissa alla finestra</mnuPin>
+    <mnuUnpin>Rimovi dalla finestra</mnuUnpin>
+    <mnuExportToOffice>Esporta in MS Office come:</mnuExportToOffice>
+    <mnuExportOutlookNote>Nota di Outlook</mnuExportOutlookNote>
+    <mnuScramble>Cifratura testo</mnuScramble>
+    <mnuUnscramble>Decifratura testo</mnuUnscramble>
+  </note_menu>
+  <edit_menu>
+    <mnuUndo>Annulla</mnuUndo>
+    <mnuRedo>Ripristina</mnuRedo>
+    <mnuCut>Taglia</mnuCut>
+    <mnuCopy>Copia</mnuCopy>
+    <mnuPaste>Incolla</mnuPaste>
+    <mnuCopyPlain>Copia come testo</mnuCopyPlain>
+    <mnuPastePlain>Incolla come testo</mnuPastePlain>
+    <mnuFormat>Formato</mnuFormat>
+    <mnuFont>Carattere</mnuFont>
+    <mnuFontSize>Dimensioni</mnuFontSize>
+    <mnuFontColor>Colore</mnuFontColor>
+    <mnuBold>Grassetto</mnuBold>
+    <mnuItalic>Corsivo</mnuItalic>
+    <mnuUnderline>Sottolineato</mnuUnderline>
+    <mnuStrikethrough>Barrato</mnuStrikethrough>
+    <mnuHighlight>Evidenziato</mnuHighlight>
+    <mnuAlignLeft>Allinea a sinistra</mnuAlignLeft>
+    <mnuAlignCenter>Al centro</mnuAlignCenter>
+    <mnuAlignRight>Allinea a destra</mnuAlignRight>
+    <mnuBulletsNumbering>Elenco puntato/numerato</mnuBulletsNumbering>
+    <mnuInsert>Inserisci</mnuInsert>
+    <mnuInsertPicture>Inserisci immagine</mnuInsertPicture>
+    <mnuInsertSmiley>Inserisci smile</mnuInsertSmiley>
+    <mnuInsertDT>Inserisci data/ora</mnuInsertDT>
+    <mnuInsertTable>Inserisci Tabella</mnuInsertTable>
+    <mnuSpell>Controllo ortografico</mnuSpell>
+    <mnuCheckSpellNow>Verifica ora</mnuCheckSpellNow>
+    <mnuCheckSpellAuto>Verifica automaticamente</mnuCheckSpellAuto>
+    <mnuDownloadDict>Scarica dizionario ortografico</mnuDownloadDict>
+    <mnuFind>Cerca</mnuFind>
+    <mnuFindNext>Cerca il successivo</mnuFindNext>
+    <mnuReplace>Sostituisci</mnuReplace>
+    <mnuSearchWeb>Cerca selezionati il:</mnuSearchWeb>
+    <mnuPostOn>Posta selezionati il:</mnuPostOn>
+    <mnuInsertPost>Inserisci dalla risposta di:</mnuInsertPost>
+    <mnuSelectAll>Seleziona tutto</mnuSelectAll>
+    <mnuToUpper>Converti in maiuscolo</mnuToUpper>
+    <mnuToLower>Converti in minuscolo</mnuToLower>
+    <mnuCapSent>Frasi in maiuscolo</mnuCapSent>
+    <mnuCapWord>Parole in maiuscolo</mnuCapWord>
+    <mnuToggleCase>Maiuscolo/Minuscolo </mnuToggleCase>
+    <mnuNoHighlight>Non compilare</mnuNoHighlight>
+    <mnuColorAutomatic>Automatico</mnuColorAutomatic>
+    <mnuNoBullets>Nessun punto elenco o numerazione</mnuNoBullets>
+    <mnuBullets>Punti semplici</mnuBullets>
+    <mnuSuperscript>Superscript</mnuSuperscript>
+    <mnuSubscript>Subscript</mnuSubscript>
+    <mnuInsertSpecialSymbol>Inserisci i simboli speciali</mnuInsertSpecialSymbol>
+    <mnuLineSpacing>Interlinea</mnuLineSpacing>
+    <mnuAddSpaceBefore>Aggiungi uno spazio prima del paragrafo</mnuAddSpaceBefore>
+    <mnuRemoveSpaceAfter>Rimuovi lo spazio dopo il paragrafo</mnuRemoveSpaceAfter>
+    <mnuRemoveSpaceBefore>Rimuovi lo spazio prima del paragrafo</mnuRemoveSpaceBefore>
+    <mnuAddSpaceAfter>Aggiungi uno spazio dopo il paragrafo</mnuAddSpaceAfter>
+    <mnuSortAscending>Elenca in ordine crescente</mnuSortAscending>
+    <mnuSortDescending>Elenca in ordine decrescente</mnuSortDescending>
+    <mnuClearFormat>Elimina tutte le formattazioni</mnuClearFormat>
+    <mnuDrawing>Inserisci disegno a mano libera</mnuDrawing>
+    <mnuInsertLinkToNote>Collegamento ad un altro appunto</mnuInsertLinkToNote>
+    <mnuIncreaseIndent>Aumenta indentazione</mnuIncreaseIndent>
+    <mnuDecreaseIndent>Diminuisci indentazione</mnuDecreaseIndent>
+  </edit_menu>
+  <insert_menu>
+    <mnuInsertContent>Inserisci contenuto del file</mnuInsertContent>
+    <mnuInsertObject>Inserisci come oggetto</mnuInsertObject>
+    <mnuInsertLink>Inserisci collegamento al file</mnuInsertLink>
+  </insert_menu>
+  <cp_menu>
+    <mnuViewLarge>Icone</mnuViewLarge>
+    <mnuViewSmall>Icone piccole</mnuViewSmall>
+    <mnuViewList>Elenco</mnuViewList>
+    <mnuViewDetails>Dettagli</mnuViewDetails>
+    <mnuUseCustColor>Usa colore personalizzato</mnuUseCustColor>
+    <mnuChooseCustColor>Scegli colore personalizzato</mnuChooseCustColor>
+    <mnuPwrdCreate>Crea password</mnuPwrdCreate>
+    <mnuPwrdChange>Cambia password</mnuPwrdChange>
+    <mnuPwrdRemove>Rimuovi password</mnuPwrdRemove>
+  </cp_menu>
+  <bin_menu>
+    <mnuEmptyRecycleBin>Svuota il cestino</mnuEmptyRecycleBin>
+    <mnuRestoreAllBin>Ripristina tutti gli elementi dal cestino</mnuRestoreAllBin>
+  </bin_menu>
+  <settings_menu>
+    <cmdSetFontUI>Cambia</cmdSetFontUI>
+    <cmdResetFontUI>Ripristina il carattere predefinito</cmdResetFontUI>
+  </settings_menu>
+  <controls>
+    <DlgSettings>Impostazioni</DlgSettings>
+    <cmdGeneral>Impostazioni generali</cmdGeneral>
+    <cmdSchedule>Pianificazione</cmdSchedule>
+    <cmdAppearance>Aspetto</cmdAppearance>
+    <cmdBehavior>Comportamento</cmdBehavior>
+    <cmdNetwork>Rete</cmdNetwork>
+    <cmdProtection>Protezione</cmdProtection>
+    <cmdDef>Impostazioni predefinite</cmdDef>
+    <cmdOK>OK</cmdOK>
+    <cmdSave>Salva</cmdSave>
+    <cmdCancel>Annulla</cmdCancel>
+    <cmdApply>Applica</cmdApply>
+    <chkDefSettIncGroups>Includi le impostazioni per i gruppi</chkDefSettIncGroups>
+    <cmdAddLang>Aggiungi lingua</cmdAddLang>
+    <pnsLanguage>Lingua</pnsLanguage>
+    <pnsStartup>Modalità di avvio</pnsStartup>
+    <chkRunOnStart>Esegui all'avvio di Windows</chkRunOnStart>
+    <chkNoSplash>Non visualizzare la schermata di benvenuto all'avvio del programma </chkNoSplash>
+    <chkShowCPOnStart>Visualizza il Pannello di controllo all'avvio del programma</chkShowCPOnStart>
+    <chkCheckNewVersionOnStart>Cerca nuove versioni all'avvio</chkCheckNewVersionOnStart>
+    <cmdNewVersion>Controlla adesso</cmdNewVersion>
+    <grpUpdate>Opzioni aggiornamento</grpUpdate>
+    <chkCheckCriticalOnStart>Controlla gli aggiornamenti critici all'avvio del programma</chkCheckCriticalOnStart>
+    <chkCheckCriticalPeriodically>Controlla gli aggiornamenti critici durante il funzionamento del programma</chkCheckCriticalPeriodically>
+    <pnsAppearance>Aspetto</pnsAppearance>
+    <chkHideToolbar>Nascondi la barra degli appunti</chkHideToolbar>
+    <chkCustomFont>Usa carattere personalizzato</chkCustomFont>
+    <chkShowScrollbar>Mostra barra di scorrimento</chkShowScrollbar>
+    <chkHideDelete>Nascondi il bottone "Elimina"</chkHideDelete>
+    <chkChangeHideToDelete>Cambia aspetto del bottone "Nascondi" in "Elimina"</chkChangeHideToDelete>
+    <chkHideHide>Nascondi il bottone "Nascondi"</chkHideHide>
+    <pnsEditArea>Area di modifica</pnsEditArea>
+    <lblIndent>Indentazione trattini (in twips) (*)</lblIndent>
+    <lblParIndent>Punti del paragrafo che aumentano/diminuiscono l'indentazione (in twips)</lblParIndent>
+    <lblMargins>Dimensioni margini - per appunti senza interfaccia</lblMargins>
+    <pnsSaveDelete>Salvataggio/Eliminazione</pnsSaveDelete>
+    <chkSaveOnExit>Salva tutto all'uscita</chkSaveOnExit>
+    <chkConfirmSave>Conferma salvataggio</chkConfirmSave>
+    <chkConfirmDelete>Conferma prima dell'eliminazione</chkConfirmDelete>
+    <chkSaveWithoutConfirm>Salva gli appunti senza conferma quando nascosto</chkSaveWithoutConfirm>
+    <chkWarnBeforeEmptyBin>Avvisa quando un appunto viene eliminato automaticamente dal cestino</chkWarnBeforeEmptyBin>
+    <chkDeleteShortExit>Elimina i collegamenti sul desktop all'uscita dal programma</chkDeleteShortExit>
+    <chkRestoreShortStart>Ripristina i collegamenti sul desktop all'avvio del programma</chkRestoreShortStart>
+    <chkCloseOnShortcut>Chiudi gli appunti dopo la creazione dei collegamenti sul desktop</chkCloseOnShortcut>
+    <chkAutosave>Salva ogni (minuti):</chkAutosave>
+    <chkRestoreAutomatically>Ripristina automaticamente gli appunti salvati in automatico</chkRestoreAutomatically>
+    <lblDeleBin>Elimina dal cestino dopo giorni</lblDeleBin>
+    <pnsDTFormat>Formati data/ora</pnsDTFormat>
+    <lblDTFormat>Formato data/ora</lblDTFormat>
+    <lblDTSample>Esempio data/ora</lblDTSample>
+    <lblTFormat>Formato ora</lblTFormat>
+    <lblTSample>Esempio ora</lblTSample>
+    <cmdAddTag>Aggiungi etichetta</cmdAddTag>
+    <cmdEditTag>Modifica etichetta</cmdEditTag>
+    <cmdDeleteTag>Rimuovi etichetta</cmdDeleteTag>
+    <cmdAddExt>Aggiungi programma esterno</cmdAddExt>
+    <cmdEditExt>Modifica programma esterno</cmdEditExt>
+    <cmdDeleteExt>Rimuovi programma esterno</cmdDeleteExt>
+    <cmdAddProv>Aggiungi motore di ricerca</cmdAddProv>
+    <cmdEditProv>Modifica motore di ricerca</cmdEditProv>
+    <cmdDeleteProv>Rimuovi motore di ricerca</cmdDeleteProv>
+    <pnsMiscMisc>Miscellanea</pnsMiscMisc>
+    <lblPreTags>Etichette predefinite</lblPreTags>
+    <lblTag>Etichetta</lblTag>
+    <lblExternals>Programmi esterni</lblExternals>
+    <lblSearchProvs>Motori di ricerca</lblSearchProvs>
+    <pnsSkinlessGeneral>Appunti senza interfaccia</pnsSkinlessGeneral>
+    <lblWidthSknlsDef>Larghezza</lblWidthSknlsDef>
+    <lblHeightSknlsDef>Altezza</lblHeightSknlsDef>
+    <lblSpellColor>Colore sottolineatura del correttore ortografico</lblSpellColor>
+    <pnsSkinless>Appunti senza interfaccia</pnsSkinless>
+    <chkRandBack>Usa sfondo casuale</chkRandBack>
+    <chkInvertText>Inverti colore del testo</chkInvertText>
+    <chkRoll>Arrotola/srotola appunti con doppio clic sul titolo</chkRoll>
+    <chkFitRolled>Ridimensiona alla dimensione del titolo quando compresso</chkFitRolled>
+    <chkShowPriority>Mostra sempre gli appunti ad alta priorità all'avvio del programma</chkShowPriority>
+    <lblButtonsSize>Dimensioni bottoni della barra</lblButtonsSize>
+    <chkAutoHeight>Regola automaticamente l'altezza degli appunti a seconda del contenuto</chkAutoHeight>
+    <chkAutomaticSmilies>Inserisci automaticamente le faccine digitando ':)' o ':('</chkAutomaticSmilies>
+    <lblParagraphSpace>Distanza usata per aggiungere gli spazi prima/dopo un paragrafo (in punti)</lblParagraphSpace>
+    <cmdFontUI>Carattere delle finestre e dei menu</cmdFontUI>
+    <cmdAddTheme>Ricerca aggiornamenti/nuove interfacce</cmdAddTheme>
+    <pnsInterface>Interfaccia utente</pnsInterface>
+    <optSkinless>Senza interfaccia</optSkinless>
+    <optSkinnable>Con l'interfaccia</optSkinnable>
+    <pnsGroups>Gruppi</pnsGroups>
+    <pnsGroupSettings>Impostazioni</pnsGroupSettings>
+    <cmdChangeFont>Cambia carattere (*)</cmdChangeFont>
+    <tbFontColor>Colore del carattere</tbFontColor>
+    <tbFontSize>Dimensione del carattere</tbFontSize>
+    <lblFontSample>Il mistero della scrittura è che in essa non c’è alcun mistero, José Saramago</lblFontSample>
+    <tbpSkinless>Appunti senza interfaccia</tbpSkinless>
+    <tbpSkinnable>Appunti con interfaccia</tbpSkinnable>
+    <lblMoreSkins>Altre interfacce</lblMoreSkins>
+    <lblBackSknls>Sfondo</lblBackSknls>
+    <cmdFontSknls>Carattere titolo</cmdFontSknls>
+    <previewCaption>Titolo</previewCaption>
+    <pnsDiaryCust>Miscellanea (diario)</pnsDiaryCust>
+    <chkAddWeekdayName>Aggiungi giorno della settimana al nome dell'appunto</chkAddWeekdayName>
+    <chkFullWeekdayName>Nome completo del giorno della settimana</chkFullWeekdayName>
+    <chkWeekdayAtTheEnd>Aggiungi giorno della settimana alla fine del nome dell'appunto</chkWeekdayAtTheEnd>
+    <chkNoPreviousDiary>Non mostrare le pagine del diario dalle date precedenti del menu del diario</chkNoPreviousDiary>
+    <chkDiaryAscOrder>Ordina in modo crescente le pagine del diario (partendo dai più vecchi)</chkDiaryAscOrder>
+    <lblNumberOfDiaries>Numero di pagine del diario mostrate nel menu</lblNumberOfDiaries>
+    <lblDiaryNaming>Formato della data per la nomenclatura appartenente al gruppo del diario</lblDiaryNaming>
+    <pnsMiscDocking>Miscellanea (Aggancio)</pnsMiscDocking>
+    <lblDockWidth>Larghezza</lblDockWidth>
+    <lblDockHeight>Altezza</lblDockHeight>
+    <pnsConduct>Comportamento</pnsConduct>
+    <chkAllowSound>Consenti suoni di avviso</chkAllowSound>
+    <chkTrackOverdue>Traccia promemoria scaduti</chkTrackOverdue>
+    <chkVisualNotify>Abilita notifiche</chkVisualNotify>
+    <chkCenterScreen>Sposta gli appunti al centro dello schermo</chkCenterScreen>
+    <grpDOW>Primo giorno della settimana</grpDOW>
+    <optDOWStandard>Secondo le impostazioni della lingua</optDOWStandard>
+    <optDOWCustom>Definito dall'utente</optDOWCustom>
+    <pnsSounds>Avvisi sonori</pnsSounds>
+    <cmdAddSound>Aggiungi</cmdAddSound>
+    <cmdRemoveSound>Rimuovi</cmdRemoveSound>
+    <cmdListenSound>Ascolta</cmdListenSound>
+    <pnsTTS>Impostazioni TTS</pnsTTS>
+    <pnsVoices>Voci disponibili</pnsVoices>
+    <cmdDefVoice>Voce predefinita</cmdDefVoice>
+    <lblVoiceSample>Inserisci testo d'esempio:</lblVoiceSample>
+    <cmdVoiceSample>Ascolta esempio</cmdVoiceSample>
+    <lblVolume>Volume</lblVolume>
+    <lblSpeed>Velocità</lblSpeed>
+    <lblPitch>Intonazione</lblPitch>
+    <pnsHotkeys>Combinazioni di tasti</pnsHotkeys>
+    <cmdHotkeys>Gestione combinazioni di tasti</cmdHotkeys>
+    <pnsMenus>Menu</pnsMenus>
+    <cmdMenus>Gestione menu</cmdMenus>
+    <chkNewOnTop>Appunto più recente sempre in alto</chkNewOnTop>
+    <chkRelationalPosition>Posizionamento appunti collegati</chkRelationalPosition>
+    <chkShowSeparateNotes>Mostra appunti separati sotto lo stesso gruppo nel menù mostra/nascondi</chkShowSeparateNotes>
+    <chkHideCompleted>Nascondi appunti impostati in stato "Completo"</chkHideCompleted>
+    <chkShowBigIcons>Mostra icone grandi nel Pannello di controllo di PNotes</chkShowBigIcons>
+    <chkDontShowList>Non mostrare appunti nell'elenco delle finestre aperte (Alt+Tab) (*)</chkDontShowList>
+    <chkHideMainWindow>Non visualizzare la finstra principale del programma (invisibile) nell'elenco dei programmi aperti (Alt+Tab) ( *** )</chkHideMainWindow>
+    <chkKeepVisibleOnShowdesktop>Mantieni gli appunti visibili mentre si scorre sul bottone "Mostra Desktop" ( ** )</chkKeepVisibleOnShowdesktop>
+    <chkPreventResizing>Evita che gli appunti siano automaticamente elencati quando vengono spostati al bordo dello schermo ( ** )</chkPreventResizing>
+    <lblDblAction>Comportamento dopo il doppio clic sull'icona della tray</lblDblAction>
+    <lblSingleAction>Comportamento dopo il clic singolo sull'icona della tray</lblSingleAction>
+    <lblDefName>Usa i seguenti nomi come predefiniti per un nuovo appunto</lblDefName>
+    <lblLengthOfName>Lunghezza del testo dell'appunto come nome per un nuovo appunto</lblLengthOfName>
+    <lblLengthOfContent>Lunghezza del testo mostrato nella colonna "contenuto" nel Pannello di controllo</lblLengthOfContent>
+    <pnsEffects>Effetti</pnsEffects>
+    <chkHideFluently>Nascondi spesso gli appunti </chkHideFluently>
+    <chkPlaySoundOnHide>Avvia suono quando si nascondono gli appunti</chkPlaySoundOnHide>
+    <grpTransparency>Trasparenza</grpTransparency>
+    <lblTransWarning>Il valore del 100% renderà la finestra completamente trasparente!</lblTransWarning>
+    <lblPinClick>Azione dopo il clic sull'icona "Attacca"</lblPinClick>
+    <grpStyles>Stile controlli</grpStyles>
+    <lblNoteStartPosition>Nuova posizione iniziale dell'appunto</lblNoteStartPosition>
+    <grpThemes>Temi di colore ( *** )</grpThemes>
+    <grpDockPanel>Pannello Appunti</grpDockPanel>
+    <chkShowPanel>Visualizza il pannello appunti</chkShowPanel>
+    <lblPanelDock>Posizionaento del pannello</lblPanelDock>
+    <chkPanelAutoHide>Nascondi automaticamente il pannello degli appunti</chkPanelAutoHide>
+    <chkPanelSwitchOffAnimation>Spegni l'animazione</chkPanelSwitchOffAnimation>
+    <lblPanelRemove>Azione per rimuovere un appunto dal pannello</lblPanelRemove>
+    <tbPanelDelay>Ritardo della comparsa automatica del pannello (in secondi)</tbPanelDelay>
+    <pnsPassword>Password</pnsPassword>
+    <cmdCreatePwrd>Crea password</cmdCreatePwrd>
+    <cmdChangePwrd>Modifica password</cmdChangePwrd>
+    <cmdRemovePwrd>Rimuovi password</cmdRemovePwrd>
+    <pnsPasswordSet>Se la password è impostata</pnsPasswordSet>
+    <pnsBehaviorMisc>Miscellanea</pnsBehaviorMisc>
+    <pnsEncryption>Cifratura</pnsEncryption>
+    <chkStoreEncrypted>Salva appunti come file cifrati</chkStoreEncrypted>
+    <pnsLocked>Quando il programma è bloccato</pnsLocked>
+    <chkHideTrayIcon>Riduci a icona nella tray quando bloccato</chkHideTrayIcon>
+    <pnsBackup>Copia di sicurezza</pnsBackup>
+    <chkBackupBeforeSaving>Effettua la copia delle note prima di salvare</chkBackupBeforeSaving>
+    <chkSilentFullBackup>Copia manuale completa silenziosa</chkSilentFullBackup>
+    <lblBackupDeepness>Profondità della copia (quantità di copie di sicurezza mantenute)</lblBackupDeepness>
+    <grpFullBackup>Copia completa automatica</grpFullBackup>
+    <lblFullBackup>A:</lblFullBackup>
+    <pnsBackupMisc>Miscellanea</pnsBackupMisc>
+    <chkDonotShowProtected>Non mostrare il contenuto degli appunti nel Pannello di controllo se protetti da password</chkDonotShowProtected>
+    <pnsLocalSync>Sincronizzazione locale</pnsLocalSync>
+    <chkIncludeBinInLocalSync>Includi gli appunti  nel cestino nella sincronizzazione locale</chkIncludeBinInLocalSync>
+    <tbLocalSyncPeriod>Sincronizza in secondo piano</tbLocalSyncPeriod>
+    <optLocalSyncPeriod>Ogni (minuti):</optLocalSyncPeriod>
+    <optLocalSyncTime>Una volta al giorno alle:</optLocalSyncTime>
+    <tbSyncPeriod>Sincronizza in secondo piano</tbSyncPeriod>
+    <optSyncPeriod>Ogni (minuti):</optSyncPeriod>
+    <optSyncTime>Una volta al giorno alle:</optSyncTime>
+    <lblLocalSyncCompList>Sincronizza automaticamente con i seguenti computer quandi si avvia da dispositivo USB</lblLocalSyncCompList>
+    <cmdAddComp>Aggiungi</cmdAddComp>
+    <cmdEditComp>Modifica</cmdEditComp>
+    <cmdRemoveComp>Rimuovi</cmdRemoveComp>
+    <chkPromptForPassword>Avvisa per la password quando si tenta di salvare come testo/copiare il testo da/inviare appunti protetti da password</chkPromptForPassword>
+    <chkLocalAutoRestart>Se è richiesto il riavvio dopo la sincronizzazione in secondo piano, esegui automaticamente</chkLocalAutoRestart>
+    <chkIncludeBinInSync>Includi gli appunti nel cestino nella sicronizzazione locale</chkIncludeBinInSync>
+    <chkSyncOnStart>Sincronizza gli appunti all'avvio del programma</chkSyncOnStart>
+    <chkSaveBeforeSync>Salva appunti prima della sincronizzazione</chkSaveBeforeSync>
+    <pnsExchange>Scambio appunti</pnsExchange>
+    <chkEnableExchange>Avvia scambio</chkEnableExchange>
+    <chkAllowPing>Consenti il controllo della connessione con il computer del destinatario (ping)</chkAllowPing>
+    <chkSaveBeforeSending>Salva appunti prima dell'invio</chkSaveBeforeSending>
+    <chkNoNotifyOnArrive>Non notificare all'arrivo di nuovi appunti</chkNoNotifyOnArrive>
+    <chkShowRecOnClick>Mostra gli appunti ricevuti cliccando sulla notifica</chkShowRecOnClick>
+    <chkRecOnTop>Gli appunti ricevuti sono sempre in primo piano</chkRecOnTop>
+    <chkShowIncomingOnClick>Mostra il gruppo "In arrivo" cliccando sulla notifica</chkShowIncomingOnClick>
+    <chkNoSoundOnArrive>Non emettere suoni quando arriva un nuovo appunto</chkNoSoundOnArrive>
+    <chkNoNotifyOnSend>Non mostrare notifiche all'arrivo di un nuovo appunto</chkNoNotifyOnSend>
+    <chkShowAfterReceiving>Mostra appunti dopo la ricezione</chkShowAfterReceiving>
+    <chkHideAfterSending>Nascondi appunti dopo l'invio</chkHideAfterSending>
+    <chkNoContInContextMenu>Non mostrare i destinatari nel menu contestuale</chkNoContInContextMenu>
+    <pnsPlugins>Social network</pnsPlugins>
+    <cmdRemovePostPlugin>Rimuovi plugin</cmdRemovePostPlugin>
+    <tbpSyncPlugins>Sincronizzazione</tbpSyncPlugins>
+    <tbpSmtp>Posta SMTP</tbpSmtp>
+    <pnsSocialNetworks>Plugin dei social network</pnsSocialNetworks>
+    <pnsSyncPlugins>Sincronizzazione plugin</pnsSyncPlugins>
+    <cmdRemoveSyncPlugin>Rimuovi plugin</cmdRemoveSyncPlugin>
+    <cmdSyncNow>Sincronizza ora</cmdSyncNow>
+    <pnsContacts>Dettagli contatto</pnsContacts>
+    <lblGroups>Gruppi</lblGroups>
+    <lblExchPort>Porta</lblExchPort>
+    <tbSendTimeout>Durata massima dell'invio dell'appunto e dell'elaborazione da parte del destinatario (secondi) </tbSendTimeout>
+    <cmdAddContact>Aggiungi contatto</cmdAddContact>
+    <cmdEditContact>Modifica contatto</cmdEditContact>
+    <cmdDeleteContact>Rimuovi contatto</cmdDeleteContact>
+    <cmdAddContactGroup>Aggiungi gruppo</cmdAddContactGroup>
+    <cmdEditContactGroup>Modifica gruppo</cmdEditContactGroup>
+    <cmdDeleteContactGroup>Rimuovi gruppo</cmdDeleteContactGroup>
+    <lblContacts>Contatti</lblContacts>
+    <lblPostCount>Conteggio dei post da ricevere</lblPostCount>
+    <pnsSocPluginDetails>Dettagli plugin</pnsSocPluginDetails>
+    <lblSocPluginAuthor>Autore:</lblSocPluginAuthor>
+    <lblSocPluginVersion>Versione:</lblSocPluginVersion>
+    <lblSocPluginInfo>Info:</lblSocPluginInfo>
+    <cmdCheckSocPlugUpdate>Cerca aggiornamenti/nuovi plugin</cmdCheckSocPlugUpdate>
+    <pnsSyncPluginDetails>Dettagli plugin</pnsSyncPluginDetails>
+    <lblSyncPluginAuthor>Autore:</lblSyncPluginAuthor>
+    <lblSyncPluginVersion>Versione:</lblSyncPluginVersion>
+    <lblSyncPluginInfo>Info:</lblSyncPluginInfo>
+    <cmdCheckSyncPlugUpdate>Cerca aggiornamenti/nuovi plugin</cmdCheckSyncPlugUpdate>
+    <lblSmtp>Seleziona il profilo per l'invio della posta invece del programma standard di posta</lblSmtp>
+    <cmdAddSmtp>Aggiungi profilo SMTP</cmdAddSmtp>
+    <cmdEditSmtp>Modifica profilo SMTP</cmdEditSmtp>
+    <cmdDeleteSmtp>Rimuovi profilo SMTP</cmdDeleteSmtp>
+    <pnsSmtp>Profili SMTP</pnsSmtp>
+    <pnsMailContacts>Contatti di posta</pnsMailContacts>
+    <cmdAddMailContact>Aggiungi un contatto</cmdAddMailContact>
+    <cmdEditMailContact>Modificail contatto</cmdEditMailContact>
+    <cmdDeleteMailContact>Rimuovi il contatto</cmdDeleteMailContact>
+    <cmdImportMailContact>Importa i contatti</cmdImportMailContact>
+    <cmdClearMailContacts>Svuota contatti</cmdClearMailContacts>
+    <chkStoreOnserver>Memorizza gli appunti non  consegnati sul server</chkStoreOnserver>
+    <tbStoreOnserver>(richiede l'installazione di PNExchangeService sulla rete locale)</tbStoreOnserver>
+    <tbServerIp>Indirizzo IP del server</tbServerIp>
+    <tbServerPort>Porta del server</tbServerPort>
+    <cmdCheckConnection>Test della connessione</cmdCheckConnection>
+    <cmdCheckForNotes>Controlla messaggi</cmdCheckForNotes>
+    <chkAutoRestart>Se è richiesto il riavvio dopo la sincronizzazione in secondo piano, esegui automaticamente</chkAutoRestart>
+    <lblSmtpHost>Nome dell'Host (ad esempio smtp.gmail.com)</lblSmtpHost>
+    <lblSmtpAddress>Indirizzo del mittente (ad esempio ilmioindirizzo@gmail.com)</lblSmtpAddress>
+    <lblSmtpPort>Porta (ad esempio: 587)</lblSmtpPort>
+    <lblSmtpPassword>Password</lblSmtpPassword>
+    <lblSmtpDisplayName>Nome visualizzato</lblSmtpDisplayName>
+    <chkSmtpShowPassword>Visualizza i simboli</chkSmtpShowPassword>
+    <DlgSendSmtp>Invia tramite SMTP </DlgSendSmtp>
+    <lblSmtpRecipients>Destinatari (delimitati da punto e virgola)</lblSmtpRecipients>
+    <lblSmtpSubject>Soggetto</lblSmtpSubject>
+    <lblSmtpAttachments>Allegati</lblSmtpAttachments>
+    <lblSmtpBody>Corpo del messaggio</lblSmtpBody>
+    <lblMailDisplayName>Nome visualizzato</lblMailDisplayName>
+    <lblMailAddress>Indirizzo di posta</lblMailAddress>
+    <lblCompName>Nome del computer</lblCompName>
+    <lblDataDir>Percorso file appunti </lblDataDir>
+    <lblDBDir>Percorso DB appunti</lblDBDir>
+    <chkUseDataDir>Usa file degli appunti nel percorso</chkUseDataDir>
+    <lblEnterPwrd>Inserire password</lblEnterPwrd>
+    <lblConfirmPwrd>Conferma password</lblConfirmPwrd>
+    <lblOldPwrd>Vecchia password</lblOldPwrd>
+    <lblContactGroupName>Nome gruppo contatti</lblContactGroupName>
+    <lblContactName>Nome contatto</lblContactName>
+    <optUseCompName>Usa nome computer</optUseCompName>
+    <optUseAddress>Usa indirizzo IP</optUseAddress>
+    <lblDeleteContactsGroup>Elimina gruppi di contatti selezionati e:</lblDeleteContactsGroup>
+    <optContsToNone>Sposta i contatti sottostanti nel gruppo '(nessuno)'</optContsToNone>
+    <optContsDelete>Elimina le costanti sottostanti</optContsDelete>
+    <lblSPWarning>Verifica la query verso il motore di ricerca prima di inserirlo. Esempio: "http://www.google.it/search?q="</lblSPWarning>
+    <lblSPQuery>Riga della Query</lblSPQuery>
+    <lblSPName>Nome</lblSPName>
+    <lblExtName>Nome</lblExtName>
+    <lblExtProgram>Programma</lblExtProgram>
+    <lblCommandLine>Riga di comando</lblCommandLine>
+    <cmdLicense>Visualizza licenza</cmdLicense>
+    <lblSQL>Motore DB SQLite di Hwaci</lblSQL>
+    <tbpHKMain>Menù principale</tbpHKMain>
+    <tbpHKNote>Appunto</tbpHKNote>
+    <tbpHKEdit>Area di modifica</tbpHKEdit>
+    <tbpHKGroups>Gruppi</tbpHKGroups>
+    <expDeterminated>Scorciatoie definite</expDeterminated>
+    <lblEnterHK>Usa i seguenti tasti come combinazioni per i comandi selezionati</lblEnterHK>
+    <cmdAddHK>Aggiungi combinazioni di tasti</cmdAddHK>
+    <cmdEditHK>Modifica combinazioni di tasti</cmdEditHK>
+    <cmdDeleteHK>Rimuovi combinazioni di tasti</cmdDeleteHK>
+    <lblRestrictedHotkeys>Combinazioni di chiavi ristrette:</lblRestrictedHotkeys>
+    <txbWatermark>Inserire la scorciatoia qui...</txbWatermark>
+    <DlgMenusManager>Gestione menu</DlgMenusManager>
+    <tbpMain>Menu principale</tbpMain>
+    <tbpNote>Appunto</tbpNote>
+    <tbpEdit>Area di modifica</tbpEdit>
+    <tbpGroups>Gruppi</tbpGroups>
+    <tbpCP>Pannello di controllo</tbpCP>
+    <cmdResetCurrent>Ripristina l'attuale</cmdResetCurrent>
+    <cmdResetAll>Ripristina tutti</cmdResetAll>
+    <cmdUp>Su</cmdUp>
+    <cmdDown>Giu</cmdDown>
+    <cmdRestoreOrder>Ripristina</cmdRestoreOrder>
+    <lblNoteName>Nome appunto</lblNoteName>
+    <lblInGroup>Salva nel gruppo</lblInGroup>
+    <lblAvailableTags>Etichette disponibili</lblAvailableTags>
+    <lblCurrentTags>Etichette in uso</lblCurrentTags>
+    <DlgLinkToNote>Aggiungi un collegamento all'appunto</DlgLinkToNote>
+    <lblAvailableLinks>Appunti disponibili</lblAvailableLinks>
+    <lblCurrentLinks>Appunti collegati in uso</lblCurrentLinks>
+    <cmdSelectAll>Seleziona tutto</cmdSelectAll>
+    <cmdClearSelection>Annulla selezione</cmdClearSelection>
+    <lblSearchResults>Risultati ricerca</lblSearchResults>
+    <cmdFind>Cerca</cmdFind>
+    <lblFrom>Da:</lblFrom>
+    <lblTo>A:</lblTo>
+    <lblHelpMissing>File di guida locale non disponibile: scegliere una delle opzioni disponibili:</lblHelpMissing>
+    <optGoOnlineHelp>Vedi documentazione online</optGoOnlineHelp>
+    <optGetCHM>Scarica file di guida in formato CHM</optGetCHM>
+    <optGetPDF>Scarica file di guida in formato PDF</optGetPDF>
+    <lblDownloadInProgress>Download in corso...</lblDownloadInProgress>
+    <lblFind>Chiave di ricerca:</lblFind>
+    <lblReplace>Sostituisci con:</lblReplace>
+    <chkMatchCase>Chiave corrispondente</chkMatchCase>
+    <chkWholeWord>Intera parola</chkWholeWord>
+    <chkIncludeHidden>Includi appunti nascosti</chkIncludeHidden>
+    <lblSearchCriteria>Criterio di ricerca</lblSearchCriteria>
+    <lblSearchScope>Scopo di ricerca</lblSearchScope>
+    <cmdClearHistory>Cronologia ricerche</cmdClearHistory>
+    <cmdClearSettings>Azzera le impostazioni di ricerca</cmdClearSettings>
+    <cmdReplaceAll>Sostituisci tutti</cmdReplaceAll>
+    <DlgNewInGroup>Nuovo appunto nel gruppo</DlgNewInGroup>
+    <lblNewInGroup>Crea appunto nel gruppo</lblNewInGroup>
+    <DlgCP>Pannello di controllo</DlgCP>
+    <cmdAddTopGroup>Aggiungi gruppo al primo posto</cmdAddTopGroup>
+    <cmdAddSubgroup>Aggiungi il sotto-gruppo al gruppo selezionato</cmdAddSubgroup>
+    <cmdEditGroup>Modifica gruppo</cmdEditGroup>
+    <cmdRemoveGroup>Elimina gruppo</cmdRemoveGroup>
+    <cmdShowAllFromGroup>Mostra tutte gli appunti del gruppo selezionato</cmdShowAllFromGroup>
+    <cmdShowAllIncSubgroups>Espandi gruppo (inclusi sottogruppi)</cmdShowAllIncSubgroups>
+    <cmdHideAllFromGroup>Nascondi tutti gli appunti del gruppo selezionato</cmdHideAllFromGroup>
+    <cmdHideAllIncSubgroups>Nascondi gruppo (inclusi sottogruppi)</cmdHideAllIncSubgroups>
+    <cmdSetGroupPassword>Imposta password di gruppo</cmdSetGroupPassword>
+    <cmdRemoveGroupPassword>Rimuovi password di gruppo</cmdRemoveGroupPassword>
+    <cmdNewNote>Nuovo appunto</cmdNewNote>
+    <cmdLoadNotes>Carica appunti</cmdLoadNotes>
+    <cmdNoteFromCB>Nuovo appunto dagli Appunti</cmdNoteFromCB>
+    <cmdDuplicate>Duplica appunto</cmdDuplicate>
+    <cmdDiary>Diario</cmdDiary>
+    <cmdSaveAs>Rinomina</cmdSaveAs>
+    <cmdSaveAsText>Salva come testo</cmdSaveAsText>
+    <cmdRestoreFromBackup>Ripristina da copia</cmdRestoreFromBackup>
+    <cmdPrint>Stampa</cmdPrint>
+    <cmdAdjust>Correggi</cmdAdjust>
+    <cmdDelete>Elimina</cmdDelete>
+    <cmdSaveAll>Salva tutto</cmdSaveAll>
+    <cmdBackup>Copia/Sincronizzazione</cmdBackup>
+    <cmdPlacement>Posizionamento/Visibilità</cmdPlacement>
+    <cmdSendAsText>Invia come testo</cmdSendAsText>
+    <cmdSendAsAttachment>Invia come allegato</cmdSendAsAttachment>
+    <cmdSendZip>Invia in archivio ZIP</cmdSendZip>
+    <cmdSendNetwork>Invia tramite rete</cmdSendNetwork>
+    <cmdTags>Etichetta</cmdTags>
+    <cmdSwitches>Interruttori</cmdSwitches>
+    <cmdFavorites>Aggiungi ai preferiti</cmdFavorites>
+    <cmdRemoveFromFavorites>Rimuovi dai preferiti</cmdRemoveFromFavorites>
+    <cmdRun>Avvia</cmdRun>
+    <cmdEmptyBin>Svuota cestino</cmdEmptyBin>
+    <cmdRestoreNote>Ripristina appunto</cmdRestoreNote>
+    <cmdPreview>Anteprima</cmdPreview>
+    <cmdPreviewRight>Finestra di anteprima sulla destra</cmdPreviewRight>
+    <cmdPreviewSettings>Finestra di anteprima in secondo piano</cmdPreviewSettings>
+    <cmdViews>Visualizzazioni</cmdViews>
+    <cmdPreferences>Preferenze</cmdPreferences>
+    <cmdHotkeysCP>Gestione combinazioni tasti</cmdHotkeysCP>
+    <cmdMenusManagementCP>Gestione menu</cmdMenusManagementCP>
+    <cmdSearch>Cerca</cmdSearch>
+    <cmdHelp>Guida</cmdHelp>
+    <cmdQuickSearch>Ricerca Rapida</cmdQuickSearch>
+    <cmdSupport>Sostieni il progetto PNotes</cmdSupport>
+    <cmdPassword>Password</cmdPassword>
+    <cmdShowGroups>Mostra gruppi</cmdShowGroups>
+    <cmdColReset>Ripristina larghezza/visibilità colonne</cmdColReset>
+    <txtSearch>Ricerca veloce</txtSearch>
+    <lblGroupName>Nome gruppo</lblGroupName>
+    <tbReadOnly>(sola lettura)</tbReadOnly>
+    <cmdGroupIcon>Icona gruppo</cmdGroupIcon>
+    <cmdStandard>Visualizzazione standard</cmdStandard>
+    <DlgFolderIcons>Seleziona un'icona per il gruppo</DlgFolderIcons>
+    <cmdFromFile>Carica da file</cmdFromFile>
+    <DlgAdjustAppearance>Aspetto dell'appunto</DlgAdjustAppearance>
+    <DlgAdjustSchedule>Pianifica appunto</DlgAdjustSchedule>
+    <lblScheduleType>Pianifica tipo</lblScheduleType>
+    <expAdvanced>Impostazioni avanzate</expAdvanced>
+    <chkTrak>Non tracciare appunti scaduti</chkTrak>
+    <chkHideUntilAlert>Nascondi appunto fino alla notifica</chkHideUntilAlert>
+    <lblRunExternal>Avvia programma esterno dopo la notifica</lblRunExternal>
+    <noExternal>(Non avviare nulla)</noExternal>
+    <lblStopAlert>Ferma notifica dopo:</lblStopAlert>
+    <lblTimeZone>Fuso orario</lblTimeZone>
+    <cmdAddAlert>Aggiungi avviso</cmdAddAlert>
+    <cmdDeleteAlert>Rimuovi avviso</cmdDeleteAlert>
+    <grpSound>Avviso sonoro</grpSound>
+    <optSoundFile>File</optSoundFile>
+    <optSoundText>Testo</optSoundText>
+    <chkRepeat>Ripeti</chkRepeat>
+    <lblAfterYears>Anni</lblAfterYears>
+    <lblAfterMonths>Mesi</lblAfterMonths>
+    <lblAfterWeeks>Settimane</lblAfterWeeks>
+    <lblAfterDays>Giorni</lblAfterDays>
+    <lblAfterHours>Ore</lblAfterHours>
+    <lblAfterMinutes>Minuti</lblAfterMinutes>
+    <lblAfterSeconds>Secondi</lblAfterSeconds>
+    <lblAfterStart>A partire da:</lblAfterStart>
+    <optAfterExact>Tempo esatto</optAfterExact>
+    <optAfterProgram>Avvio programma</optAfterProgram>
+    <lblRepeatYears>Anni</lblRepeatYears>
+    <lblRepeatMonths>Mesi</lblRepeatMonths>
+    <lblRepeatWeeks>Settimane</lblRepeatWeeks>
+    <lblRepeatDays>Giorni</lblRepeatDays>
+    <lblRepeatHours>Ore</lblRepeatHours>
+    <lblRepeatMinutes>Minuti</lblRepeatMinutes>
+    <lblRepeatSeconds>Secondi</lblRepeatSeconds>
+    <lblRepeatStart>A partire da:</lblRepeatStart>
+    <optRepeatExact>Tempo esatto</optRepeatExact>
+    <optRepeatProgram>Avvio programma</optRepeatProgram>
+    <lblWeeklyAt>Alle:</lblWeeklyAt>
+    <lblExactDate>Data</lblExactDate>
+    <lblExactTime>Tempo</lblExactTime>
+    <lblMonthExactWarning>Nessuna data valida nel mese in corso, verrà usata la data più vicina.</lblMonthExactWarning>
+    <lblDW>Giorno della settimana</lblDW>
+    <lblOrdinal>Numeri ordinali</lblOrdinal>
+    <lblDWTime>Tempo</lblDWTime>
+    <DlgColorChooser>Scelta dei colori</DlgColorChooser>
+    <DlgSmilies>Faccine</DlgSmilies>
+    <lblArchName>Nome archivio</lblArchName>
+    <cmdFindNext>Trova successivo</cmdFindNext>
+    <cmdReplace>Sostituisci</cmdReplace>
+    <grdSearchOptions>Opzioni di ricerca</grdSearchOptions>
+    <chkSearchUp>Cerca su</chkSearchUp>
+    <chkRegExp>Usa le espressioni regolari</chkRegExp>
+    <DlgSync>Sincronizzazione</DlgSync>
+    <lblSyncInProgress>Sincronizzazione in corso...</lblSyncInProgress>
+    <DlgLocalSync>Parametri di sincronizzazione locale</DlgLocalSync>
+    <DlgOverdue>Appunti scaduti</DlgOverdue>
+    <DlgSelectGroups>Contatti di gruppo</DlgSelectGroups>
+    <DlgPin>Aggancia appunti alla finestra</DlgPin>
+    <lblWindows>Finestre disponibili</lblWindows>
+    <chkUseWildcards>Usa caratteri universali (* e/o ?)</chkUseWildcards>
+    <DlgImportNotes>Importa appunti da PNotes</DlgImportNotes>
+    <chkNoRecycle>Non importare appunti dal cestino</chkNoRecycle>
+    <chkImportGroups>Importa gruppi (la gerarchia di gruppo non verrà mantenuta)</chkImportGroups>
+    <lblIniLocations>File di inizializzazione (notes.ini)</lblIniLocations>
+    <chkKeepInvisible>Mantieni gli appunti invisibili (controllate se importate un gran numero di appunti)</chkKeepInvisible>
+    <DlgImportSettings>Importa impostazioni da PNotes</DlgImportSettings>
+    <chkImpSounds>Importa suoni</chkImpSounds>
+    <chkImpFTP>Importa impostazioni FTP</chkImpFTP>
+    <chkImpContacts>Importa contatti</chkImpContacts>
+    <chkImpSearchEngines>Importa motori di ricerca</chkImpSearchEngines>
+    <chkImpTags>Importa etichetta</chkImpTags>
+    <chkImpExtPrograms>Importa programmi esterni</chkImpExtPrograms>
+    <lblINIFile>File di inizializzazione (notes.ini)</lblINIFile>
+    <lblImportSettingsWarning>ATTENZIONE! Le impostazioni importate sovrascriveranno quelle esistenti.</lblImportSettingsWarning>
+    <DlgGetPlugins>Scarica plugin</DlgGetPlugins>
+    <DlgGetThemes>Scarica interfacce</DlgGetThemes>
+    <DlgGetDicts>Scarica i dizionari</DlgGetDicts>
+    <cmdBrowser>Apri nel browser</cmdBrowser>
+    <cmdDownload>Scarica</cmdDownload>
+    <DlgLocalComps>Computer sulla rete locale</DlgLocalComps>
+    <DlgPosts>Post disponibili %PLACEHOLDER1% per l'appunto %PLACEHOLDER2%</DlgPosts>
+    <DlgAddTable>Proprietà della tabella</DlgAddTable>
+    <lblTableRows>Righe</lblTableRows>
+    <lblTableColumns>Colonne</lblTableColumns>
+    <lblTableColumnWidth>Larghezza della colonna (in twips)</lblTableColumnWidth>
+    <lblTableTextIndent>Indentazione del testo (in twips)</lblTableTextIndent>
+    <lblTableBorders>Larghezza del bordo</lblTableBorders>
+    <lblTableBorderColor>Colore del bordo</lblTableBorderColor>
+    <DlgSpecialSymbols>Simboli speciali</DlgSpecialSymbols>
+    <DlgImportMailContacts>Importa i contatti di posta</DlgImportMailContacts>
+    <cmdLoadImport>Carica</cmdLoadImport>
+    <chkNoDuplicates>Non visualizzare i duplicati</chkNoDuplicates>
+    <pnsImportContacts>Importa i contatti di posta da:</pnsImportContacts>
+    <DlgChooseMailContacts>Seleziona i contatti di posta</DlgChooseMailContacts>
+    <lblScramble>Inserisci chiave di cifratura/decifratura</lblScramble>
+    <DlgFontChooser>Seleziona carattere</DlgFontChooser>
+    <grpNames>Nome del carattere</grpNames>
+    <grpWeight>Peso del carattere</grpWeight>
+    <grpStyle>Stile del carattere</grpStyle>
+    <grpSize>Dimenzioni del carattere</grpSize>
+    <grpStretch>Allunga il carattere</grpStretch>
+    <grpSample>Esempio</grpSample>
+    <grpColors>Colore</grpColors>
+    <DlgLotusCred>Credenziali IBM Notes</DlgLotusCred>
+    <tbLotusPassword>Password (campo rchiesto)</tbLotusPassword>
+    <tbLotusServer>Server (campo facoltativo)</tbLotusServer>
+    <DlgConfigureReport>Configura resoconto</DlgConfigureReport>
+    <grpFields>Visualizza i seguenti campi</grpFields>
+    <chkName>Nome dell'appunto</chkName>
+    <chkGroup>Gruppo dell'appunto</chkGroup>
+    <chkCreated>Creato alle</chkCreated>
+    <chkSaved>Ultimo salvataggio</chkSaved>
+    <chkSentAt>Inviato alle</chkSentAt>
+    <chkReceivedAt>Ricevuto alle</chkReceivedAt>
+    <chkSentTo>Inviato a</chkSentTo>
+    <chkReceivedFrom>Ricevuto da</chkReceivedFrom>
+    <chkText>Testo dell'appunto</chkText>
+    <grpDates>Intervallo di date</grpDates>
+    <chkAllDates>Tutte le date</chkAllDates>
+    <chkCreation>Data di creazione</chkCreation>
+    <tbCrFrom>Da:</tbCrFrom>
+    <tbCrTo>A:</tbCrTo>
+    <chkSaving>Data di salvataggio</chkSaving>
+    <tbSvFrom>Da:</tbSvFrom>
+    <tbSvTo>A:</tbSvTo>
+    <grpMisc>Varie</grpMisc>
+    <chkFlags>Visualizza spunta</chkFlags>
+    <chkDontShowMessage>Non mostrare nuovamente questo messaggio</chkDontShowMessage>
+    <lblWarn1>(*) - Un nuovo valore verra usato nell'appunto appena creato</lblWarn1>
+    <lblWarn2>(***) - Richiede il riavvio del programma</lblWarn2>
+    <lblWarn3>(**) - Richiede Windows Vista o successivi</lblWarn3>
+  </controls>
+  <grid_columns>
+    <grdNotes_Note_Name>Nome appunto</grdNotes_Note_Name>
+    <grdNotes_Note_Id>ID</grdNotes_Note_Id>
+    <grdNotes_Note_Priority>Priorità</grdNotes_Note_Priority>
+    <grdNotes_Note_Completed>Completato</grdNotes_Note_Completed>
+    <grdNotes_Note_Locked>Protetto</grdNotes_Note_Locked>
+    <grdNotes_Note_Password_Protected>Protetto da password</grdNotes_Note_Password_Protected>
+    <grdNotes_Note_Pinned>Agganciato</grdNotes_Note_Pinned>
+    <grdNotes_Note_Favorites>Preferiti</grdNotes_Note_Favorites>
+    <grdNotes_Note_Sent_Received>Inviati/Ricevuti</grdNotes_Note_Sent_Received>
+    <grdNotes_Note_Encrypted>Cifrato</grdNotes_Note_Encrypted>
+    <grdNotes_Note_Group>Gruppo</grdNotes_Note_Group>
+    <grdNotes_Note_PrevGroup>Gruppo</grdNotes_Note_PrevGroup>
+    <grdNotes_Note_Created>Creato il</grdNotes_Note_Created>
+    <grdNotes_Note_Saved>Ultimo salvataggio</grdNotes_Note_Saved>
+    <grdNotes_Note_Schedule_Type>Tipologia pianifica</grdNotes_Note_Schedule_Type>
+    <grdNotes_Note_Deleted>Eliminato</grdNotes_Note_Deleted>
+    <grdNotes_Note_Tags>Etichetta</grdNotes_Note_Tags>
+    <grdNotes_Note_Content>Contenuto</grdNotes_Note_Content>
+    <grdNotes_Note_Sent_To>Inviato da</grdNotes_Note_Sent_To>
+    <grdNotes_Note_Sent_At>Inviato alle</grdNotes_Note_Sent_At>
+    <grdNotes_Note_Received_From>Ricevuto da</grdNotes_Note_Received_From>
+    <grdNotes_Note_Received_At>Ricevuto alle</grdNotes_Note_Received_At>
+    <grdBackup_Back_Name>Nome appunto</grdBackup_Back_Name>
+    <grdBackup_Back_Original>Appunto originale</grdBackup_Back_Original>
+    <grdBackup_Back_Saved>Salvato il</grdBackup_Back_Saved>
+    <grdSearchProvs_SP_Name>Nome</grdSearchProvs_SP_Name>
+    <grdSearchProvs_SP_Query_Line>Linea di ricerca</grdSearchProvs_SP_Query_Line>
+    <grdLocalSync_Sync_Name>Nome computer</grdLocalSync_Sync_Name>
+    <grdLocalSync_Sync_File_Location>Percorso file di appunti</grdLocalSync_Sync_File_Location>
+    <grdLocalSync_Sync_DB_Location>Percorso DB</grdLocalSync_Sync_DB_Location>
+    <grdContacts_Cont_Name>Nome</grdContacts_Cont_Name>
+    <grdContacts_Cont_Comp>Nome computer</grdContacts_Cont_Comp>
+    <grdContacts_Cont_IP>Indirizzo IP</grdContacts_Cont_IP>
+    <grdExternals_Ext_Name>Nome</grdExternals_Ext_Name>
+    <grdExternals_Ext_Program>Programma</grdExternals_Ext_Program>
+    <grdExternals_Ext_Command_Line>Riga di comando</grdExternals_Ext_Command_Line>
+    <grdTagsResults_Tag_Name>Nome appunto</grdTagsResults_Tag_Name>
+    <grdTagsResults_Tag_Tag>Etichette</grdTagsResults_Tag_Tag>
+    <grdAvailableTags_Tag_Tag>Etichetta</grdAvailableTags_Tag_Tag>
+    <grdFields_Field>Cerca per:</grdFields_Field>
+    <grdDates_Date_Name>Nome appunto</grdDates_Date_Name>
+    <grdDates_Date_Created>Creato il</grdDates_Date_Created>
+    <grdDates_Date_Saved>Salvato il</grdDates_Date_Saved>
+    <grdDates_Date_Sent>Inviato il</grdDates_Date_Sent>
+    <grdDates_Date_Received>Ricevuto il</grdDates_Date_Received>
+    <grdDates_Date_Deleted>Eliminato il</grdDates_Date_Deleted>
+    <grdWindows_Win_Text>Finestra di testo</grdWindows_Win_Text>
+    <grdWindows_Win_Class>Classe finestra</grdWindows_Win_Class>
+    <grdOverdue_Over_Name>Nome appunto</grdOverdue_Over_Name>
+    <grdOverdue_Over_Type>Tipo pianifica</grdOverdue_Over_Type>
+    <grdOverdue_Over_Zone>Fuso orario</grdOverdue_Over_Zone>
+    <grdOverdue_Over_Id>Id</grdOverdue_Over_Id>
+    <grdPosts_PostDate>Data post</grdPosts_PostDate>
+    <grdPosts_PostText>Contenuto post</grdPosts_PostText>
+    <grdSmtp_HostName>Nome dell'host</grdSmtp_HostName>
+    <grdSmtp_SenderAddress>Indirizzo del mittente</grdSmtp_SenderAddress>
+    <grdSmtp_DisplayName>Nome visualizzato</grdSmtp_DisplayName>
+    <grdSmtp_SmtpPort>Porta</grdSmtp_SmtpPort>
+    <grdMailContacts_DispName>Nome visualizzato</grdMailContacts_DispName>
+    <grdMailContacts_MailAddress>Indirizzo di posta</grdMailContacts_MailAddress>
+    <grdDefHotkeys_DHK_Group>Campo delle scorciatoie</grdDefHotkeys_DHK_Group>
+    <grdDefHotkeys_DHK_Menu>Menu</grdDefHotkeys_DHK_Menu>
+    <grdDefHotkeys_DHK_Shortcut>Scorciatoie</grdDefHotkeys_DHK_Shortcut>
+    <grdLinks_Note_Name>Nome dell'appunto</grdLinks_Note_Name>
+    <grdLinks_Note_Group>Gruppo</grdLinks_Note_Group>
+    <grdLinks_Note_Created>Data di creazione</grdLinks_Note_Created>
+    <grdLinks_Note_Saved>Data di salvataggio</grdLinks_Note_Saved>
+  </grid_columns>
+  <messages>
+    <def_warning>Si stanno per ripristinare TUTTE le impostazioni del programma ai valori predefiniti. Volete continuare?</def_warning>
+    <sound_exists>Il file esiste già nella cartella 'sounds'. Volete sovrascriverlo?</sound_exists>
+    <sound_delete>Eliminare il suono selezionato?</sound_delete>
+    <sync_comp_exists>Il nome scelto per la destinazione per la sincronizzazione esiste già</sync_comp_exists>
+    <sync_comp_delete>Eliminare la destinazione per la sincronizzazione?</sync_comp_delete>
+    <pwrd_not_identical>Entrambi i campi password devono essere uguali. Verificare che combacino.</pwrd_not_identical>
+    <pwrd_old_not_match>Vecchia password non valida</pwrd_old_not_match>
+    <pwrd_not_match>Password non valida</pwrd_not_match>
+    <group_exists>Il gruppo di contatti con questo nome esiste già</group_exists>
+    <group_delete>Eliminare il gruppo di contatti?</group_delete>
+    <contact_exists>Un contatto con questo nome esiste già</contact_exists>
+    <contact_delete>Eliminare il contatto?</contact_delete>
+    <ext_exists>Un programma esterno con questo nome esiste già</ext_exists>
+    <ext_delete>Eliminare programma esterno?</ext_delete>
+    <sp_exists>Un motore di ricerca con questo nome esiste già</sp_exists>
+    <sp_delete>Eliminare motore di ricerca?</sp_delete>
+    <tag_exists>Questa etichetta esiste già</tag_exists>
+    <tag_delete>Eliminare l'etichetta selezionato?</tag_delete>
+    <new_version_1>Una nuova versione di PNotes.NET è disponibile - %PLACEHOLDER1%.</new_version_1>
+    <new_version_2>Clicca 'OK' per installare la nuova versione (è richiesto il riavvio del programma).</new_version_2>
+    <new_version_3>Clicca qui per installare la nuova versione (è richiesto il riavvio del programma).</new_version_3>
+    <new_version_plugins>Sono disponibili versioni aggiornate per i seguenti plugin:</new_version_plugins>
+    <latest_version>Si sta usando l'ultima versione disponibile di PNotes.NET</latest_version>
+    <plugins_latest_version>Tutti i plugin sono aggiornati.</plugins_latest_version>
+    <themes_latest_version>Tutte le interfacce sono aggiornate.</themes_latest_version>
+    <first_baloon_caption>Grazie per aver scelto di utilizzare PNotes.NET!</first_baloon_caption>
+    <first_baloon_message>Clicca con il tasto destro sull'icona della tray per avviare il processo.</first_baloon_message>
+    <license>Questo programma è distribuito sotto licenza GNU GPL v2 o successiva.</license>
+    <thanks>Grazie a tutti quelli che hanno testato, tradotto o semplicemente usato questo programma</thanks>
+    <code_thanks>Un ringraziamento speciale per gli utili frammenti di codice ed esempi a:</code_thanks>
+    <sug_thanks>Grazie per i suggerimenti e il testing altruista a:</sug_thanks>
+    <hk_registered_1>Questa combinazione di tasti è già stata registrata.</hk_registered_1>
+    <hk_registered_2>Sceglierne un'altra. Grazie</hk_registered_2>
+    <hk_exists>La stessa combinazione di tasti esiste già</hk_exists>
+    <delete_hot_keys>Eliminare la combinazione di tasti?</delete_hot_keys>
+    <delete_to_bin>Volete spostare nel cestino quest'appunto?</delete_to_bin>
+    <delete_completely>Volete eliminare definitivamente quest'appunto?</delete_completely>
+    <delete_note>Appunto:</delete_note>
+    <delete_created>Creato il:</delete_created>
+    <delete_to_bin_many>Volete inviare questi appunti %PLACEHOLDER1% al cestino?</delete_to_bin_many>
+    <delete_completely_many>Volete eliminare definitivamente questi appunti %PLACEHOLDER1% ?</delete_completely_many>
+    <delete_group_warning>Siete sicuri di voler eliminare questo gruppo - %PLACEHOLDER1% - inclusi i sottogruppi e relativi appunti?</delete_group_warning>
+    <save_note_1>L'appunto è stato cambiato:</save_note_1>
+    <save_note_2>Volete salvarlo?</save_note_2>
+    <id_exists>Un'appunto con lo stesso ID esiste già.</id_exists>
+    <search_complete>Ricerca completata.</search_complete>
+    <matches_found>Risultati trovati:</matches_found>
+    <nothing_found>Nessun risultato.</nothing_found>
+    <clear_search_history>Eliminare la cronologia di ricerca?</clear_search_history>
+    <replace_complete>Ricerca e sostituzione completati.</replace_complete>
+    <matches_replaced>Risultati sostituiti:</matches_replaced>
+    <replace_hidden_1>Avete selezionato l'opzione</replace_hidden_1>
+    <replace_hidden_2>Tutti i risultati negli appunti nascosti  verranno sostituiti e salvati. Volete continuare?</replace_hidden_2>
+    <no_backup_copies>Non sono presenti copie di sicurezza dell'appunto in uso.</no_backup_copies>
+    <restore_question>Volete ripristinare il contenuto dell'appunto dalla copia di sicurezza selezionata?</restore_question>
+    <mail_subject_text>Inviato da PNotes. Nome appunto:</mail_subject_text>
+    <mail_subject_attachment>Inviato da PNotes.</mail_subject_attachment>
+    <mail_error>Errore MAPI:</mail_error>
+    <empty_bin_warning>Lo svuotamento del cestino è irreversibile. Volete continuare?</empty_bin_warning>
+    <selection_objects_warning>La selezione contiene uno o più oggetti diversi dal testo normale (es. immagini). Se continuate questi oggetti verranno eliminati. Continuare comunque?</selection_objects_warning>
+    <many_files_dropped>Solo un file può essere incluso nell'appunto</many_files_dropped>
+    <full_backup_complete>Operazione di copia completa eseguita con successo</full_backup_complete>
+    <full_restore_complete>Ripristino dalla copia completa eseguito con successo</full_restore_complete>
+    <full_restore_warning>ATTENZIONE! Tutte gli appunti verranno eliminati e sostituiti da quelli presenti nella copia di sicurezza. Volete continuare?</full_restore_warning>
+    <message_posted>Postato con successo il</message_posted>
+    <sync_complete>Sincronizzazione completata con successo</sync_complete>
+    <sync_complete_reload>Sincronizzazione completata con successo. Il programma deve essere riavviato per poter applicare le modifiche apportate.</sync_complete_reload>
+    <diff_versions>La versione del database in uso è diversa da quella precedentemente sincronizzata. La sincronizazzione non può essere completata.</diff_versions>
+    <outlook_not_running>MS Outlook non è in esecuzione. Avviare il programma e riprovare.</outlook_not_running>
+    <load_autosaved>Il programma non è terminato correttamente l'ultima volta, desiderate ripristinare gli appunti salvati automaticamente?</load_autosaved>
+    <clean_bin_1>I seguenti appunti verranno eliminati definitivamente dal cestino:</clean_bin_1>
+    <clean_bin_2>Scegliete 'Sì' per continuare o 'No' per ritardare l'eliminazione in futuro.</clean_bin_2>
+    <sender>Mittente:</sender>
+    <recipient>Destinatari(o):</recipient>
+    <hide_on_lock_warning>Per poter consentire all'icona della tray di essere nascosta quando il programma è bloccato si deve impostare una combinazione di tasti per "Blocco programma" nel menu</hide_on_lock_warning>
+    <continue_anyway>Continuare comunque?</continue_anyway>
+    <load_program_settings>Caricamento impostazioni</load_program_settings>
+    <load_database>Caricamento database</load_database>
+    <create_database>Creazione database</create_database>
+    <load_hotkeys>Applicazione combinazioni di tasti</load_hotkeys>
+    <load_spellchecker>Inizializzazione correttore ortografico</load_spellchecker>
+    <load_notes>Caricamento appunti</load_notes>
+    <load_menus>Preparazione in corso della tabella dell'ordine dei menu</load_menus>
+    <update_menus_order>Aggiornamento degli indici dei menu</update_menus_order>
+    <no_posts>Non sono disponibili post</no_posts>
+    <confirm_plugin_remove>Volete rimuovere i plugin selezionati?</confirm_plugin_remove>
+    <confirm_plugin_remove_1>La rimozione dei plugin richiede il riavvio del programma. Riavviarlo ora?</confirm_plugin_remove_1>
+    <confirm_plugin_remove_2>Sì - per riavviare ora, No - per riavviare dopo, Annulla - per annullare la rimozione</confirm_plugin_remove_2>
+    <confirm_restart_1>Per poter applicare le modifiche apportate è necessario riavviare il programma.</confirm_restart_1>
+    <confirm_restart_2>Cliccare 'Sì' per riavviare ora o 'No' per riavviare successivamente.</confirm_restart_2>
+    <sync_in_progress>Sincronizzazione in corso...</sync_in_progress>
+    <ini_file_path_required>Il file di inizializzazione (notes.ini) è necessario</ini_file_path_required>
+    <dicts_found>L'applicazione di nuovi dizionari richiede il riavvio del programma. Riavviarlo ora?</dicts_found>
+    <sync_error_1>Si è verificato un errore durante la sincronizzazione</sync_error_1>
+    <sync_error_2>Fate riferimento al file di log del plugin adatto.</sync_error_2>
+    <send_error_1>Si è verificato un errore durante l'invio di uno o più appunti.</send_error_1>
+    <send_error_2>Fate riferimento al file di log per i dettagli.</send_error_2>
+    <smtp_same_address>Esiste già un profilo SMTP con lo stesso indirizzo</smtp_same_address>
+    <mail_contact_same_address>Esiste già un contatto di posta con lo stesso nome ed indirizzo</mail_contact_same_address>
+    <invalid_host>Nome dell'host non valido </invalid_host>
+    <invalid_email>Indirizzo di posta non valido</invalid_email>
+    <invalid_port>Numero della porta non valido</invalid_port>
+    <remove_mail_contact>Volete rimuovere il contatto di posta selezionato?</remove_mail_contact>
+    <remove_smtp>Volete rimuovere il profilo SMTP selezionato?</remove_smtp>
+    <critical_check>Controllo aggiornamenti critici</critical_check>
+    <critical_applied>Il programma è stato riavviato per installare gli aggiornamenti critici.</critical_applied>
+    <new_edition>Avete avviato la nuova edizione di PNotes.Net. Tutte le vostre impostazioni della precedente versione sono state salvate in un file ZIP a</new_edition>
+    <same_actions>Non potete scegliere la stessa azione per il doppio clic e per il clic singolo</same_actions>
+    <delete_backups>Eliminare le copie di sicurezza selezionate?</delete_backups>
+    <image_size_message>Le dimensioni dell'immagine devono essere di 16x16</image_size_message>
+    <completed_hidden>Per visualzzare gli appunti segnati come "Completati" deselezionare l'appostita casella nella pagina "Comportamento" della finestra delle Preferenze</completed_hidden>
+    <back_prev>Copia in corso del file dalla versione precedente...</back_prev>
+    <host_unknown>Il computer %PLACEHOLDER1% non può essere trovato sulla rete</host_unknown>
+    <contact_disconnected>Il computer del contatto %PLACEHOLDER1% non è connesso alla rete</contact_disconnected>
+    <address_not_found>Uno o più indirizzi IP specificati non possono essere trovati</address_not_found>
+    <contacts_disconnected>I computer di uno o più contatti non sono connessi alla rete</contacts_disconnected>
+    <hosts_unknown>Uno o più computer non possono essere trovati sulla rete</hosts_unknown>
+    <inv_lotus_server>Nome del server IBM Notes non valido</inv_lotus_server>
+    <inv_file_link>Collegamento non valido ad un oggetto di sistema</inv_file_link>
+    <sec_ex_link>Non avete il permesso di lavorare con questo file</sec_ex_link>
+    <file_not_exist>Il collegamento punta ad un file (una cartella) inesistente</file_not_exist>
+    <dict_connection_problem>Il server per il download dei dizionari non è disponibile. Aprire la pagina dei dizionari nel browser?</dict_connection_problem>
+    <link_not_exists>Lìappunto collegato non esiste. Forse è stato spostato nel Cestino o eliminato completamente.</link_not_exists>
+    <export_in_progress>Esportazione degli appunti in corso. Il file di destinazione è:</export_in_progress>
+    <invalid_start_date>La data di inizio non deve essere successiva alla data finale</invalid_start_date>
+    <invalid_exp_comm_line>File non valido specificato per il resoconto degli appunti</invalid_exp_comm_line>
+    <invalid_dates_com_line>Data non valida nella riga di comando</invalid_dates_com_line>
+    <report_lib_missing>L'esportazione in PDF, DOC o TIF richiede il download di librerie aggiuntive. Continuare? </report_lib_missing>
+    <no_server_props>Dovete specificare l'indirizzo IP del server e la porta</no_server_props>
+    <server_check_success>Test della connessione completato</server_check_success>
+    <server_check_failed>Test della connessione fallito</server_check_failed>
+    <no_net_adapter>Non è stato trovato alcun adattatore di rete</no_net_adapter>
+    <sending_progress>Verifica in corso...</sending_progress>
+    <encrypt_warning_1>Sta per essere caricato un appunto nel programma che usa la cifratura. </encrypt_warning_1>
+    <encrypt_warning_2>Se questo appunto è stato cifrato in precedenza, potrebbe diventare illeggibile. Volete continuare?</encrypt_warning_2>
+    <invalid_file_format>Formato del file non valido. Forse è stato cifrato in precedenza.</invalid_file_format>
+    <restart_required>È richiesto il riavvio del programma.</restart_required>
+  </messages>
+  <time_format_chars_h12>
+    <h>Ore senza zero iniziale a una sola cifra. Orologio a 12h.</h>
+    <hh>Ore con zero iniziale a una sola cifra. Orologio a 12h.</hh>
+  </time_format_chars_h12>
+  <time_format_chars_h24>
+    <H>Ore senza zero iniziale a una sola cifra. Orologio a 24h.</H>
+    <HH>Ore con zero iniziale a una sola cifra. Orologio a 24h.</HH>
+  </time_format_chars_h24>
+  <time_format_chars>
+    <m>Minuti senza zero iniziale per minuti a una sola cifra.</m>
+    <mm>Minuti con zero iniziale per minuti a una sola cifra.</mm>
+    <s>Secondi senza zero iniziale per secondi a una sola cifra.</s>
+    <ss>Minuti con zero iniziale per minuti a una sola cifra.</ss>
+    <t>Un carattere come marcatore di tempo. come A o P</t>
+    <tt>Più caratteri come marcatori di tempo, come AM o PM</tt>
+  </time_format_chars>
+  <date_format_chars>
+    <d>Giorno del mese senza zero iniziale per minuti a una sola cifra.</d>
+    <dd>Giorno del mese con zero iniziale per minuti a una sola cifra.</dd>
+    <ddd>Giorno del mese con abbreviazione di tre lettere.</ddd>
+    <dddd>Giorno della settimana completo</dddd>
+    <M>Mese senza zero iniziale per mesi a una sola cifra.</M>
+    <MM>Mese con zero iniziale per mesi a una sola cifra.</MM>
+    <MMM>Mese con abbreviazione di tre lettere.</MMM>
+    <MMMM>Mese completo</MMMM>
+    <y>Anno come ultime due cifre, senza zero iniziale per anni a una sola cifra.</y>
+    <yy>Anno come ultime due cifre, con zero iniziale per anni a una sola cifra.</yy>
+    <yyyy>Anno rappresentato con 4 numeri</yyyy>
+  </date_format_chars>
+  <captions>
+    <note>Appunto</note>
+    <group>Gruppo</group>
+    <confirm>Conferma</confirm>
+    <choose_sound>Scegli suono</choose_sound>
+    <date_formats>Formato data dispnibile</date_formats>
+    <time_formats>Formato tempo disponibile</time_formats>
+    <sync_comps_add>Nuova destsinazione di sincronizzazione locale</sync_comps_add>
+    <sync_comps_edit>Modifica destsinazione di sincronizzazione locale</sync_comps_edit>
+    <choose_dir>Scegli percorso</choose_dir>
+    <pwrd_create>Crea password</pwrd_create>
+    <pwrd_edit>Modifica password</pwrd_edit>
+    <pwrd_delete>Rimuovi password</pwrd_delete>
+    <pwrd_login>Inserisci password</pwrd_login>
+    <group_new>Nuovo gruppo di contatti</group_new>
+    <group_edit>Modifica gruppo di contatti</group_edit>
+    <contact_new>Nuovo contatto</contact_new>
+    <contact_edit>Modifica contatto</contact_edit>
+    <choose_def_browser>Scegli browser preferito</choose_def_browser>
+    <ext_new>Scegli programma esterno</ext_new>
+    <ext_edit>Modifica programma esterno</ext_edit>
+    <choose_new_ext>Scegli programma esterno</choose_new_ext>
+    <sp_new>Scegli motore di ricerca</sp_new>
+    <sp_edit>Modifica motore di ricerca</sp_edit>
+    <about>Informazioni su</about>
+    <dlg_hot_keys>Combinazioni tasti</dlg_hot_keys>
+    <restricted_keys>Tasti non validi</restricted_keys>
+    <add_hot_key>Aggiungi combinazione di tasti</add_hot_key>
+    <edit_hot_keys>Modifica combinazione di tasti</edit_hot_keys>
+    <save_as>Salva appunto come...</save_as>
+    <save_as_text>Salva appunto come testo</save_as_text>
+    <save_as_filter>File di testo (*.txt)|*.txt</save_as_filter>
+    <pdf_filter>File PDF (*.pdf)|*.pdf</pdf_filter>
+    <tif_filter>Immagini TIF (*.tif)|*.tif</tif_filter>
+    <doc_filter>Documenti Word (*.doc)|*.doc</doc_filter>
+    <rtf_filter>Documenti RTF (*.rtf)|*.rtf</rtf_filter>
+    <restore_note>Ripristina appunto</restore_note>
+    <restore_filter>Copie di sicurezza delgli appunti</restore_filter>
+    <load_notes>Carica appunti</load_notes>
+    <tags>Etichetta</tags>
+    <linked_notes>Appunti collegati</linked_notes>
+    <serach_tags>Ricerca per etichetta</serach_tags>
+    <search_dates>Cerca per data</search_dates>
+    <help_chooser>Selezione file di aiuto</help_chooser>
+    <search_in_notes>Ricerca negli appunti</search_in_notes>
+    <cp_total>Appunti totali:</cp_total>
+    <cp_count>Appunti nel gruppo:</cp_count>
+    <cp_group>Gruppo:</cp_group>
+    <add_new_group>Nuovo grupo</add_new_group>
+    <edit_group>Modifica gruppo</edit_group>
+    <transparency>Trasparenza</transparency>
+    <image_filter>File di immagine</image_filter>
+    <show_group>Mostra gruppo</show_group>
+    <hide_group>Nascondi gruppo</hide_group>
+    <full_backup>Crea copia completa di sicurezza</full_backup>
+    <full_backup_filter>Copia completa in formato PNotes.NET</full_backup_filter>
+    <resture_full_backup>Ripristina da copia completa</resture_full_backup>
+    <dlg_search_find>Trova</dlg_search_find>
+    <dlg_search_replace>Sostituisci</dlg_search_replace>
+    <sync_local>Locale</sync_local>
+    <received>Nuovi appunti ricevuti</received>
+    <sent>Appunti inviati con successo</sent>
+    <sent_to_server>I seguenti appunti sono stati inviati sul server poiché i destinatari sono irraggiungibili</sent_to_server>
+    <retrievivg_data>Ricerca informazioni</retrievivg_data>
+    <import_warning_1>Prima di procedere:</import_warning_1>
+    <import_warning_2>1. Decifra tutte gli appunti nella vecchia versione di PNotes</import_warning_2>
+    <import_warning_3>2. Rimuovi la password da tutti i files protetti nella vecchia versione di PNotes</import_warning_3>
+    <ini_file_filter>File di inizializzazione di PNotes (notes.ini)|notes.ini</ini_file_filter>
+    <ini_file_text>File di inizializzazione di PNotes</ini_file_text>
+    <update_progress>Aggiornamento in corso...</update_progress>
+    <downloading>Download:</downloading>
+    <extracting>Estrazione:</extracting>
+    <copying>Copia:</copying>
+    <upd_plugin>(aggiornamento)</upd_plugin>
+    <new_plugin>(nuovo plugin)</new_plugin>
+    <upd_theme>(aggiorna)</upd_theme>
+    <new_theme>(nuova interfaccia)</new_theme>
+    <b_size_normal>Normale</b_size_normal>
+    <b_size_large>Grande</b_size_large>
+    <import_fonts_caption>Percorso caratteri di PNotes</import_fonts_caption>
+    <import_dicts_caption>Percorso dizionari di PNotes</import_dicts_caption>
+    <smtp_new>Nuovo client SMTP</smtp_new>
+    <smtp_edit>Modifica client SMTP</smtp_edit>
+    <mail_contact_new>Nuovo contatto di posta</mail_contact_new>
+    <mail_contact_edit>Modifica contatto di posta</mail_contact_edit>
+    <scramble_caption>Cifra l'appunto:</scramble_caption>
+    <unscramble_caption>Decifra l'appunto:</unscramble_caption>
+    <scramble_warning>La cifratura del testo eliminerà completamente la formattazione del testo!</scramble_warning>
+    <alerts>Avvisi</alerts>
+    <panel_remove_single>Clic singolo</panel_remove_single>
+    <panel_remove_double>Doppio clic</panel_remove_double>
+    <no_cont_group>(Nessun gruppo)</no_cont_group>
+    <now>Adesso</now>
+  </captions>
+  <misc>
+    <tray_tooltip>PNotes - il tuo gestore di note virtuali</tray_tooltip>
+    <never>(Mai)</never>
+    <line>Riga:</line>
+    <column>Colonna:</column>
+    <text_and_title>(testo e titolo)</text_and_title>
+    <title_only>(solo titolo)</title_only>
+    <text_only>(solo testo)</text_only>
+    <auto_hide_set>Nascondi il pannello automaticamente</auto_hide_set>
+    <auto_hide_remove>Mantieni la posizione del pannello</auto_hide_remove>
+    <orient_top>Piazza il pannello sul bordo superiore</orient_top>
+    <orient_left>Piazza il pannello sul bordo sinistro</orient_left>
+  </misc>
+  <list_cboDblAction>
+    <_0>(nessuna azione)</_0>
+    <_1>Nuovo appunto</_1>
+    <_2>Pannello di controllo</_2>
+    <_3>Preferenze</_3>
+    <_4>Cerca negli appunti</_4>
+    <_5>Nuovo appunto nel gruppo</_5>
+    <_6>Carica appunto</_6>
+    <_7>Nuovo appunto dagli Appunti</_7>
+    <_8>Sposta tutto in alto</_8>
+    <_9>Salva tutto</_9>
+    <_10>Mostra tutto/Nascondi tutto</_10>
+    <_11>Cerca per etichetta</_11>
+    <_12>Cerca per data</_12>
+  </list_cboDblAction>
+  <list_cboSingleAction>
+    <_0>(nessuna azione)</_0>
+    <_1>Nuovo appunto</_1>
+    <_2>Pannello di controllo</_2>
+    <_3>Preferenze</_3>
+    <_4>Cerca negli appunti</_4>
+    <_5>Nuovo appunto nel gruppo</_5>
+    <_6>Carica appunti</_6>
+    <_7>Nuovo appunto dagli Appunti</_7>
+    <_8>Sposta tutto in alto</_8>
+    <_9>Salva tutto</_9>
+    <_10>Mostra tutto/Nascondi tutto</_10>
+    <_11>Cerca per etichetta</_11>
+    <_12>Cerca per data</_12>
+  </list_cboSingleAction>
+  <list_cboDefName>
+    <_0>Primi caratteri dell'appunto</_0>
+    <_1>Data e ora correnti</_1>
+    <_2>Data e ora correnti con primi caratteri dell'appunto</_2>
+  </list_cboDefName>
+  <list_cboSearchСriteria>
+    <_0>L'intera riga deve combaciare</_0>
+    <_1>Ogni parola deve combiaciare nella riga di ricerca</_1>
+    <_2>Almeno una parola deve combaciare nella riga di ricerca</_2>
+  </list_cboSearchСriteria>
+  <list_cboSearchScope>
+    <_0>Cerca nel testo</_0>
+    <_1>Cerca nei titoli</_1>
+    <_2>Cerca nel testo e nei titoli</_2>
+  </list_cboSearchScope>
+  <list_cboStopAlert>
+    <_0>Mai</_0>
+    <_1>5 sec</_1>
+    <_2>10 sec</_2>
+    <_3>15 sec</_3>
+    <_4>30 sec</_4>
+    <_5>45 sec</_5>
+    <_6>1 min </_6>
+    <_7>2 min </_7>
+    <_8>3 min </_8>
+    <_9>5 min</_9>
+    <_10>15 min</_10>
+    <_11>30 min</_11>
+  </list_cboStopAlert>
+  <list_cboOrdinal>
+    <_0>Primo</_0>
+    <_1>Secondo</_1>
+    <_2>Terzo</_2>
+    <_3>Quarto</_3>
+    <_4>Ultimo</_4>
+  </list_cboOrdinal>
+  <list_cboPinClick>
+    <_0>Sgancia</_0>
+    <_1>Mostra finestre agganciate</_1>
+  </list_cboPinClick>
+  <list_cboNoteStartPosition>
+    <_0>Centro dello schermo</_0>
+    <_1>Agganciato a sinistra</_1>
+    <_2>Agganciato in alto</_2>
+    <_3>Agganciato a destra</_3>
+    <_4>Agganciato in basso</_4>
+  </list_cboNoteStartPosition>
+  <list_cboSymbols>
+    <_0>Vari</_0>
+    <_1>Frecce</_1>
+    <_2>Operatori matematici</_2>
+    <_3>Forme geometriche</_3>
+  </list_cboSymbols>
+  <list_cboScrollBars>
+    <_0>Nessuna barra di scorrimento</_0>
+    <_1>Orizzontale</_1>
+    <_2>Verticale</_2>
+    <_3>Entrambi</_3>
+  </list_cboScrollBars>
+  <list_cboLocalSyncPeriod>
+    <_0>Mai</_0>
+    <_4>10 minuti</_4>
+    <_5>15 minuti</_5>
+    <_6>20 minuti</_6>
+    <_7>30 minuti</_7>
+    <_8>45 minuti</_8>
+    <_9>60 minuti</_9>
+    <_10>120 minuti</_10>
+    <_11>180 minuti</_11>
+    <_12>240 minuti</_12>
+  </list_cboLocalSyncPeriod>
+  <list_cboSyncPeriod>
+    <_0>Mai</_0>
+    <_4>10 minuti</_4>
+    <_5>15 minuti</_5>
+    <_6>20 minuti</_6>
+    <_7>30 minuti</_7>
+    <_8>45 minuti</_8>
+    <_9>60 minuti</_9>
+    <_10>120 minuti</_10>
+    <_11>180 minuti</_11>
+    <_12>240 minuti</_12>
+  </list_cboSyncPeriod>
+  <note>
+    <def_caption>Senza nome</def_caption>
+    <cmdFontFamily>Carattere</cmdFontFamily>
+    <cmdFontSize>Dimensione carattere</cmdFontSize>
+    <cmdFontColor>Colore carattere</cmdFontColor>
+    <cmdBold>Grassetto</cmdBold>
+    <cmdItalic>Corsivo</cmdItalic>
+    <cmdUnderline>Sottolineato</cmdUnderline>
+    <cmdStrikethrough>Barrato</cmdStrikethrough>
+    <cmdHighlight>Evidenziato</cmdHighlight>
+    <cmdLeft>Allinea a sinistra</cmdLeft>
+    <cmdCenter>Al centro</cmdCenter>
+    <cmdRight>Allinea a destra</cmdRight>
+    <cmdBullets>Elenco puntato/numerato</cmdBullets>
+    <cmdHide>Nascondi</cmdHide>
+    <cmdDelete>Elimina</cmdDelete>
+    <cmdPanel>Inserisci nel pannello</cmdPanel>
+  </note>
+  <groups>
+    <AllGroups>Tutti i gruppi</AllGroups>
+    <RecycleBin>Cestino</RecycleBin>
+    <Diary>Diario</Diary>
+    <SearchResults>Risultati ricerca</SearchResults>
+    <Backup>Copia di sicurezza</Backup>
+    <Favorites>Preferiti</Favorites>
+    <Incoming>In arrivo</Incoming>
+    <General>Generale</General>
+    <Docking>Base di aggancio</Docking>
+  </groups>
+  <schedule_description>
+    <_0>Nessuna pianificazione</_0>
+    <_1>Una volta alle:</_1>
+    <_2>Ogni giorno alle:</_2>
+    <_3>Ripeti ogni:</_3>
+    <_4>Settimanalmente il:</_4>
+    <_5>Dopo:</_5>
+    <_6>Mensilmente (data esatta)</_6>
+    <_7>Mensilmente (giorno del mese)</_7>
+    <_8>Avvisi multipli</_8>
+  </schedule_description>
+  <spellchecking>
+    <DlgSpelling>Correzione ortografica</DlgSpelling>
+    <lblNotInDic>Non presente nel dizionario</lblNotInDic>
+    <lblSuggestions>Suggerimenti</lblSuggestions>
+    <cmdIgnoreOnce>Ignora una sola volta</cmdIgnoreOnce>
+    <cmdIgnoreAll>Ignora tutto</cmdIgnoreAll>
+    <cmdAddToDict>Aggiungi al dizionario</cmdAddToDict>
+    <cmdChange>Cambia</cmdChange>
+    <cmdChangeAll>Cambia tutto</cmdChangeAll>
+    <cmdCancel>Annulla</cmdCancel>
+    <msgComplete>Verifica ortografica completata</msgComplete>
+    <mnuAddToDict>Aggiungi al dizionario</mnuAddToDict>
+    <mnuNoSuggestions>Nessun suggerimento</mnuNoSuggestions>
+  </spellchecking>
+  <report_parameters>
+    <Title>Resoconto degli appunti di PNotes.NET</Title>
+    <NoteName>Nome dell'appunto</NoteName>
+    <NoteGroup>Gruppo dell'appunto</NoteGroup>
+    <DateTaken>Stampato alle</DateTaken>
+    <Created>Creato alle</Created>
+    <Saved>Ultimo salvataggio</Saved>
+    <Sent>Inviato alle</Sent>
+    <Received>Ricevuto alle</Received>
+    <SentTo>Inviato a</SentTo>
+    <RceceivedFrom>Ricevuto da</RceceivedFrom>
+    <NoteText>Testo dell'appunto</NoteText>
+    <filter_creation>Data di  creazione degli appunti tra %PLACEHOLDER1% e %PLACEHOLDER2%</filter_creation>
+    <filter_saving>Data di salvataggio degli appunti tra %PLACEHOLDER1% e %PLACEHOLDER2%</filter_saving>
+  </report_parameters>
+</language>
