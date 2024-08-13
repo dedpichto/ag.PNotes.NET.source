@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizations>
+  <lang culture="en-US">
+    <config_file_not_found>Configuration file not found</config_file_not_found>
+    <id_not_found>Client ID not found</id_not_found>
+    <secret_not_found>Client secret not found</secret_not_found>
+    <progress_text>Synchronization in progress...</progress_text>
+  </lang>
+  <lang culture="ru-RU">
+    <config_file_not_found>Файл кофигурации не найден</config_file_not_found>
+    <id_not_found>Клиентский идентификатор не найден</id_not_found>
+    <secret_not_found>Клиентский код не найден</secret_not_found>
+    <progress_text>Выполняется синхронизация...</progress_text>
+  </lang>
+  <lang culture="bg-BG">
+    <config_file_not_found>Не е открит конфигурационен файл</config_file_not_found>
+    <id_not_found>Клиентският идентификатор не е открит</id_not_found>
+    <app_secret_not_found>Не е открит код на приложението</app_secret_not_found>
+    <progress_text>Изпълнява се синхронизация ...</progress_text>
+  </lang>
+</localizations>
