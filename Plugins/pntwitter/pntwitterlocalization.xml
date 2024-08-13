@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizations>
+  <lang culture="en-US">
+    <label1>1.   Press "Continue" button to navigate to Twitter page</label1>
+    <label2>2.   Fill in all required fields and authorize PNotes (pressing on "Authorize App" button)</label2>
+    <label3>3.   Copy and paste PIN CODE into appropriate text box and press "Continue" again. You are done!</label3>
+    <lblPin>Enter PIN CODE here:</lblPin>
+    <cmdContinue>Continue</cmdContinue>
+    <config_file_not_found>Configuration file not found</config_file_not_found>
+    <enter_pin>Please, enter PIN CODE</enter_pin>
+    <message_too_long>The message is too long and will be truncated to max available length</message_too_long>
+    <key_not_found>Consumer key not found</key_not_found>
+    <secret_not_found>Consumer secret not found</secret_not_found>
+  </lang>
+  <lang culture="ru-RU">
+    <label1>1.   Нажмите кнопку "Продолжить", чтобы перейти на страницу Твиттера</label1>
+    <label2>2.   Заполните все необходимые поля и авторизуйте PNotes (нажав на кнопку "Authorize App")</label2>
+    <label3>3.   Скопируйте и вставьте PIN CODE в соответствующее текстовое поле и опять нажмите "Продолжить". Готово!</label3>
+    <lblPin>Ввести PIN CODE здесь:</lblPin>
+    <cmdContinue>Продолжить</cmdContinue>
+    <config_file_not_found>Файл кофигурации не найден</config_file_not_found>
+    <enter_pin>Введите, пожалуйста, PIN CODE</enter_pin>
+    <message_too_long>Это сообщение слишком длинное и будет обрезано до максимально допустимой длины</message_too_long>
+    <key_not_found>Пользовательский ключ не найден</key_not_found>
+    <secret_not_found>Пользовательский секрет не найден</secret_not_found>
+  </lang>
+</localizations>

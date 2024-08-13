@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizations>
+  <lang culture="en-US">
+    <config_file_not_found>Configuration file not found</config_file_not_found>
+    <message_too_long>The message is too long and will be truncated to max available length</message_too_long>
+    <client_id_not_found>Client ID not found</client_id_not_found>
+  </lang>
+  <lang culture="ru-RU">
+    <config_file_not_found>Файл кофигурации не найден</config_file_not_found>
+    <message_too_long>Это сообщение слишком длинное и будет обрезано до максимально допустимой длины</message_too_long>
+    <client_id_not_found>Клиентский идентификатор не найден</client_id_not_found>
+  </lang>
+</localizations>

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pnvkontakte", "pnvkontakte.csproj", "{B3CE76F5-D790-424C-854A-F4FA177D276B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKTest", "VKTest\VKTest.csproj", "{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Release|x86.ActiveCfg = Release|x86
+		{B3CE76F5-D790-424C-854A-F4FA177D276B}.Release|x86.Build.0 = Release|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Debug|x86.ActiveCfg = Debug|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Debug|x86.Build.0 = Debug|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Release|Any CPU.ActiveCfg = Release|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Release|x86.ActiveCfg = Release|x86
+		{0AB8B1B7-32B1-4A8C-B05B-7F2415CEA2BB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BFDC81E-7C95-433F-9455-BE6D99BE1A9A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://andreygruber.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = pnvkontakte.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = VKTest\\VKTest.csproj
+		SccProjectName2 = VKTest
+		SccLocalPath2 = VKTest
+	EndGlobalSection
+EndGlobal
