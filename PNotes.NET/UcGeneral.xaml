@@ -1,0 +1,299 @@
+﻿<UserControl x:Class="PNotes.NET.UcGeneral"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:net="clr-namespace:PNotes.NET"
+             xmlns:pnNumericUpDown="clr-namespace:PNNumericUpDown;assembly=PNNumericUpDown"
+             xmlns:pnColorPicker="clr-namespace:PNColorPicker;assembly=PNColorPicker"
+             xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <UserControl.Resources>
+        <net:CheckedToEnableOppsiteConverter x:Key="ChkOpConverter"/>
+
+        <x:Array Type="system:Int32" x:Key="Indents">
+            <system:Int32>100</system:Int32>
+            <system:Int32>200</system:Int32>
+            <system:Int32>300</system:Int32>
+            <system:Int32>400</system:Int32>
+            <system:Int32>500</system:Int32>
+        </x:Array>
+        <x:Array Type="system:Int32" x:Key="Margins">
+            <system:Int32>0</system:Int32>
+            <system:Int32>1</system:Int32>
+            <system:Int32>2</system:Int32>
+            <system:Int32>3</system:Int32>
+            <system:Int32>4</system:Int32>
+            <system:Int32>5</system:Int32>
+            <system:Int32>6</system:Int32>
+            <system:Int32>7</system:Int32>
+            <system:Int32>8</system:Int32>
+            <system:Int32>9</system:Int32>
+            <system:Int32>10</system:Int32>
+        </x:Array>
+        <x:Array Type="system:Int32" x:Key="Pars">
+            <system:Int32>100</system:Int32>
+            <system:Int32>200</system:Int32>
+            <system:Int32>300</system:Int32>
+            <system:Int32>400</system:Int32>
+            <system:Int32>500</system:Int32>
+        </x:Array>
+    </UserControl.Resources>
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox x:Name="pnsLanguage" Header="Language" Margin="4">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox x:Name="cboLanguage" Margin="4" SelectionChanged="cboLanguage_SelectionChanged"/>
+                    <net:SmallButton x:Name="cmdAddLang" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="4" Click="cmdAddLang_Click"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="cmdFontUI" Header="Font of windows and menus" Grid.Column="1" Margin="4">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="cmdSetFontUI" Grid.Column="0" Content="Change" Margin="4" Height="{Binding Path=ActualHeight, ElementName=cboLanguage}" Click="cmdSetFontUI_Click"/>
+                    <Button x:Name="cmdRestoreFontUI" Grid.Column="1" Content="Restore" Margin="4" Height="{Binding Path=ActualHeight, ElementName=cboLanguage}" Click="cmdRestoreFontUI_Click"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <GroupBox x:Name="pnsStartup" Header="Startup options" Margin="4">
+            <StackPanel>
+                <CheckBox x:Name="chkRunOnStart" Content="Run on system start" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkNoSplash" Content="Do not show splash screen on program start" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkShowCPOnStart" Content="Show Control Panel on program start" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkShowPriority" Content="Always show notes marked as 'High Priority' on program start" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="grpUpdate" Header="Update options" Margin="4">
+            <StackPanel>
+                <CheckBox x:Name="chkCheckNewVersionOnStart" Content="Check for new version on program start" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <Button x:Name="cmdNewVersion" Content="Check now" MinHeight="23" MinWidth="75" Padding="8,0,8,0" Margin="24,4,4,4" HorizontalAlignment="Left" Click="cmdNewVersion_Click"/>
+                <CheckBox x:Name="chkCheckCriticalOnStart" Content="Check for critical updates on program start" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkCheckCriticalPeriodically" Content="Check for critical updates during program's work" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="pnsAppearance" Header="Appearance" Margin="4">
+            <StackPanel>
+                <CheckBox x:Name="chkHideToolbar" Content="Hide note's toolbar" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkCustomFont" Content="Use custom fonts" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkHideDelete" Content="Hide 'Delete' button" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkChangeHideToDelete" Content="Change appearance of 'Hide' button to 'Delete' button" Margin="24,4,4,4" IsEnabled="{Binding Path=IsChecked, ElementName=chkHideDelete}" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkHideHide" Content="Hide 'Hide' button" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="chkShowScrollbar" Grid.Column="0" Text="Show scrollbars" Margin="4" VerticalAlignment="Center" IsEnabled="{Binding Path=IsChecked, ElementName=chkAutoHeight, Converter={StaticResource ChkOpConverter}}"/>
+                    <ComboBox x:Name="cboScrollBars" Grid.Column="1" Margin="4" HorizontalAlignment="Right" MinWidth="300" IsEnabled="{Binding Path=IsChecked, ElementName=chkAutoHeight, Converter={StaticResource ChkOpConverter}}" SelectionChanged="cboScrollBars_SelectionChanged"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="pnsSkinlessGeneral" Header="Skinless notes" Margin="4">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <pnNumericUpDown:NumericUpDown x:Name="txtWidthSknlsDef" MinValue="100" MaxValue="999" MinWidth="72" Margin="4" ValueChanged="txtWidthSknlsDef_ValueChanged"/>
+                    <TextBlock x:Name="lblWidthSknlsDef" Text="Width" Grid.Row="0" Grid.Column="1" Margin="4" VerticalAlignment="Center"/>
+                    <pnNumericUpDown:NumericUpDown x:Name="txtHeightSknlsDef" Grid.Row="1" Grid.Column="0" MinValue="72" MaxValue="999" MinWidth="72" Margin="4" ValueChanged="txtHeightSknlsDef_ValueChanged"/>
+                    <TextBlock x:Name="lblHeightSknlsDef" Text="Height" Grid.Row="1" Grid.Column="1" Margin="4" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="lblButtonsSize" Text="Toolbar buttons size" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="cboButtonsSize" Grid.Column="1" MinWidth="150" HorizontalAlignment="Right" Margin="4" SelectionChanged="cboButtonsSize_SelectionChanged"/>
+                </Grid>
+                <CheckBox x:Name="chkAutoHeight" Content="Automatically adjust note's height depending on it's content" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="pnsEditArea" Header="Edit area" Margin="4">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="lblIndent" Text="Bullets indent (in twips) ( * )" ToolTip="{Binding Text, ElementName=lblWarn1}" Grid.Row="0" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cboIndent" Grid.Row="0" Grid.Column="1" Margin="4" ToolTip="{Binding Text, ElementName=lblWarn1}" HorizontalAlignment="Right" MinWidth="80" ItemsSource="{StaticResource Indents}" SelectionChanged="cboIndent_SelectionChanged"/>
+                <TextBlock x:Name="lblMargins" Text="Left and right margin width - for skinless notes" Grid.Row="1" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cboMargins" Grid.Row="1" Grid.Column="1" Margin="4" HorizontalAlignment="Right" MinWidth="80" ItemsSource="{StaticResource Margins}" SelectionChanged="cboMargins_SelectionChanged"/>
+                <TextBlock x:Name="lblParIndent" Text="Step of paragraph indent's increasing/decreasing (in twips)" Grid.Row="2" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cboParIndent" Grid.Row="2" Grid.Column="1" Margin="4" HorizontalAlignment="Right" MinWidth="80" ItemsSource="{StaticResource Pars}" SelectionChanged="cboParIndent_SelectionChanged"/>
+                <TextBlock x:Name="lblSpellColor" Text="Underlining color of spell checker" Grid.Row="3" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <pnColorPicker:ColorPicker x:Name="pckSpell" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" Margin="4" MinWidth="80" SelectedColor="Red" SelectedColorChanged="pckSpell_SelectedColorChanged"/>
+                <CheckBox x:Name="chkAutomaticSmilies" Content="Automatically insert smilies while typing ':)' or ':('" Grid.Row="4" Grid.Column="0" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <TextBlock x:Name="lblParagraphSpace" Text="Points to be applied when user choses to add space before/after paragraph" Grid.Row="5" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <pnNumericUpDown:NumericUpDown x:Name="updSpace" MaxValue="1584" Grid.Row="5" Grid.Column="1" Margin="4" HorizontalAlignment="Right" MinWidth="80" ValueChanged="updSpace_ValueChanged"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="pnsSaveDelete" Header="Saving/Deletion" Margin="4">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="chkSaveOnExit" Content="Save all on program exit" Grid.Row="0" Grid.Column="0" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkConfirmSave" Content="Confirm saving" Grid.Row="1" Grid.Column="0" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkConfirmDelete" Content="Confirmation before note deletion" Grid.Row="2" Grid.Column="0" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkSaveWithoutConfirm" Content="Save notes without confirmation while hiding" Grid.Row="3" Grid.Column="0" Margin="4" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkAutosave" Content="Autosave every (minutes):" Grid.Row="4" Grid.Column="0" Margin="4" VerticalAlignment="Center" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <pnNumericUpDown:NumericUpDown x:Name="updAutosave" MinValue="1" MaxValue="99" Grid.Row="4" Grid.Column="1" Margin="4" HorizontalAlignment="Right" MinWidth="80" IsEnabled="{Binding Path=IsChecked, ElementName=chkAutosave}" ValueChanged="updAutosave_ValueChanged"/>
+                <CheckBox x:Name="chkRestoreAutomatically" Content="Restore auto-saved notes automatically" Grid.Row="5" Grid.Column="0" Margin="24,4,4,4" VerticalAlignment="Center" IsEnabled="{Binding Path=IsChecked, ElementName=chkAutosave}" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <TextBlock x:Name="lblDeleBin" Text="Delete note from Recycle Bin after selected period (days)" Grid.Row="6" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cboDeleteBin" Grid.Row="6" Grid.Column="1" Margin="4" MinWidth="80" HorizontalAlignment="Right" SelectionChanged="cboDeleteBin_SelectionChanged"/>
+                <CheckBox x:Name="chkWarnBeforeEmptyBin" Content="Warn when note is deleted automatically from Recycle Bin" Grid.Row="7" Grid.Column="0" Margin="24,4,4,4" VerticalAlignment="Center" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkDeleteShortExit" Content="Delete desktop shortcuts on program exit" Grid.Row="8" Grid.Column="0" Margin="4" VerticalAlignment="Center" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkRestoreShortStart" Content="Restore desktop shortcuts on program start" Grid.Row="9" Grid.Column="0" Margin="24,4,4,4" IsEnabled="{Binding IsChecked, ElementName=chkDeleteShortExit}" VerticalAlignment="Center" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+                <CheckBox x:Name="chkCloseOnShortcut" Content="Close note after desktop shortcut creation" Grid.Row="10" Grid.Column="0" Margin="4" VerticalAlignment="Center" Checked="CheckGeneral_Checked" Unchecked="CheckGeneral_Checked"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="pnsDTFormat" Header="Date/Time formats" Margin="4">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="lblDTFormat" Text="Date format" Grid.Row="0" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right">
+                    <TextBox x:Name="txtDTFShort" MinWidth="200" Margin="4" TextAlignment="Center" VerticalAlignment="Center" TextChanged="txtDTFShort_TextChanged" PreviewKeyDown="txtDTFShort_PreviewKeyDown"/>
+                    <Button x:Name="cmdDTFShort" Content="?" Padding="8,0,8,0" Margin="0,4,4,4" Click="cmdDTFShort_Click"/>
+                </StackPanel>
+                <TextBlock x:Name="lblDTSample" Text="Date sample" Grid.Row="1" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <Border BorderBrush="{DynamicResource CommonControlBorderBrush}" Height="{Binding Path=ActualHeight, ElementName=txtDTFShort, Mode=OneWay}" BorderThickness="1" Grid.Row="1" Grid.Column="2" Margin="4">
+                    <TextBlock x:Name="lblDTShort" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+
+                <TextBlock x:Name="lblTFormat" Text="Time format" Grid.Row="2" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right">
+                    <TextBox x:Name="txtTFLong" MinWidth="200" Margin="4" TextAlignment="Center" VerticalAlignment="Center" TextChanged="txtTFLong_TextChanged" PreviewKeyDown="txtTFLong_PreviewKeyDown"/>
+                    <Button x:Name="cmdTFLong" Content="?" Padding="8,0,8,0" Margin="0,4,4,4" Click="cmdTFLong_Click"/>
+                </StackPanel>
+                <TextBlock x:Name="lblTSample" Text="Time sample" Grid.Row="3" Grid.Column="0" Margin="4" VerticalAlignment="Center"/>
+                <Border BorderBrush="{DynamicResource CommonControlBorderBrush}" Height="{Binding Path=ActualHeight, ElementName=txtTFLong, Mode=OneWay}" BorderThickness="1" Grid.Row="3" Grid.Column="2" Margin="4">
+                    <TextBlock x:Name="lblTFLong" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="pnsMiscMisc" Header="Miscellaneous" Margin="4">
+            <TabControl x:Name="tabMisc" Margin="4">
+                <TabItem x:Name="lblSearchProvs" Header="Search providers">
+                    <Grid Height="120">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <ListView x:Name="grdSearchProvs" net:PNGridViewHelper.AutoSort="True" net:PNGridViewHelper.ShowGridLines="true" Grid.Row="0" Margin="4,4,4,0" SelectionMode="Single" SelectionChanged="grdSearchProvs_SelectionChanged" MouseDoubleClick="grdSearchProvs_MouseDoubleClick">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn net:PNGridViewHelper.ColumnName="SP_Name" Header="Name" Width="180" DisplayMemberBinding="{Binding Name}"/>
+                                    <GridViewColumn net:PNGridViewHelper.ColumnName="SP_Query_Line" Header="Query line" Width="300" DisplayMemberBinding="{Binding Query}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <Border Background="{Binding Path=Background, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Control}}}" Grid.Row="1" Margin="4,0,4,4">
+                            <StackPanel Orientation="Horizontal">
+                                <net:SmallButton x:Name="cmdAddProv" Margin="4" Click="cmdAddProv_Click"/>
+                                <net:SmallButton x:Name="cmdEditProv" net:PNUtils.SmallButtonType="Edit" Margin="4" IsEnabled="False" Click="cmdEditProv_Click"/>
+                                <net:SmallButton x:Name="cmdDeleteProv" net:PNUtils.SmallButtonType="Remove" Margin="4" IsEnabled="False" Click="cmdDeleteProv_Click"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="lblExternals" Header="External programs">
+                    <Grid Height="120">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <ListView x:Name="grdExternals" net:PNGridViewHelper.AutoSort="True" net:PNGridViewHelper.ShowGridLines="true" Grid.Row="0" Margin="4,4,4,0" SelectionMode="Single" SelectionChanged="grdExternals_SelectionChanged" MouseDoubleClick="grdExternals_MouseDoubleClick">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn net:PNGridViewHelper.ColumnName="Ext_Name" Header="Name" Width="140" DisplayMemberBinding="{Binding Name}"/>
+                                    <GridViewColumn net:PNGridViewHelper.ColumnName="Ext_Program" Header="Program" Width="180" DisplayMemberBinding="{Binding Prog}"/>
+                                    <GridViewColumn net:PNGridViewHelper.ColumnName="Ext_Command_Line" Header="Command line" Width="180" DisplayMemberBinding="{Binding CommLine}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <Border Background="{Binding Path=Background, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Control}}}" Grid.Row="1" Margin="4,0,4,4">
+                            <StackPanel Orientation="Horizontal">
+                                <net:SmallButton x:Name="cmdAddExt" Margin="4" Click="cmdAddExt_Click"/>
+                                <net:SmallButton x:Name="cmdEditExt" net:PNUtils.SmallButtonType="Edit" Margin="4" IsEnabled="False" Click="cmdEditExt_Click"/>
+                                <net:SmallButton x:Name="cmdDeleteExt" net:PNUtils.SmallButtonType="Remove" Margin="4" IsEnabled="False" Click="cmdDeleteExt_Click"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="lblPreTags" Header="Predefined tags">
+                    <Grid Height="120">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <ListBox x:Name="lstTags" Grid.Row="0" Grid.Column="0" Margin="4" SelectionChanged="lstTags_SelectionChanged"/>
+                        <StackPanel Grid.Row="0" Grid.Column="1">
+                            <TextBlock x:Name="lblTag" Text="Tag" Margin="4"/>
+                            <TextBox x:Name="txtTag" Margin="4" TextChanged="txtTag_TextChanged"/>
+                        </StackPanel>
+                        <Border Background="{Binding Path=Background, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Control}}}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="4,0,4,4">
+                            <StackPanel Orientation="Horizontal">
+                                <net:SmallButton x:Name="cmdAddTag" Margin="4" IsEnabled="False" Click="cmdAddTag_Click"/>
+                                <net:SmallButton x:Name="cmdDeleteTag" net:PNUtils.SmallButtonType="Remove" Margin="4" IsEnabled="False" Click="cmdDeleteTag_Click"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </GroupBox>
+    </StackPanel>
+</UserControl>

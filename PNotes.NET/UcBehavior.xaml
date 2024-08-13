@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="PNotes.NET.UcBehavior"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <UserControl.Resources>
+        <x:Array Type="system:Double" x:Key="PanelDelays">
+            <system:Double>0.0</system:Double>
+            <system:Double>0.5</system:Double>
+            <system:Double>1.0</system:Double>
+            <system:Double>1.5</system:Double>
+            <system:Double>2.0</system:Double>
+        </x:Array>
+    </UserControl.Resources>
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <GroupBox x:Name="pnsHotkeys" Header="Hot keys" Grid.Column="0" Margin="4">
+                <Button x:Name="cmdHotkeys" Content="Hot keys management" Margin="4" Click="cmdHotkeys_Click"/>
+            </GroupBox>
+            <GroupBox x:Name="pnsMenus" Header="Menus" Grid.Column="1" Margin="4">
+                <Button x:Name="cmdMenus" Content="Menus management" Margin="4" Click="cmdMenus_Click"/>
+            </GroupBox>
+        </Grid>
+        <GroupBox x:Name="pnsSkinless" Header="Skinless notes" Margin="4">
+            <StackPanel>
+                <CheckBox x:Name="chkRandBack" Content="Use random background color" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkInvertText" Content="Invert text color" Margin="24,4,4,4" IsEnabled="{Binding Path=IsChecked, ElementName=chkRandBack}" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkRoll" Content="Roll/unroll note by double click on caption" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkFitRolled" Content="Fit to caption when rolled" Margin="24,4,4,4" IsEnabled="{Binding Path=IsChecked, ElementName=chkRoll}" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="pnsBehaviorMisc" Header="Miscellaneous" Margin="4">
+            <StackPanel>
+                <CheckBox x:Name="chkNewOnTop" Content="New note always on top" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkRelationalPosition" Content="Relational notes positioning" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkShowSeparateNotes" Content="Show separate notes under each group in Show/Hide menus" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkHideCompleted" Content="Hide notes marked as 'Completed'" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkShowBigIcons" Content="Show big icons on PNotes Control Panel's toolbar" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkDontShowList" Content="Do not show notes in the list of opened windows (Alt+Tab) ( * )" ToolTip="{Binding Text, ElementName=lblWarn1}" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkHideMainWindow" Content="Do not show main program window in the list of opened windows (Alt+Tab) ( *** )" ToolTip="{Binding Text, ElementName=lblWarn2}" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkKeepVisibleOnShowdesktop" Content="Keep notes visible while hovering over 'Show Desktop' button ( ** )" ToolTip="{Binding Text, ElementName=lblWarn3}" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkPreventResizing" Content="Prevent notes from being automatically arranged when moved to the edge of the screen ( ** )" ToolTip="{Binding Text, ElementName=lblWarn3}" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="lblDblAction" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="Action after double click on system tray icon" Margin="4"/>
+                    <TextBlock x:Name="lblSingleAction" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Text="Action after single click on system tray icon" Margin="4"/>
+                    <TextBlock x:Name="lblDefName" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Text="Use following as default name of new note" Margin="4"/>
+                    <TextBlock x:Name="lblLengthOfName" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Text="Length of note's text used as default name for new note" Margin="4"/>
+                    <TextBlock x:Name="lblLengthOfContent" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Text="Length of note's text shown in 'Content' column at Control Panel" Margin="4"/>
+                    <TextBlock x:Name="lblPinClick" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Text="Action after click on 'Pin' icon" Margin="4"/>
+                    <TextBlock x:Name="lblNoteStartPosition" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Text="New note initial position" Margin="4"/>
+                    <ComboBox x:Name="cboDblAction" Grid.Row="0" Grid.Column="1" Margin="4" SelectionChanged="cboDblAction_SelectionChanged"/>
+                    <ComboBox x:Name="cboSingleAction" Grid.Row="1" Grid.Column="1" Margin="4" SelectionChanged="cboSingleAction_SelectionChanged"/>
+                    <ComboBox x:Name="cboDefName" Grid.Row="2" Grid.Column="1" Margin="4" SelectionChanged="cboDefName_SelectionChanged"/>
+                    <ComboBox x:Name="cboLengthOfName" Grid.Row="3" Grid.Column="1" Margin="4" Width="82" HorizontalAlignment="Right" SelectionChanged="cboLengthOfName_SelectionChanged"/>
+                    <ComboBox x:Name="cboLengthOfContent" Grid.Row="4" Grid.Column="1" Margin="4" Width="82" HorizontalAlignment="Right" SelectionChanged="cboLengthOfContent_SelectionChanged"/>
+                    <ComboBox x:Name="cboPinClick" Grid.Row="5" Grid.Column="1" Margin="4" SelectionChanged="cboPinClick_SelectionChanged"/>
+                    <ComboBox x:Name="cboNoteStartPosition" Grid.Row="6" Grid.Column="1" Margin="4" SelectionChanged="cboNoteStartPosition_SelectionChanged"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="grpDockPanel" Header="Notes panel" Margin="4">
+            <StackPanel>
+                <CheckBox x:Name="chkShowPanel" Content="Show notes panel" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <Grid IsEnabled="{Binding IsChecked, ElementName=chkShowPanel}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="lblPanelDock" Text="Panel placement" Margin="24,4,4,4" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="cboPanelDock" Grid.Column="1" Margin="4" HorizontalAlignment="Right" Width="{Binding ActualWidth, ElementName=cboNoteStartPosition}" SelectionChanged="cboPanelDock_SelectionChanged"/>
+                </Grid>
+                <CheckBox x:Name="chkPanelAutoHide" Content="Hide notes panel automatically" IsEnabled="{Binding IsChecked, ElementName=chkShowPanel}" Margin="24,4,4,4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkPanelSwitchOffAnimation" Content="Switch off animation" IsEnabled="{Binding IsChecked, ElementName=chkShowPanel}" Margin="24,4,4,4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <Grid IsEnabled="{Binding IsChecked, ElementName=chkShowPanel}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="lblPanelRemove" Text="Action to remove note from panel" Margin="24,4,4,4" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="cboPanelRemove" Grid.Column="1" Margin="4" HorizontalAlignment="Right" Width="{Binding ActualWidth, ElementName=cboNoteStartPosition}" SelectionChanged="cboPanelRemove_SelectionChanged"/>
+                </Grid>
+                <Grid IsEnabled="{Binding IsChecked, ElementName=chkShowPanel}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="tbPanelDelay" Text="Delay of automatic panel appearance (in seconds)" Margin="24,4,4,4" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="cboPanelDelay" Grid.Column="1" Margin="4" HorizontalAlignment="Right" Width="82" SelectionChanged="cboPanelDelay_SelectionChanged" ItemsSource="{StaticResource PanelDelays}"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="pnsEffects" Header="Effects" Margin="4">
+            <StackPanel>
+                <CheckBox x:Name="chkHideFluently" Content="Hide notes fluently" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <CheckBox x:Name="chkPlaySoundOnHide" Content="Play sound when hide note" Margin="4" Checked="CheckBehavior_Checked" Unchecked="CheckBehavior_Checked"/>
+                <GroupBox x:Name="grpTransparency" Header="Transparency" Margin="4">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="lblTransPerc" Text="0%" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="4" VerticalAlignment="Center"/>
+                        <TextBlock Text="0%" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="4" VerticalAlignment="Center"/>
+                        <Slider x:Name="trkTrans" Grid.Row="1" Grid.Column="1" Margin="4" TickPlacement="BottomRight" ValueChanged="trkTrans_ValueChanged" SmallChange="1" Maximum="100"/>
+                        <TextBlock Text="100%" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" Margin="4" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="lblTransWarning" Text="Value of 100% will result in fully transparent window!" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="4" Foreground="{DynamicResource WarningTextBrush}" TextWrapping="Wrap"/>
+                    </Grid>
+                </GroupBox>
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</UserControl>

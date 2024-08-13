@@ -1,0 +1,56 @@
+﻿<Window x:Class="PNotes.NET.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:pnPalette="clr-namespace:PNPalette;assembly=PNPalette"
+        xmlns:net="clr-namespace:PNotes.NET"
+        xmlns:componentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+        xmlns:pnColorPicker="clr-namespace:PNColorPicker;assembly=PNColorPicker"
+        xmlns:pnDateTimePicker="clr-namespace:PNDateTimePicker;assembly=PNDateTimePicker"
+        xmlns:pnipBox="clr-namespace:PNIPBox;assembly=PNIPBox"
+        Style="{DynamicResource CustomWindowStyle}"
+        Width="600" Height="400"
+        Title="Hello, world"
+        Icon="{DynamicResource note_pinned}"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Canvas Margin="0,-5,0,5" Grid.Column="0">
+            <Border Canvas.Left="100" Canvas.Top="20" Width="16" Height="16">
+                <Path Stroke="{DynamicResource NormalTextBrush}" Fill="{DynamicResource NormalTextBrush}" Data="M0,16 A8,6 180 1 1 16,16 Z M8,2 A4,4 180 1 1 8,10 M8,2 A4,4 180 1 0 8,10" StrokeThickness="1"/>
+            </Border>
+            <Border Canvas.Left="100" Canvas.Top="40" Width="16" Height="16">
+                <Path Stroke="{DynamicResource NormalTextBrush}" Data="M1,1 L15,1 L13,15 L3,15 Z M6,4 L6,12 M10,4 L10,12" StrokeThickness="2" />
+            </Border>
+            <Border Canvas.Left="100" Canvas.Top="60" Width="16" Height="16">
+                <Path Stroke="{DynamicResource NormalTextBrush}" Data="M0,0 L0,16 L16,16 L16,8 M0,0 L8,0 M16,0 L6,10" StrokeThickness="4" StrokeStartLineCap="Square" StrokeEndLineCap="Triangle"/>
+            </Border>
+            <Border Canvas.Left="100" Canvas.Top="160" Width="16" Height="16">
+                <Path Stroke="{DynamicResource SmallButtonBrush}" Fill="{DynamicResource SmallButtonBrush}" Data="M6,16 L10,16 L10,12 L6,12 Z M0,0 L4,0 L4,4 L0,4 Z M0,0 L8,16 M16,0 L12,0 L12,4 L16,4 Z M16,0 L8,16" StrokeThickness="2" />
+            </Border>
+            <Border Canvas.Left="100" Canvas.Top="180" Width="16" Height="16">
+                <Path Stroke="{DynamicResource SmallButtonBrush}" Data="M7,3 L0,3 L0,12 L16,12 L16,10 M6,14 L10,14 M3,16 L13,16 M16,0 L8,8 M16,8 L8,0 " StrokeThickness="2" />
+            </Border>
+            <Border Canvas.Left="100" Canvas.Top="200" Width="16" Height="16">
+                <Path Stroke="{DynamicResource SmallButtonBrush}" Data="M16,3 L0,3 L0,12 L16,12 L16,3 M6,14 L10,14 M3,16 L13,16 M13,6 L3,6 L3,9 L13,9 Z" StrokeThickness="2" />
+            </Border>
+            <Border Canvas.Left="100" Canvas.Top="220" Width="16" Height="16">
+                <Path Stroke="{DynamicResource SmallButtonBrush}" Data="M16,3 L0,3 L0,12 L16,12 L16,3 M6,14 L10,14 M3,16 L13,16" StrokeThickness="2" />
+            </Border>
+            <Border Canvas.Left="100" Canvas.Top="240" Width="16" Height="16">
+                <Path Stroke="{DynamicResource SmallButtonBrush}" Data="M5,3 L0,3 L0,12 L16,12 L16,10 M6,14 L10,14 M3,16 L13,16 M13,1 A4,4 180 1 1 9,8 M13,1 A4,4 180 1 0 9,8 M10,4 L12,4" StrokeThickness="2" />
+            </Border>
+            <Border Canvas.Left="100" Canvas.Top="260" Width="16" Height="16">
+                <Path Stroke="{DynamicResource SmallButtonBrush}" Data="M1,5 L5,5 L9,0 L8,7 L8,9 L9,16 L5,11 L1,11 L1,4 M11,4 L12,8 L11,12 M14,2 L15,8 L14,14" StrokeThickness="2"/>
+            </Border>
+            <net:SmallButton Canvas.Left="100" Canvas.Top="80"/>
+            <net:SmallButton net:PNUtils.SmallButtonType="Edit" Canvas.Left="100" Canvas.Top="100"/>
+            <net:SmallButton net:PNUtils.SmallButtonType="Remove" Canvas.Left="100" Canvas.Top="120"/>
+            <net:SmallButton net:PNUtils.SmallButtonType="Apply" Canvas.Left="100" Canvas.Top="140"/>
+        </Canvas>
+        <Ellipse x:Name="ElpProgress" Grid.Row="0" Grid.Column="1" Width="48" Height="48" Margin="10" StrokeThickness="7" StrokeDashArray="3.3 1.33" Style="{DynamicResource ProgressImage}"/>
+    </Grid>
+</Window>

@@ -1,0 +1,55 @@
+﻿<Window x:Class="PNotes.NET.WndChooseMailContacts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:net="clr-namespace:PNotes.NET"
+        xmlns:sts="clr-namespace:WPFStandardStyles;assembly=WPFStandardStyles"
+        Title="WndChooseMailContacts" Height="300" Width="360"
+        Name="DlgChooseMailContacts"
+        Style="{DynamicResource CustomWindowStyle}"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner"
+        SizeToContent="Height"
+        TextElement.FontFamily="{Binding FontFamily}"
+        TextElement.FontSize="{Binding FontSize}"
+        TextElement.FontStretch="{Binding FontStretch}"
+        TextElement.FontStyle="{Binding FontStyle}"
+        TextElement.FontWeight="{Binding FontWeight}"
+        Loaded="DlgChooseMailContacts_Loaded">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static net:OkCancelCommands.OkCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+        <CommandBinding Command="{x:Static net:OkCancelCommands.CancelCommand}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+    </Window.CommandBindings>
+    <StackPanel>
+        <ListView Name="grdMailContacts" sts:WPFGridViewHelper.AutoSort="True" Height="170" Margin="4">
+            <ListView.View>
+                <GridView>
+
+                    <sts:FixedWidthColumn FixedWidth="30">
+                        <sts:FixedWidthColumn.Header>
+                            <CheckBox x:Name="chkAll" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="chkAll_Checked"  Unchecked="chkAll_Checked"/>
+                        </sts:FixedWidthColumn.Header>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding Selected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Checked="CheckBox_Checked"  Unchecked="CheckBox_Checked"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </sts:FixedWidthColumn>
+                    <GridViewColumn sts:WPFGridViewHelper.ColumnName="DispName" Header="Display name" Width="136" DisplayMemberBinding="{Binding DispName}"/>
+                    <GridViewColumn sts:WPFGridViewHelper.ColumnName="MailAddress" Header="Sender address" Width="136" DisplayMemberBinding="{Binding Address}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="4" MinWidth="75" IsDefault="True" MinHeight="23" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" Command="net:OkCancelCommands.OkCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+            <Button Margin="4" MinWidth="75" IsCancel="True" MinHeight="23" Grid.Row="0" Grid.Column="1" Command="net:OkCancelCommands.CancelCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+        </Grid>
+    </StackPanel>
+</Window>
+
+
+
