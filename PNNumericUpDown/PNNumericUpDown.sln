@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNNumericUpDown", "PNNumericUpDown.csproj", "{C1445EDF-4FA0-44A5-8A90-5638360ADC91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUpDown", "TestUpDown\TestUpDown.csproj", "{E2390C78-09D4-411E-9924-3FAF905A3BC8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://andreygruber.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = PNNumericUpDown.csproj
+		SccLocalPath0 = .
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = TestUpDown\\TestUpDown.csproj
+		SccProjectName2 = TestUpDown
+		SccLocalPath2 = TestUpDown
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1445EDF-4FA0-44A5-8A90-5638360ADC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1445EDF-4FA0-44A5-8A90-5638360ADC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1445EDF-4FA0-44A5-8A90-5638360ADC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1445EDF-4FA0-44A5-8A90-5638360ADC91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2390C78-09D4-411E-9924-3FAF905A3BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2390C78-09D4-411E-9924-3FAF905A3BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2390C78-09D4-411E-9924-3FAF905A3BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2390C78-09D4-411E-9924-3FAF905A3BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
